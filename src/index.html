@@ -4,13 +4,7 @@ layout: layouts/base.njk
 
 <h1>The Embassy Components</h1>
 
-<p>Parse some components html</p>
-
-<button type="button" class="btn btn-primary">Download CSS</button>
-
-{% highlight "html" %}
-<div class="example-html">
-  <!-- Add html code sample  -->
-  <span>Data something!</span>
-</div>
-{% endhighlight %}
+<h3>Download assets for The Embassy Semantic MediaWiki skin</h3>
+<a type="button" class="btn btn-primary"  href="{{assets['main.css']}}">Download css</a>
+<a type="button" class="btn btn-primary" href="{{assets['main.js']}}">Download main js</a>
+<a type="button" class="btn btn-primary" href="{{assets['vendors.js']}}">Download vendors js</a>

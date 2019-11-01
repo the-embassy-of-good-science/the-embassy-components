@@ -5,9 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    {% set css %}{% include "./static/css/prism.css" %}{% endset %}
-    <!-- Prism CSS  -->
-    <style>{{ css | cssmin | safe }}</style>
+    <link rel="stylesheet" href="static/css/main.css" />
+    <link rel="stylesheet" href="static/css/prism.css" />
 
   </head>
   <body>
@@ -25,8 +24,14 @@
 
     <p>Parse some CSS</p>
 
+<!-- Read css and import this as string  -->
+{% set css %}{% include "./static/css/prism.css" %}{% endset %}
 {% highlight "css" %}
 {{ css }}
 {% endhighlight %}
+
+  <script type="text/javascript" src="static/js/vendors.js"></script>
+  <script type="text/javascript" src="static/js/main.js"></script>
+
   </body>
 </html>

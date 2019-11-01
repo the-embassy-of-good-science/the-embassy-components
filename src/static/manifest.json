@@ -1,0 +1,6 @@
+{
+  "main.css": "/static/css/main.css",
+  "main.js": "/static/js/main.js",
+  "vendors.js": "/static/js/vendors.js",
+  "js/vendors.js.LICENSE": "/static/js/vendors.js.LICENSE"
+}

@@ -33,7 +33,6 @@
     "webpack-manifest-plugin": "^2.2.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm-run-all --parallel dev:*",
     "dev:webpack": "webpack --mode development --watch",
     "dev:eleventy": "npx @11ty/eleventy --watch --serve --port=8081",

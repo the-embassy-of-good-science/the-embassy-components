@@ -1,0 +1,21 @@
+---
+title: The Embassy of Good Science - Components
+---
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{ title }}</title>
+
+    <link rel="stylesheet" href="{{ assets['main.css'] }}" />
+    <link rel="stylesheet" href="static/css/prism.css" />
+</head>
+<body>
+
+{{ content | safe }}
+
+<script type="text/javascript" src="{{ assets['vendors.js'] }}"></script>
+<script type="text/javascript" src="{{ assets['main.js'] }}"></script>
+</body>
+</html>

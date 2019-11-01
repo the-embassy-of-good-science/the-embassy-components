@@ -1,24 +1,12 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+---
+layout: layouts/base.njk
+---
 
-    <!-- main css file -->
-    <link rel="stylesheet" href="{{ assets['main.css'] }}" />
+<h1>The Embassy Components</h1>
 
-    <!-- prism syntax css -->
-    <link rel="stylesheet" href="static/css/prism.css" />
-  </head>
-  <body>
+<p>Parse some components html</p>
 
-
-
-    <h1>The Embassy Components</h1>
-
-    <p>Parse some components html</p>
-
-    <button type="button" class="btn btn-primary">Download CSS</button>
+<button type="button" class="btn btn-primary">Download CSS</button>
 
 {% highlight "html" %}
 <div class="example-html">
@@ -26,8 +14,3 @@
   <span>Data something!</span>
 </div>
 {% endhighlight %}
-
-  <script type="text/javascript" src="{{ assets['vendors.js'] }}"></script>
-  <script type="text/javascript" src="{{ assets['main.js'] }}"></script>
-  </body>
-</html>

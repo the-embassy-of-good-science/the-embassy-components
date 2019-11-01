@@ -4,14 +4,16 @@
   "description": "The HTML / CSS design system for The Embassy of Good Science using Bootstrap 4",
   "main": "src/js/main.js",
   "dependencies": {
-    "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3",
     "@11ty/eleventy": "^0.9.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3",
     "bootstrap": "^4.3.1",
+    "clean-css": "^4.2.1",
     "terser": "^4.3.9"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx @11ty/eleventy --watch --serve --port=8081"
+    "start": "npx @11ty/eleventy --watch --serve --port=8081",
+    "build": "npx @11ty/eleventy"
   },
   "repository": {
     "type": "git",

@@ -1,8 +1,17 @@
+// Plugins
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+
+// Modules
 const Terser = require("terser");
+const CleanCSS = require("clean-css");
 
 module.exports = function(eleventyConfig) {
     eleventyConfig.addPlugin(syntaxHighlight);
+
+    // Minify css files
+    eleventyConfig.addFilter("cssmin", function(code) {
+        return new CleanCSS({}).minify(code).styles;
+    });
 
     // Copy static folder to "_site/static"
     eleventyConfig.addPassthroughCopy({ "src/static": "static" });

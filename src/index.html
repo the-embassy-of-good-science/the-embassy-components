@@ -5,11 +5,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="static/css/prism.css" />
+    {% set css %}{% include "./static/css/prism.css" %}{% endset %}
+    <!-- Prism CSS  -->
+    <style>{{ css | cssmin | safe }}</style>
+
   </head>
   <body>
+
     <h1>The Embassy Components</h1>
 
+    <p>Parse some components html</p>
 
 {% highlight "html" %}
 <div class="example-html">
@@ -18,5 +23,10 @@
 </div>
 {% endhighlight %}
 
+    <p>Parse some CSS</p>
+
+{% highlight "css" %}
+{{ css }}
+{% endhighlight %}
   </body>
 </html>

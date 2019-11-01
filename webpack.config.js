@@ -19,8 +19,8 @@ module.exports = (env, argv) => {
     },
     output: {
       path: path.resolve(__dirname, outputFolder),
-      filename: 'js/[name].js',
-      chunkFilename: 'js/[name].js',
+      filename: 'js/[name].[chunkhash:8].js',
+      chunkFilename: 'js/[name].[chunkhash:8].js',
       // Easier navigation in Chrome dev tool source mapping:
       devtoolModuleFilenameTemplate: info => path.resolve(info.absoluteResourcePath).replace(/\\/g, '/')
     },
@@ -107,18 +107,19 @@ module.exports = (env, argv) => {
       // }),
       new CleanWebpackPlugin({
         cleanOnceBeforeBuildPatterns: [
-          path.resolve(__dirname, 'static/js'),
-          path.resolve(__dirname, 'static/css'),
-          '!prism.css'
-        ]
+          path.resolve(__dirname, './docs/static/'),
+          path.resolve(__dirname, './src/static/js/main*'),
+          path.resolve(__dirname, './src/static/js/vendor*'),
+          path.resolve(__dirname, './src/static/css/main*')
+        ],
       }),
       new ManifestPlugin({
         publicPath: '/static/',
-        fileName: 'manifest.json'
+        fileName: '../_data/assets.json'
       }),
       new MiniCssExtractPlugin({
         publicPath: '/static/',
-        filename: 'css/[name].css',
+        filename: 'css/[name].[chunkhash:8].css',
       }),
       new ErrorOverlayPlugin()
     ]

@@ -1,7 +1,9 @@
-# the-embassy-styleguide
-The HTML / CSS design system for The Embassy of Good Science using Bootstrap 4  
+<img src="https://user-images.githubusercontent.com/382735/53409751-0e6d6600-39c2-11e9-94fc-5b49bf239ed6.png" width="60"> The Embassy of Good Science
+=======
 
-Our components library is hosted with [GitHub Pages](https://pages.github.com/) and its set on [component.embassy.science](https://components.embassy.science/)
+> The HTML / CSS components for The Embassy of Good Science using Bootstrap 4 .  
+
+Our components library is hosted with [GitHub Pages](https://pages.github.com/) and its set on [https://components.embassy.science](https://components.embassy.science/)
 
 ## Technology docs 
 

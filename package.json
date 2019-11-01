@@ -1,0 +1,26 @@
+{
+  "name": "the-embassy-styleguide",
+  "version": "1.0.0",
+  "description": "The HTML / CSS design system for The Embassy of Good Science using Bootstrap 4",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx @11ty/eleventy --watch --serve --port=8081"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/the-embassy-of-good-science/the-embassy-styleguide.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/the-embassy-of-good-science/the-embassy-styleguide/issues"
+  },
+  "homepage": "https://github.com/the-embassy-of-good-science/the-embassy-styleguide#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.9.0"
+  }
+}

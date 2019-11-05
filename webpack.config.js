@@ -98,17 +98,13 @@ module.exports = (env, argv) => {
       }
     },
     plugins: [
-      // new CleanWebpackPlugin([
-      //   // wipe the entire static folder
-      //   path.resolve(__dirname, 'static/js'),
-      //   path.resolve(__dirname, 'static/css'),
-      // ], {
-      //   // except of this file
-      //   exclude: ['prism.css']
-      // }),
       new CleanWebpackPlugin({
         cleanOnceBeforeBuildPatterns: [
           path.resolve(__dirname, './docs/static/'),
+          path.resolve(__dirname, './docs/static/js/main*'),
+          path.resolve(__dirname, './docs/static/js/vendor*'),
+          path.resolve(__dirname, './docs/static/js/library*'),
+          path.resolve(__dirname, './docs/static/css/main*'),
           path.resolve(__dirname, './src/static/js/main*'),
           path.resolve(__dirname, './src/static/js/vendor*'),
           path.resolve(__dirname, './src/static/js/library*'),

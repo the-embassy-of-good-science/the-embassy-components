@@ -17,6 +17,7 @@ $te-error: #EC3232;
 
 // Add new CSS variables colours based on The Embassy colors
 :root {
+  --te-homepage-background: #{$te-homepage-background};
   --te-verylightblue: #{$te-verylightblue};
   --te-lightblue: #{$te-lightblue};
   --te-glacier: #{$te-glacier};

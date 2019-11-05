@@ -9,7 +9,7 @@ body {
 .container-fluid {
   min-height: calc(100% - 76px); }
   @media (min-width: 768px) {
-    .container-fluid .row {
+    .container-fluid > .row {
       height: calc(100vh - 76px); } }
 
 .sidebar {
@@ -26,4 +26,9 @@ body {
 .content {
   padding-top: 30px;
   padding-bottom: 30px; }
+
+.code-sample {
+  margin-bottom: -0.5rem;
+  padding: 40px;
+  background-color: #F9F9F9; }
 

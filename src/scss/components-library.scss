@@ -17,7 +17,7 @@ body {
 .container-fluid {
     min-height: calc(100% - 76px);
 
-    .row {
+     > .row {
         @include media-breakpoint-up(md) {
             height: calc(100vh - 76px);
         }
@@ -40,4 +40,10 @@ body {
 .content {
     padding-top: 30px;
     padding-bottom: 30px;
+}
+
+.code-sample {
+    margin-bottom: - 0.5rem;
+    padding: 40px;
+    background-color: #F9F9F9;
 }

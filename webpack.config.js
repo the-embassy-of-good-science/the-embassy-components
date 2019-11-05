@@ -15,6 +15,7 @@ module.exports = (env, argv) => {
 
   const webpackConfig = {
     entry: {
+      'library': [ './src/js/library.js' ],
       'main': [ './src/js/main.js' ],
     },
     output: {

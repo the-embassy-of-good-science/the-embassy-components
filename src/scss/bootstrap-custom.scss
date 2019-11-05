@@ -1,0 +1,31 @@
+// Required
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+// The embassy colour variables
+$te-white: #FFFFFF;
+$te-black: #000000;
+$te-homepage-background: #EDF6F8;
+$te-verylightblue: #DFF0F3;
+$te-lightblue: #BCD5DA;
+$te-glacier: #78B7C2;
+$te-blue: #567C83;
+$te-sunfloweryellow: #F6D30B;
+$te-sunfloweryellow-dark: #D2B409;
+$te-error: #EC3232;
+
+// Add new CSS variables colours
+:root {
+  --te-verylightblue: $te-verylightblue;
+  --te-lightblue: $te-lightblue;
+  --te-glacier: $te-glacier;
+  --te-blue: $te-blue;
+  --te-sunfloweryellow: $te-sunfloweryellow;
+  --te-sunfloweryellow-dark: $te-sunfloweryellow-dark;
+  --te-error: $te-error
+}
+
+// Override bootstrap
+$link-color: $te-blue;
+$link-hover-color: $te-sunfloweryellow-dark;

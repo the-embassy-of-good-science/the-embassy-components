@@ -41,3 +41,11 @@
 .navigation-logo {
   max-width: 75px;
 }
+
+.navigation.is-homepage {
+  a.is-active {
+    &::after {
+      background-color: $te-black;
+    }
+  }
+}

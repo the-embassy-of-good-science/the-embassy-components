@@ -4,10 +4,59 @@ layout: layouts/base.njk
 
 <h3>Navigation</h3>
 
-<p>Describe the component here...</p>
+<p></p>
+<p></p>
+
+<h5>Visual (pages)</h5>
 
 <div class="code-sample">
     <div class="navigation container">
+        <div class="row">
+            <div class="col-lg-2">
+                <a href="#">
+                    <img class="navigation-logo" src="/static/images/the-embassy-logo.png" />
+                </a>
+            </div>
+            <div class="nav col-lg-10">
+                <a href="#">Home</a>
+                <a href="#" class="is-active">Themes</a>
+                <a href="#">Resources</a>
+                <a href="#">Discussions</a>
+                <a href="#">Training</a>
+                <a href="#">About</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% highlight "html" %}
+<div class="navigation container">
+    <div class="row">
+        <div class="col-lg-2">
+            <a href="#">
+                <img class="navigation-logo" src="/static/images/the-embassy-logo-white.png" />
+            </a>
+        </div>
+        <div class="nav col-lg-10">
+            <a href="#" class="is-active">Home</a>
+            <a href="#">Themes</a>
+            <a href="#">Resources</a>
+            <a href="#">Discussions</a>
+            <a href="#">Training</a>
+            <a href="#">About</a>
+        </div>
+    </div>
+</div>
+{% endhighlight %}
+
+<p> </p>
+<p> </p>
+
+<h5>Visual (homepage)</h5>
+
+<div class="code-sample">
+    <div class="navigation container is-homepage">
         <div class="row">
             <div class="col-lg-2">
                 <a href="#">

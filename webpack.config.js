@@ -68,6 +68,13 @@ module.exports = (env, argv) => {
 
           ],
         },
+        {
+          test: /\.svg$/,
+          use: [{
+            loader: 'svg-sprite-loader',
+            options: {}
+          }]
+        }
       ]
     },
     // https://webpack.js.org/configuration/performance/

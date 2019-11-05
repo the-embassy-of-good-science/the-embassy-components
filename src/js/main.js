@@ -2,4 +2,7 @@
 import '../scss/main.scss';
 
 // Import bootstrap logic
-import 'bootstrap';
+// import 'bootstrap';
+
+// Import svgs
+import '../svgs/index';

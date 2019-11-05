@@ -1,0 +1,82 @@
+---
+layout: layouts/base.njk
+---
+
+<h3>Footer</h3>
+
+<p></p>
+<p></p>
+
+<div class="code-sample">
+    <div class="footer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="footer-content col col-lg-10">
+                    <div class="footer-head">
+                        <svg width="42" height="41" viewBox="0 0 42 41" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M41.6954 20.4999L21.1953 41 .6954 20.4999 41.6954 0z" fill="#D1E2E5"></path>
+                        </svg>
+                        <p>Your platform for research integrity and ethics</p>
+                    </div>
+                    <div class="footer-columns row">
+                        <div class="footer-links col-lg-4 order-sm-1 order-lg-0">
+                            <a href="#" >Privacy statement</a>
+                            <a href="#" >Terms of service</a>
+                            <a href="#" >Take down policy</a>
+                            <a href="#" >Contact</a>
+                        </div>
+                        <div class="footer-form col-lg-4 order-sm-0 order-lg-1">X</div>
+                        <div class="footer-social col-lg-4 order-sm-2">
+                            <a href="https://twitter.com/EmbassySci" target="_blank">
+                                <svg>
+                                    <use xlink:href="#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <img class="flag-eu" src="/static/images/flag-eu.png">
+            <p>The EnTIRE and VIRT2UE projects have received funding from the European Union’s Horizon 2020 research programme under grant agreements N 741782 and N 787580.</p>
+        </div>
+    </div>
+</div>
+
+{% highlight "html" %}
+<div class="footer">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="footer-content col-md-10">
+                <div class="footer-head">
+                    <svg width="42" height="41" viewBox="0 0 42 41" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M41.6954 20.4999L21.1953 41 .6954 20.4999 41.6954 0z" fill="#D1E2E5"></path>
+                    </svg>
+                    <p>Your platform for research integrity and ethics</p>
+                </div>
+                <div class="footer-columns row">
+                    <div class="footer-links col-lg-4">
+                        <a href="#" >Privacy statement</a>
+                        <a href="#" >Terms of service</a>
+                        <a href="#" >Take down policy</a>
+                        <a href="#" >Contact</a>
+                    </div>
+                    <div class="footer-form col-lg-4">X</div>
+                    <div class="footer-social col-lg-4">
+                        <a href="https://twitter.com/EmbassySci" target="_blank">
+                            <svg>
+                                <use xlink:href="#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <img class="flag-eu" src="/static/images/flag-eu.png">
+        <p>The EnTIRE and VIRT2UE projects have received funding from the European Union’s Horizon 2020 research programme under grant agreements N 741782 and N 787580.</p>
+    </div>
+</div>
+{% endhighlight %}

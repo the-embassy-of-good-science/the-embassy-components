@@ -111,6 +111,7 @@ module.exports = (env, argv) => {
           path.resolve(__dirname, './docs/static/'),
           path.resolve(__dirname, './src/static/js/main*'),
           path.resolve(__dirname, './src/static/js/vendor*'),
+          path.resolve(__dirname, './src/static/js/library*'),
           path.resolve(__dirname, './src/static/css/main*')
         ],
       }),

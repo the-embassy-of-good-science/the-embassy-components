@@ -1,1 +1,1 @@
-import '../scss/components-library.scss'
+import '../scss/components-library.scss';

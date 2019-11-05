@@ -1,2 +1,8 @@
-@import 'bootstrap_custom';
-@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+// Add custom styles
+@import 'generic/paths';
+@import 'generic/webfonts';
+
+// Add bootstrap
+@import 'bootstrap-custom';
+@import '~bootstrap/scss/bootstrap.scss';
+

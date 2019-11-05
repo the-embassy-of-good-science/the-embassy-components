@@ -24,7 +24,7 @@ npm install
 npm run start
 ```
 
-- Build and optimise project in produciton mode
+- Build and optimise project in production mode
 ```
 npm run build
 ```

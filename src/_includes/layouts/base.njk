@@ -43,25 +43,24 @@ url: https://components.embassy.science
     <meta name="twitter:image" content="/static/images/og-image.png"/>
 
     <link rel="stylesheet" href="{{ assets['main.css'] }}" />
-    <link rel="stylesheet" href="/static/css/dashboard.css" />
+    <link rel="stylesheet" href="{{ assets['library.css'] }}" />
     <link rel="stylesheet" href="/static/css/prism.css" />
 </head>
 <body>
 
-<nav class="navbar">
-    <span class="navbar-brand">Navbar</span>
+<nav class="navbar sticky-top navbar-light">
+    <a class="navbar-brand" href="/"><img src="/static/images/the-embassy-logo.png" width="50" /></a>
 </nav>
 
 <div class="container-fluid">
     <div class="row">
         {% include '../components/sidebar.njk' %}
 
-        <main class="col-md-10">
+        <main class="content col-md-9 col-xl-10">
             {{ content | safe }}
         </main>
     </div>
 </div>
-
 
 <script type="text/javascript" src="{{ assets['vendors.js'] }}"></script>
 <script type="text/javascript" src="{{ assets['main.js'] }}"></script>

@@ -108,6 +108,8 @@ module.exports = (env, argv) => {
       new CleanWebpackPlugin({
         cleanOnceBeforeBuildPatterns: [
           path.resolve(__dirname, './docs/static/'),
+          path.resolve(__dirname, './docs/bootstrap/'),
+          path.resolve(__dirname, './docs/components/'),
           path.resolve(__dirname, './docs/static/js/main*'),
           path.resolve(__dirname, './docs/static/js/vendor*'),
           path.resolve(__dirname, './docs/static/js/library*'),

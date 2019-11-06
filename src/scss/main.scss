@@ -2,9 +2,20 @@
 @import 'generic/paths';
 @import 'generic/webfonts';
 
-// Add bootstrap
+// Add bootstrap settings
 @import 'bootstrap-custom';
-@import '~bootstrap/scss/bootstrap.scss';
+// Avoid to load all bootstrap css
+// @import '~bootstrap/scss/bootstrap.scss';
+
+// Bootstrap components
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
 
 // Add components
 @import 'components/footer';

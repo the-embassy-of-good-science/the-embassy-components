@@ -5,7 +5,7 @@
 // Add bootstrap settings
 @import 'bootstrap-custom';
 // Avoid to load all bootstrap css
-// @import '~bootstrap/scss/bootstrap.scss';
+ @import '~bootstrap/scss/bootstrap.scss';
 
 // Bootstrap components
 @import "~bootstrap/scss/reboot";

@@ -1,17 +1,78 @@
 .navigation {
-  font-family: $te-font-bold;
-
-  .nav {
-    display: flex;
-    align-items: center;
+  @include media-breakpoint-up(lg) {
+    background-color: transparent;
   }
 
-  a {
-    position: relative;
-    color: $te-black;
-    text-decoration: none;
-    text-transform: lowercase;
+  min-height: 60px;
+  font-family: $te-font-bold;
+  background-color: $te-lightblue;
+}
 
+.nav-trigger {
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  margin: 0;
+
+  .open-icon,
+  .close-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .close-icon {
+    display: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+#nav-trigger-home,
+#nav-trigger {
+  @include media-breakpoint-down(md) {
+    & ~ .nav {
+      display: none;
+      padding-right: 0;
+      background-color: $te-sunfloweryellow;
+    }
+
+    &:checked + .nav-trigger {
+      .open-icon {
+        display: none;
+      }
+
+      .close-icon {
+        display: inline;
+      }
+    }
+
+    &:checked ~ .nav {
+      display: flex;
+      user-select: none;
+    }
+  }
+
+  display: none;
+}
+
+.navigation .nav {
+  @include media-breakpoint-up(lg) {
+    flex-direction: row;
+  }
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  a {
     @include media-breakpoint-up(lg) {
       margin: 0 16px;
       padding: 16px 0 10px;
@@ -22,9 +83,28 @@
         color: $te-lightblue;
       }
     }
+
+    position: relative;
+    padding: 16px;
+    font-family: $te-font-bold;
+    font-size: 26px;
+    text-decoration: none;
+    text-transform: lowercase;
+    color: $te-black;
   }
 
   a.is-active {
+    @include media-breakpoint-down(md) {
+      &:after {
+        background-color: transparent;
+      }
+    }
+    @include media-breakpoint-up(lg) {
+      color: $te-black;
+    }
+
+    color: $te-white;
+
     &::after {
       position: absolute;
       bottom: 0;
@@ -38,6 +118,14 @@
   }
 }
 
+.navigation .nav-brand {
+  @include media-breakpoint-up(lg) {
+    display: inline;
+  }
+
+  display: none;
+}
+
 .navigation-logo {
   max-width: 75px;
 }
@@ -45,7 +133,9 @@
 .navigation.is-homepage {
   a.is-active {
     &::after {
-      background-color: $te-black;
+      @include media-breakpoint-up(lg) {
+        background-color: $te-black;
+      }
     }
   }
 }

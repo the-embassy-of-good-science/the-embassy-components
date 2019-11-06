@@ -1,5 +1,8 @@
 .navigation {
+  display: grid;
+  align-items: center;
   @include media-breakpoint-up(lg) {
+    height: 200px;
     background-color: transparent;
   }
 

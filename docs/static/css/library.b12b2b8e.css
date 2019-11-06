@@ -1,0 +1,30 @@
+html,
+body {
+  height: 100%;
+  min-height: 100%; }
+
+.navbar {
+  background-color: var(--te-lightblue); }
+
+.container-fluid {
+  min-height: calc(100% - 76px); }
+  @media (min-width: 768px) {
+    .container-fluid > .row {
+      height: 100%; } }
+
+.sidebar {
+  height: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: var(--te-verylightblue); }
+
+.content {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.code-sample {
+  position: relative;
+  margin-bottom: -0.5rem;
+  padding: 10px 10px;
+  border: solid 2px #f5f2f0; }
+

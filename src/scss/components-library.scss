@@ -19,18 +19,13 @@ body {
 
      > .row {
         @include media-breakpoint-up(md) {
-            height: calc(100vh - 76px);
+            height: 100%;
         }
     }
 }
 
 .sidebar {
-    @include media-breakpoint-up(sm) {
-        height: auto;
-    }
-    @include media-breakpoint-up(lg) {
-        height: 100%;
-    }
+    height: auto;
 
     padding-top: 30px;
     padding-bottom: 30px;

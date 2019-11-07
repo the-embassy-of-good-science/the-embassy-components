@@ -1,11 +1,12 @@
 .navigation {
-  display: grid;
-  align-items: center;
   @include media-breakpoint-up(lg) {
     height: 200px;
     background-color: transparent;
   }
 
+  position: relative;
+  display: grid;
+  align-items: center;
   min-height: 60px;
   font-family: $te-font-bold;
   background-color: $te-lightblue;
@@ -16,6 +17,8 @@
     display: none;
   }
 
+  position: relative;
+  z-index: $zindex-navigation + 1;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -31,6 +34,8 @@
 
   .close-icon {
     display: none;
+    width: 13px;
+    height: 13px;
   }
 
   &:hover {
@@ -47,6 +52,10 @@
       background-color: $te-sunfloweryellow;
     }
 
+    &:checked ~ .nav-brand {
+      transform: translate(-50%, -50%) scale(1.15);
+    }
+
     &:checked + .nav-trigger {
       .open-icon {
         display: none;
@@ -57,9 +66,12 @@
       }
     }
 
+    &:checked > * {
+      user-select: none;
+    }
+
     &:checked ~ .nav {
       display: flex;
-      user-select: none;
     }
   }
 
@@ -68,15 +80,23 @@
 
 .navigation .nav {
   @include media-breakpoint-up(lg) {
+    position: relative;
     flex-direction: row;
+    justify-content: left;
+    height: auto;
   }
 
+  position: absolute;
+  z-index: $zindex-navigation;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  height: 100vh;
 
   a {
     @include media-breakpoint-up(lg) {
+      width: auto;
       margin: 0 16px;
       padding: 16px 0 10px;
       font-size: 16px;
@@ -88,9 +108,11 @@
     }
 
     position: relative;
+    width: 100%;
     padding: 16px;
     font-family: $te-font-bold;
     font-size: 26px;
+    text-align: center;
     text-decoration: none;
     text-transform: lowercase;
     color: $te-black;
@@ -123,14 +145,28 @@
 
 .navigation .nav-brand {
   @include media-breakpoint-up(lg) {
+    position: relative;
+    top: auto;
+    left: auto;
     display: inline;
+    transform: none;
   }
 
-  display: none;
+  position: absolute;
+  z-index: $zindex-navigation + 1;
+  top: 60px;
+  left: 50%;
+  width: auto;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 0.12s ease-out, color 0.1s ease-in-out;
 }
 
 .navigation-logo {
-  max-width: 75px;
+  @include media-breakpoint-up(lg) {
+    max-width: 75px;
+  }
+
+  max-width: 60px;
 }
 
 .navigation.is-homepage {

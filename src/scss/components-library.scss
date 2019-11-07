@@ -20,7 +20,7 @@ body {
     min-height: calc(100% - 76px);
 
      > .row {
-        @include media-breakpoint-up(md) {
+        @include media-breakpoint-up(sm) {
             height: 100%;
             min-height: calc(100vh - 76px);
         }

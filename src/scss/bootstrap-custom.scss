@@ -31,25 +31,26 @@ $te-error: #EC3232;
 
 // Color system
 
-$primary:       $te-sunfloweryellow;
-$secondary:     $te-blue;
-$success:       $te-glacier;
-$info:          $cyan;
-$warning:       $te-sunfloweryellow-dark;
-$danger:        $te-error;
-$light:         $te-homepage-background;
-$dark:          $te-black;
+$primary: $te-sunfloweryellow;
+$secondary: $te-blue;
+$success: $te-glacier;
+$info: $cyan;
+$warning: $te-sunfloweryellow-dark;
+$danger: $te-error;
+$light: $te-homepage-background;
+$dark: $te-black;
 
 $theme-colors: (
-    "primary":    $primary,
-    "secondary":  $secondary,
-    "success":    $success,
-    "info":       $info,
-    "warning":    $warning,
-    "danger":     $danger,
-    "light":      $light,
-    "dark":       $dark
+        "primary": $primary,
+        "secondary": $secondary,
+        "success": $success,
+        "info": $info,
+        "warning": $warning,
+        "danger": $danger,
+        "light": $light,
+        "dark": $dark
 );
+
 
 // Body
 //
@@ -65,6 +66,7 @@ $body-color: $te-black;
 $link-color: $te-blue;
 $link-hover-color: $te-sunfloweryellow-dark;
 
+
 // Grid breakpoints
 //
 // Define the minimum dimensions at which your layout will change,
@@ -78,16 +80,18 @@ $grid-breakpoints: (
         xl: 1200px
 );
 
+
 // Grid containers
 //
 // Define the maximum width of `.container` for different screen sizes.
 
 $container-max-widths: (
-        sm: 540px,
-        md: 720px,
+        sm: 100%,
+        md: 100%,
         lg: 960px,
         xl: 1180px
 );
+
 
 // Grid columns
 //
@@ -95,8 +99,24 @@ $container-max-widths: (
 
 $grid-gutter-width: 60px;
 
+
 // Typography
 //
 
 $font-family-base: $te-font-regular, $font-family-sans-serif;
 $headings-font-family: $te-font-extrabold, $font-family-sans-serif;
+
+
+// Z-index master list
+//
+// Warning: Avoid customizing these values. They're used for a bird's eye view
+// of components dependent on the z-axis and are designed to all work together.
+
+$zindex-dropdown: 1000 !default;
+$zindex-sticky: 1020 !default;
+$zindex-fixed: 1030 !default;
+$zindex-navigation: 1035;
+$zindex-modal-backdrop: 1040 !default;
+$zindex-modal: 1050 !default;
+$zindex-popover: 1060 !default;
+$zindex-tooltip: 1070 !default;

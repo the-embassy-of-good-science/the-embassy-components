@@ -5,7 +5,7 @@
 // Add bootstrap settings
 @import 'bootstrap-custom';
 // Avoid to load all bootstrap css
-@import '~bootstrap/scss/bootstrap';
+// @import '~bootstrap/scss/bootstrap';
 
 // Bootstrap components
 @import '~bootstrap/scss/reboot';
@@ -23,4 +23,5 @@
 
 // Add components
 @import 'components/footer';
+@import 'components/homeblock';
 @import 'components/navigation';

@@ -1,0 +1,78 @@
+---
+layout: layouts/base.njk
+---
+
+<h3>Home block</h3>
+
+<p>When home block is a header (used on the homepage)</p>
+<div class="code-sample">
+    <div id="top" class="homeblock is-header"  style="background-image: url(/static/images/background-homeblock-top.png)">
+        <div class="container">
+            <div class="row">
+                <div class="homeblock-content col no-gutters">
+                    <h1 class="homeblock-title">Your platform for research integrity and ethics</h1>
+                    <!-- no rendering of description or cards  -->
+                </div>
+                <div class="homeblock-anchor text-center">
+                    <a href="#help">What's here<br>for me</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% highlight "html" %}
+<div id="top" class="homeblock is-header"  style="background-image: url(/static/images/background-homeblock-top.png)">
+    <div class="container">
+        <div class="row">
+            <div class="homeblock-content col no-gutters">
+                <h1 class="homeblock-title">Your platform for research integrity and ethics</h1>
+                <!-- no rendering of description or cards  -->
+            </div>
+            <div class="homeblock-anchor text-center">
+                <a href="#help">What's here<br>for me</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endhighlight %}
+
+<p>When home block is not a page header (also used on the homepage)</p>
+<div class="code-sample">
+    <div id="help" class="homeblock" style="background-image: url(/static/images/background-homeblock-help.png)">
+        <div class="container">
+            <div class="row">
+                <div class="homeblock-content col no-gutters">
+                    <h1 class="homeblock-title">What's here for me?</h1>
+                    <div class="homeblock-description">
+                        <p>The Embassy offers help to anyone seeking support in handling day-to-day research practices and dilemmas.</p>
+                    </div>
+                    <div class="homeblock-cards"></div>
+                </div>
+                <div class="homeblock-anchor text-center">
+                    <a href="#about">About The Embassy of Good Science</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% highlight "html" %}
+<div id="help" class="homeblock" style="background-image: url(/static/images/background-homeblock-help.png)">
+    <div class="container">
+        <div class="row">
+            <div class="homeblock-content col no-gutters">
+                <h1 class="homeblock-title">What's here for me?</h1>
+                <div class="homeblock-description">
+                    <p>The Embassy offers help to anyone seeking support in handling day-to-day research practices and dilemmas.</p>
+                </div>
+                <div class="homeblock-cards"></div>
+            </div>
+            <div class="homeblock-anchor text-center">
+                <a href="#about">About The Embassy of Good Science</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endhighlight %}
+

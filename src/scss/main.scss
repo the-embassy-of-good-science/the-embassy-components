@@ -1,11 +1,15 @@
 // Add custom styles
+@import 'mixins/units'; // extracted from Foundation for Sites
 @import 'generic/paths';
 @import 'generic/webfonts';
 
 // Add bootstrap settings
 @import 'bootstrap-custom';
 // Avoid to load all bootstrap css
-@import '~bootstrap/scss/bootstrap';
+// @import '~bootstrap/scss/bootstrap';
+
+// Global overwrites
+@import 'generic/global';
 
 // Bootstrap components
 @import '~bootstrap/scss/reboot';
@@ -23,4 +27,5 @@
 
 // Add components
 @import 'components/footer';
+@import 'components/homeblock';
 @import 'components/navigation';

@@ -6,45 +6,7 @@ url: https://components.embassy.science
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>{{ title }}</title>
-
-    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-    <meta name="application-name" content="The Embassy of Good Science"/>
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="white">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="/static/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/static/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/static/favicons/site.webmanifest">
-    <link rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#f6d30b">
-    <link rel="shortcut icon" href="/static/favicons/favicon.ico">
-    <meta name="msapplication-TileColor" content="#f6d30b">
-    <meta name="msapplication-config" content="/static/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
-
-    {# OG #}
-    <meta property="fb:app_id" content="">
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="{{ url }}"/>
-    <meta property="og:site_name" content="{{ title }}"/>
-    <meta property="og:title" content="{{ title }}"/>
-    <meta property="og:description" content=""/>
-    <meta property="og:image" content="/static/images/og-image.png"/>
-
-    {# Twitter #}
-    <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:site" content="@EmbassySci"/>
-    <meta name="twitter:url" content=""/>
-    <meta name="twitter:title" content="{{ url }}"/>
-    <meta name="twitter:description" content="{{ description }}">
-    <meta name="twitter:image" content="/static/images/og-image.png"/>
-
-    <link rel="stylesheet" href="{{ assets['main.css'] }}" />
-    <link rel="stylesheet" href="{{ assets['library.css'] }}" />
-    <link rel="stylesheet" href="/static/css/prism.css" />
+    {% include '../_head.njk' %}
 </head>
 <body>
 

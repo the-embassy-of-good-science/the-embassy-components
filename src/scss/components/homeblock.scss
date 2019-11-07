@@ -4,18 +4,21 @@
   background-size: cover;
 
   .row {
+    display: flex;
+    flex-grow: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100%;
     min-height: 100vh;
   }
 }
 
 .homeblock-content {
-  @include media-breakpoint-up(lg) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
+  display: flex;
+  flex-grow: 0;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
@@ -39,10 +42,6 @@
   text-align: center;
 }
 
-.homeblock-anchor {
-  //flex: 1 1 100%;
-}
-
 .homeblock-anchor a {
   font-family: $te-font-bold;
   font-size: rem-calc(18);
@@ -50,18 +49,7 @@
   color: $te-black;
 }
 
-.homeblock.is-header .homeblock-anchor a {
-  @include media-breakpoint-up(lg) {
-    bottom: 40px;
-  }
-
-  position: absolute;
-  bottom: 80px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: $te-white;
-}
-
+// variations of state in homeblock
 .homeblock.is-header {
   @include media-breakpoint-up(lg) {
     margin-top: -200px;
@@ -78,6 +66,9 @@
     @include media-breakpoint-up(lg) {
       align-items: flex-end;
     }
+
+    flex-grow: 1;
+    justify-content: center;
   }
 
   .homeblock-title {
@@ -87,4 +78,16 @@
       text-align: right;
     }
   }
+}
+
+.homeblock.is-header .homeblock-anchor a {
+  @include media-breakpoint-up(lg) {
+    bottom: 40px;
+  }
+
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: $te-white;
 }

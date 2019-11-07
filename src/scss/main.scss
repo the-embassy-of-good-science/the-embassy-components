@@ -20,12 +20,14 @@
 @import '~bootstrap/scss/button-group';
 @import '~bootstrap/scss/forms';
 @import '~bootstrap/scss/custom-forms';
+//@import '~bootstrap/scss/card'; this is added on our card component
 @import '~bootstrap/scss/nav';
 @import '~bootstrap/scss/navbar';
 @import '~bootstrap/scss/popover';
 @import '~bootstrap/scss/tooltip';
 
 // Add components
+@import 'components/card';
 @import 'components/footer';
 @import 'components/homeblock';
 @import 'components/navigation';

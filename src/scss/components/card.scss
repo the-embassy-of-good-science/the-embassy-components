@@ -1,0 +1,124 @@
+// Styles for bootstrap card
+@import '~bootstrap/scss/card';
+
+// The card component extends funcionality from Bootstrap and implements custom styles for The Embassy of Good Science
+
+.card-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .card {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+.card-grid-4 {
+  @include media-breakpoint-down(sm) {
+
+  }
+
+  @include media-breakpoint-up(xl) {
+    display: grid;
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    align-content: center;
+    grid-row-gap: 30px;
+  }
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+
+  .card {
+    @include media-breakpoint-down(lg) {
+      min-width: 320px;
+      max-width: 320px;
+      margin: 15px;
+    }
+    @include media-breakpoint-up(xl) {
+      grid-column: span 3;
+    }
+
+    grid-column: span 12;
+  }
+}
+
+.card {
+  max-width: 320px;
+  min-height: 320px;
+  border: none;
+  border-radius: 0;
+
+  &:nth-child(2n+1) {
+    .card-header::after {
+      transform: skewY(-5deg);
+    }
+  }
+}
+
+a.card {
+  text-decoration: none;
+  color: $te-black;
+}
+
+.card-header {
+  position: relative;
+  left: 0;
+  overflow: hidden;
+  min-height: 140px;
+  padding: 40px 40px 50px;
+  border-bottom: 0;
+  border-radius: 0 !important;
+  background-color: $te-lightblue;
+
+  &::after {
+    position: absolute;
+    z-index: 0;
+    bottom: -30px;
+    left: 0;
+    width: 105%;
+    height: 50px;
+    content: ' ';
+    transform: skewY(5deg);
+    background-color: $te-white;
+    transition: transform 0.15s ease-in-out;
+  }
+}
+
+.card-body {
+  position: relative;
+  z-index: 10;
+}
+
+.card-title {
+  font-family: $te-font-bold;
+  font-size: rem-calc(24);
+}
+
+.card-text {
+  font-size: rem-calc(18);
+}
+
+.card-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.card.is-themes {
+  .card-header {
+    background-color: $te-sunfloweryellow;
+  }
+}

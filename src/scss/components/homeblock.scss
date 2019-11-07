@@ -1,6 +1,5 @@
 .homeblock {
   min-height: 100vh;
-  background-image: url('/static/images/background-homeblock-top.png');
   background-position: center center;
   background-size: cover;
 
@@ -21,20 +20,34 @@
 }
 
 .homeblock-title {
-  max-width: 770px;
   @include media-breakpoint-up(lg) {
     font-size: rem-calc(44);
     line-height: unitless-calc(52, 44);
   }
 
+  max-width: 770px;
   font-size: rem-calc(34);
   line-height: unitless-calc(42, 34);
+}
+
+.homeblock-description {
+  width: 90%;
+  max-width: 660px;
+  margin-bottom: 65px;
+  font-size: rem-calc(23);
+  line-height: unitless-calc(32, 23);
+  text-align: center;
+}
+
+.homeblock-anchor {
+  //flex: 1 1 100%;
 }
 
 .homeblock-anchor a {
   font-family: $te-font-bold;
   font-size: rem-calc(18);
   text-decoration: underline;
+  color: $te-black;
 }
 
 .homeblock.is-header .homeblock-anchor a {
@@ -56,6 +69,10 @@
 
   margin-top: -60px;
   background-color: $te-white;
+
+  .row {
+    align-items: center;
+  }
 
   .homeblock-content {
     @include media-breakpoint-up(lg) {

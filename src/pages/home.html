@@ -2,11 +2,13 @@
 layout: layouts/main.njk
 bodyclasses: is-homepage
 ---
-<div id="top" class="homeblock is-header">
+<!-- Header variation-->
+<div id="top" class="homeblock is-header"  style="background-image: url(/static/images/background-homeblock-top.png)">
     <div class="container">
-        <div class="row align-items-center">
+        <div class="row">
             <div class="homeblock-content col no-gutters">
                 <h1 class="homeblock-title">Your platform for research integrity and ethics</h1>
+                <!-- no rendering of description or cards  -->
             </div>
             <div class="homeblock-anchor text-center">
                 <a href="#help">What's here<br>for me</a>
@@ -15,10 +17,10 @@ bodyclasses: is-homepage
     </div>
 </div>
 
-<!-- -->
-<div id="help" class="homeblock">
+<!-- What's here for me? -->
+<div id="help" class="homeblock" style="background-image: url(/static/images/background-homeblock-help.png)">
     <div class="container">
-        <div class="row align-items-center">
+        <div class="row">
             <div class="homeblock-content col no-gutters">
                 <h1 class="homeblock-title">What's here for me?</h1>
                 <div class="homeblock-description">
@@ -28,18 +30,18 @@ bodyclasses: is-homepage
                     X X X X
                     cards
                 </div>
-                <div class="homeblock-anchor">
-                    <a href="#about">About The Embassy of Good Science</a>
-                </div>
+            </div>
+            <div class="homeblock-anchor text-center">
+                <a href="#about">About The Embassy of Good Science</a>
             </div>
         </div>
     </div>
 </div>
 
 <!-- About the embassy -->
-<div id="about" class="homeblock">
+<div id="about" class="homeblock"  style="background-image: url(/static/images/background-homeblock-about.png)">
     <div class="container">
-        <div class="row align-items-center">
+        <div class="row">
             <div class="homeblock-content col no-gutters">
                 <h1 class="homeblock-title">About The Embassy of Good Science</h1>
                 <div class="homeblock-description">
@@ -49,9 +51,9 @@ bodyclasses: is-homepage
                     X X X X
                     cards
                 </div>
-                <div class="homeblock-anchor">
-                    <a href="#newsletter">Stay up to date with the development of The Embassy</a>
-                </div>
+            </div>
+            <div class="homeblock-anchor text-center">
+                <a href="#newsletter">Stay up to date with the development of The Embassy</a>
             </div>
         </div>
     </div>

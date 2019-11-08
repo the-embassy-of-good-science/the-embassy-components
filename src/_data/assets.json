@@ -1,7 +1,8 @@
 {
-  "library.css": "/static/css/library.758739b3.css",
-  "library.js": "/static/js/library.758739b3.js",
-  "main.css": "/static/css/main.31d12997.css",
-  "main.js": "/static/js/main.31d12997.js",
-  "vendors.js": "/static/js/vendors.9eb71a31.js"
+  "library.css": "/static/css/library.216859c8.css",
+  "library.js": "/static/js/library.216859c8.js",
+  "main.css": "/static/css/main.a7e22099.css",
+  "main.js": "/static/js/main.a7e22099.js",
+  "vendors.js": "/static/js/vendors.1a3da26a.js",
+  "js/vendors.1a3da26a.js.LICENSE": "/static/js/vendors.1a3da26a.js.LICENSE"
 }

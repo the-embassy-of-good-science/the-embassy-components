@@ -1,17 +1,12 @@
----
-title: The Embassy of Good Science - Sidebar Layout
-description:
-url: https://components.embassy.science
----
 <!doctype html>
 <html lang="en">
     {% include '../_head.njk' %}
 <head>
 
 </head>
-<body>
+<body class="{{ bodyclasses }}">
 
-<div class="navigation container is-homepage">
+<div class="navigation container">
     <div class="row">
         <input type="checkbox" id="nav-trigger-home" />
         <label class="nav-trigger" for="nav-trigger-home">
@@ -30,12 +25,12 @@ url: https://components.embassy.science
         </label>
         <div class="nav-brand col-lg-2">
             <a href="#">
-                <img class="navigation-logo" src="/static/images/the-embassy-logo-white.png" />
+                <img class="navigation-logo" src="/static/images/the-embassy-logo.png" />
             </a>
         </div>
         <div class="nav col-lg-10">
-            <a href="#" class="is-active">Home</a>
-            <a href="#">Themes</a>
+            <a href="#">Home</a>
+            <a href="#" class="is-active">Themes</a>
             <a href="#">Resources</a>
             <a href="#">Discussions</a>
             <a href="#">Training</a>
@@ -44,10 +39,13 @@ url: https://components.embassy.science
     </div>
 </div>
 
+{# You can use this area to inject a header element#}
+{% block header %}{% endblock %}
+
 <div class="container">
-    <div class="row">
-        <div class="content">{{ content | safe }}</div>
-        <aside></aside>
+    <div class="row no-gutters">
+        <main class="col-sm-12 col-lg-6 offset-lg-2">{% block content %}{% endblock %}</main>
+        <aside class="sidebar col-sm-12 col-lg-3 offset-lg-1">{% block sidebar %}{% endblock %}</aside>
     </div>
 </div>
 

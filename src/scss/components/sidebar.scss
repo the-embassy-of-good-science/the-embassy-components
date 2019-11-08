@@ -1,3 +1,10 @@
+.wrapper {
+    overflow: hidden;
+    @include media-breakpoint-up(lg) {
+        overflow: visible;
+    }
+}
+
 .sidebar {
     @include media-breakpoint-up(lg) {
         padding-top: 0;

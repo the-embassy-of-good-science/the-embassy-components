@@ -42,9 +42,9 @@
 {# You can use this area to inject a header element#}
 {% block header %}{% endblock %}
 
-<div class="container">
+<div class="wrapper container">
     <div class="row no-gutters">
-        <main class="col-sm-12 col-lg-6 offset-lg-2">{% block content %}{% endblock %}</main>
+        <main class="content col-sm-12 col-lg-6 offset-lg-2">{% block content %}{% endblock %}</main>
         <aside class="sidebar col-sm-12 col-lg-3 offset-lg-1">{% block sidebar %}{% endblock %}</aside>
     </div>
 </div>

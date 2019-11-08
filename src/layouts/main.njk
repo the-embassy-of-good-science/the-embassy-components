@@ -1,0 +1,95 @@
+---
+layout: layouts/base.njk
+---
+
+<h3>Main layout</h3>
+
+
+{% highlight "html" %}
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- add head  -->
+</head>
+<body class="{{ bodyclasses }}">
+
+<!-- navigation -->
+<div class="navigation container">
+    <div class="row">
+        <input type="checkbox" id="nav-trigger-home" />
+        <label class="nav-trigger" for="nav-trigger-home">
+            <svg class="open-icon" viewBox="0 0 20 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="icon-hamburguer" fill="#678B91">
+                    <rect id="rectangle-03" x="0" y="0" width="20" height="2"></rect>
+                    <rect id="rectangle-02" x="0" y="5" width="20" height="2"></rect>
+                    <rect id="rectangle-01" x="0" y="10" width="20" height="2"></rect>
+                </g>
+            </svg>
+            <svg class="close-icon" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="icon-cross" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <path d="M5.59597747,6.61789673 L1,2.0219017 L2.02195371,1 L6.61788827,5.59597552 L11.213817,1 L12.2350947,2.0215377 L7.6392066,6.61730295 L12.2357837,11.213921 L11.213882,12.2358227 L6.61727954,7.63920269 L2.0212777,12.2350817 L1,11.213921 L5.59597747,6.61789673 Z" id="cross" stroke="#000000" fill="#000000"></path>
+                </g>
+            </svg>
+        </label>
+        <div class="nav-brand col-lg-2">
+            <a href="#">
+                <img class="navigation-logo" src="/static/images/the-embassy-logo-white.png" />
+            </a>
+        </div>
+        <div class="nav col-lg-10">
+            <!-- depending on the page you are is-active css class is added -->
+            <a href="#" class="is-active">Home</a>
+            <a href="#">Themes</a>
+            <a href="#">Resources</a>
+            <a href="#">Discussions</a>
+            <a href="#">Training</a>
+            <a href="#">About</a>
+        </div>
+    </div>
+</div>
+
+<!-- all components should be stacked here -->
+{{ content | safe }}
+
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="footer-content col col-lg-10">
+                <div class="footer-head">
+                    <svg width="42" height="41" viewBox="0 0 42 41" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M41.6954 20.4999L21.1953 41 .6954 20.4999 41.6954 0z" fill="#D1E2E5"></path>
+                    </svg>
+                    <p>Your platform for research integrity and ethics</p>
+                </div>
+                <div class="footer-columns row">
+                    <div class="footer-links col-lg-4 order-sm-1 order-lg-0">
+                        <a href="#" >Privacy statement</a>
+                        <a href="#" >Terms of service</a>
+                        <a href="#" >Take down policy</a>
+                        <a href="#" >Contact</a>
+                    </div>
+                    <div class="footer-form col-lg-4 order-sm-0 order-lg-1">X</div>
+                    <div class="footer-social col-lg-4 order-sm-2">
+                        <a href="https://twitter.com/EmbassySci" target="_blank">
+                            <svg>
+                                <use xlink:href="#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <img class="flag-eu" src="/static/images/flag-eu.png">
+        <p>The EnTIRE and VIRT2UE projects have received funding from the European Union’s Horizon 2020 research programme under grant agreements N 741782 and N 787580.</p>
+    </div>
+</div>
+
+<script type="text/javascript" src="{{ assets['vendors.js'] }}"></script>
+<script type="text/javascript" src="{{ assets['main.js'] }}"></script>
+</body>
+</html>
+{% endhighlight %}
+

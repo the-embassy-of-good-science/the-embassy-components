@@ -6,25 +6,25 @@
 // Add bootstrap settings
 @import 'bootstrap-custom';
 // Avoid to load all bootstrap css
-// @import '~bootstrap/scss/bootstrap';
+ @import '~bootstrap/scss/bootstrap';
 
 // Global overwrites
 @import 'generic/global';
 
 // Bootstrap components
-@import '~bootstrap/scss/reboot';
-@import '~bootstrap/scss/grid';
-@import '~bootstrap/scss/type';
-@import '~bootstrap/scss/utilities';
-@import '~bootstrap/scss/buttons';
-@import '~bootstrap/scss/button-group';
-@import '~bootstrap/scss/forms';
-@import '~bootstrap/scss/custom-forms';
+//@import '~bootstrap/scss/reboot';
+//@import '~bootstrap/scss/grid';
+//@import '~bootstrap/scss/type';
+//@import '~bootstrap/scss/utilities';
+//@import '~bootstrap/scss/buttons';
+//@import '~bootstrap/scss/button-group';
+//@import '~bootstrap/scss/forms';
+//@import '~bootstrap/scss/custom-forms';
 //@import '~bootstrap/scss/card'; this is added on our card component
-@import '~bootstrap/scss/nav';
-@import '~bootstrap/scss/navbar';
-@import '~bootstrap/scss/popover';
-@import '~bootstrap/scss/tooltip';
+//@import '~bootstrap/scss/nav';
+//@import '~bootstrap/scss/navbar';
+//@import '~bootstrap/scss/popover';
+//@import '~bootstrap/scss/tooltip';
 
 // Add components
 @import 'components/card';

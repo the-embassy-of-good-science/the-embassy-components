@@ -1,0 +1,9 @@
+// Overwrite MediaWiki styles or use its classnames to add styles
+.mw-body {
+  padding: 0;
+  margin-bottom: 0;
+}
+
+body.page-Main_Page {
+  background-color: $te-verylightblue;
+}

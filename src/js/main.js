@@ -3,6 +3,3 @@
 
 // SCSS files from bootstrap
 import '../scss/main.scss';
-
-// Import svg
-import '../svgs/index';

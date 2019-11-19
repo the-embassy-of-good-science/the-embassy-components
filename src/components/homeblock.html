@@ -6,7 +6,7 @@ layout: layouts/base.njk
 
 <p>When home block is a header (used on the homepage)</p>
 <div class="code-sample">
-    <div id="top" class="homeblock is-header"  style="background-image: url(/static/images/background-homeblock-top.png)">
+    <div id="top" class="homeblock is-header homeblock--top">
         <div class="container">
             <div class="row">
                 <div class="homeblock-content">
@@ -22,7 +22,7 @@ layout: layouts/base.njk
 </div>
 
 {% highlight "html" %}
-<div id="top" class="homeblock is-header"  style="background-image: url(/static/images/background-homeblock-top.png)">
+<div id="top" class="homeblock is-header homeblock--top">
     <div class="container">
         <div class="row">
             <div class="homeblock-content">
@@ -39,7 +39,7 @@ layout: layouts/base.njk
 
 <p>When home block is not a page header (also used on the homepage)</p>
 <div class="code-sample">
-    <div id="help" class="homeblock" style="background-image: url(/static/images/background-homeblock-help.png)">
+    <div id="help" class="homeblock homeblock--help">
         <div class="container">
             <div class="row">
                 <div class="homeblock-content col no-gutters">
@@ -58,7 +58,7 @@ layout: layouts/base.njk
 </div>
 
 {% highlight "html" %}
-<div id="help" class="homeblock" style="background-image: url(/static/images/background-homeblock-help.png)">
+<div id="help" class="homeblock homeblock--help">
     <div class="container">
         <div class="row">
             <div class="homeblock-content">

@@ -23,3 +23,58 @@ body.is-homepage {
   background-color: $te-verylightblue;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  border-bottom: none; // avoid MW border
+}
+
+ul, ol, p {
+  margin-bottom: map_get($paragraph-bottom-margins, sm);
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: map_get($paragraph-bottom-margins, md);
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin-bottom: map_get($paragraph-bottom-margins, lg);
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin-bottom: map_get($paragraph-bottom-margins, xl);
+  }
+}
+
+ul, ol {
+  list-style: none;
+}
+
+ul {
+  li {
+    margin-bottom: 25px;
+    padding-left: 25px;
+    font-size: rem-calc(18);
+    line-height: rem-calc(24);
+    background: url('/static/images/te-ul-bullet.svg') no-repeat 0 6px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+ol {
+  counter-reset: te-counter;
+
+  li {
+    margin-bottom: 25px;
+    counter-increment: te-counter;
+    font-size: rem-calc(18);
+    line-height: rem-calc(24);
+
+    &::before {
+      padding-right: 9px;
+      content: counter(te-counter) '. ';
+      font-weight: bold;
+      color: $te-lightblue;
+    }
+  }
+}

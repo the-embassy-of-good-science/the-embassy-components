@@ -1,7 +1,11 @@
 // jQuery is needed by Bootstrap
 import $ from 'jquery';
 
+// Add library styles
 import '../scss/components-library.scss';
+
+// Import svg
+import '../svgs/index';
 
 // Import all bootstrap components
 import 'bootstrap';

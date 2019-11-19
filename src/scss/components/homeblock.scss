@@ -113,3 +113,15 @@
     transform: translateX(-50%);
     color: $te-white;
 }
+
+.homeblock.homeblock--top {
+    background-image: url(/static/images/background-homeblock-top.png);
+}
+
+.homeblock.homeblock--help {
+    background-image: url(/static/images/background-homeblock-help.png);
+}
+
+.homeblock.homeblock--about {
+    background-image: url(/static/images/background-homeblock-about.png)
+}

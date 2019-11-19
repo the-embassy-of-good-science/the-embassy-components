@@ -1,14 +1,15 @@
 ---
-title: The Embassy of Good Science - Main Layout
-description:
-url: https://components.embassy.science
-bodyclasses:
+layout: layouts/base.njk
 ---
+
+<h3>Main full width layout</h3>
+
+
+{% highlight "html" %}
 <!doctype html>
 <html lang="en">
-{% include '../_head.njk' %}
 <head>
-
+    <!-- add head  -->
 </head>
 <body class="{{ bodyclasses }}">
 
@@ -36,6 +37,7 @@ bodyclasses:
             </a>
         </div>
         <div class="nav col-lg-10">
+            <!-- depending on the page you are is-active css class is added -->
             <a href="#" class="is-active">Home</a>
             <a href="#">Themes</a>
             <a href="#">Resources</a>
@@ -46,7 +48,8 @@ bodyclasses:
     </div>
 </div>
 
-<div class="wrapper container">
+<!-- all components should be stacked here -->
+<div class="wrapper">
     {{ content | safe }}
 </div>
 
@@ -90,3 +93,5 @@ bodyclasses:
 <script type="text/javascript" src="{{ assets['main.js'] }}"></script>
 </body>
 </html>
+{% endhighlight %}
+

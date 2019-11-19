@@ -99,12 +99,103 @@ $container-max-widths: (
 
 $grid-gutter-width: 60px;
 
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+$spacer: 60px;
+$spacers: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge(
+                (
+                        0: 0,
+                        1: ($spacer * .25),
+                        2: ($spacer * .5),
+                        3: $spacer,
+                        4: ($spacer * 1.5),
+                        5: ($spacer * 3)
+                ),
+                $spacers
+);
 
 // Typography
 //
 
 $font-family-base: $te-font-regular, $font-family-sans-serif;
 $headings-font-family: $te-font-extrabold, $font-family-sans-serif;
+$font-family-base: $font-family-base;
+
+$font-size-base:              18;
+$font-size-lg:                18;
+$font-size-sm:                16;
+
+$font-weight-lighter:         lighter;
+$font-weight-light:           300;
+$font-weight-normal:          600;
+$font-weight-bold:            600;
+$font-weight-bolder:          bolder;
+
+$font-weight-base:            $font-weight-normal;
+$line-height-base:            1.5;
+
+$h1-font-size:                64;
+$h2-font-size:                28;
+$h3-font-size:                26;
+$h4-font-size:                20;
+$h5-font-size:                19;
+$h6-font-size:                $font-size-base;
+
+$headings-margin-bottom:      $spacer / 2;
+$headings-font-family:        $te-font-extrabold, $font-family-sans-serif;
+$headings-font-weight:        600;
+$headings-line-height:        1;
+$headings-color:              null;
+
+$display1-size:               6rem;
+$display2-size:               5.5rem;
+$display3-size:               4.5rem;
+$display4-size:               3.5rem;
+
+$display1-weight:             300;
+$display2-weight:             300;
+$display3-weight:             300;
+$display4-weight:             300;
+$display-line-height:         $headings-line-height;
+
+$lead-font-size:              $font-size-base * 1.25;
+$lead-font-weight:            300;
+
+$small-font-size:             80%;
+
+$text-muted:                  $gray-600;
+
+$blockquote-small-color:      $gray-600;
+$blockquote-small-font-size:  $small-font-size;
+$blockquote-font-size:        $font-size-base * 1.25;
+
+$hr-border-color:             rgba($black, .1);
+$hr-border-width:             $border-width;
+
+$mark-padding:                .2em;
+
+$dt-font-weight:              $font-weight-bold;
+
+$kbd-box-shadow:              inset 0 -.1rem 0 rgba($black, .25);
+$nested-kbd-font-weight:      $font-weight-bold;
+
+$list-inline-padding:         .5rem;
+
+$mark-bg:                     #fcf8e3;
+
+$hr-margin-y:                 $spacer;
+
+// Paragraphs
+//
+// Style p element.
+
+$paragraph-margin-bottom:   rem-calc(60);
 
 
 // Z-index master list
@@ -112,11 +203,11 @@ $headings-font-family: $te-font-extrabold, $font-family-sans-serif;
 // Warning: Avoid customizing these values. They're used for a bird's eye view
 // of components dependent on the z-axis and are designed to all work together.
 
-$zindex-dropdown: 1000 !default;
-$zindex-sticky: 1020 !default;
-$zindex-fixed: 1030 !default;
+$zindex-dropdown: 1000;
+$zindex-sticky: 1020;
+$zindex-fixed: 1030;
 $zindex-navigation: 1035;
-$zindex-modal-backdrop: 1040 !default;
-$zindex-modal: 1050 !default;
-$zindex-popover: 1060 !default;
-$zindex-tooltip: 1070 !default;
+$zindex-modal-backdrop: 1040;
+$zindex-modal: 1050;
+$zindex-popover: 1060;
+$zindex-tooltip: 1070;

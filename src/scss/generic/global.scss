@@ -27,6 +27,16 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: none; // avoid MW border
 }
 
+h1 {
+  font-size: rem-calc(30);
+  line-height: rem-calc(52);
+
+  @include media-breakpoint-up(lg) {
+    font-size: rem-calc(64);
+    line-height: rem-calc(77);
+  }
+}
+
 ul, ol, p {
   margin-bottom: map_get($paragraph-bottom-margins, sm);
 

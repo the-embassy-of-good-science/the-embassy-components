@@ -1,0 +1,37 @@
+.columns {
+  margin: 50px 0;
+}
+
+.columns-item {
+  background: $te-white;
+}
+
+.column-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 15px;
+  padding: 10px 0;
+  color: $te-blue;
+  border-bottom: solid 1px $te-verylightblue;
+
+  &:first-child {
+    color: $te-black;
+    font-family: $font-headings-bold;
+    padding: 20px 15px 15px;
+    margin: 0;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.column-svg {
+  width: 6px;
+  height: 9px;
+}

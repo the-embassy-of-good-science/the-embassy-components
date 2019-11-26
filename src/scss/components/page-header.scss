@@ -53,3 +53,17 @@
         margin-bottom: 0;
     }
 }
+
+.pageheader-title {
+    svg {
+        width: 58px;
+        height: 47px;
+    }
+    @include media-breakpoint-up(lg) {
+        display: flex;
+        svg {
+            transform: translateY(5px);
+            margin-right: 20px;
+        }
+    }
+}

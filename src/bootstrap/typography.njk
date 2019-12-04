@@ -24,6 +24,55 @@ layout: layouts/base.njk
 <h6>h6. Bootstrap heading</h6>
 {% endhighlight %}
 
+<h6>MediaWiki content hyperlinks</h6>
+
+<div class="code-sample">    
+    <div class="te-mw-link" data-href="https://components.embassy.science/" data-target="_self">This is a link that does not open a new page</div>
+    <div class="te-mw-link" data-href="https://components.embassy.science/m" data-target="_blank">This is a link that opens a new page</div>    
+    <div class="te-mw-link" data-href="#" data-target="back">go back button wrapper</div>
+</div>
+
+
+{% highlight "html" %}
+<div class="te-mw-link" data-href="https://components.embassy.science/" data-target="_self">This is a link that does not open a new page</div>
+<div class="te-mw-link" data-href="https://components.embassy.science/" data-target="_blank">This is a link that opens a new page</div>    
+<div class="te-mw-link" data-href="#" data-target="back">go back button wrapper</div>
+{% endhighlight %}
+
+
+<div class="code-sample">    
+    Javascript module below:
+</div>
+{% highlight "javascript" %}
+/**
+ * Module to open links inside MediaWiki context
+ */
+$('.te-mw-link').on('click', function(e) {
+  e.preventDefault();
+
+  // does not do anything if href is undefined
+  if (this.dataset.href === undefined) {
+    return;
+  }
+
+  // specific to go back
+  if (this.dataset.href === '#' && this.dataset.target === 'back') {
+    window.history.back();
+    return;
+  }
+
+  // check if its target
+  if (this.dataset.target === '_self' || this.dataset.target === undefined) {
+    window.location.href = this.dataset.href;
+  } else if (
+    this.dataset.target === '_blank' ||
+    this.dataset.href !== undefined
+  ) {
+    window.open(this.dataset.href);
+  }
+});
+{% endhighlight %}
+
 
 <h6>Display</h6>
 

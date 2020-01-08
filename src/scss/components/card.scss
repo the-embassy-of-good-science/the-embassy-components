@@ -55,17 +55,14 @@
   min-height: 320px;
   border: none;
   border-radius: 0;
+  text-decoration: none;
+  color: $te-black;
 
   &:nth-child(2n+1) {
     .card-header::after {
       transform: skewY(-5deg);
     }
   }
-}
-
-a.card {
-  text-decoration: none;
-  color: $te-black;
 }
 
 .card-header {

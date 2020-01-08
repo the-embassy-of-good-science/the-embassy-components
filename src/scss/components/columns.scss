@@ -4,6 +4,10 @@
 
 .columns-item {
   background: $te-white;
+
+  a {
+    color: $te-blue;
+  }
 }
 
 .column-link {
@@ -14,6 +18,13 @@
   padding: 10px 0;
   color: $te-blue;
   border-bottom: solid 1px $te-verylightblue;
+
+  &:hover {
+    color: $te-sunfloweryellow;
+    a {
+      color: $te-sunfloweryellow;
+    }
+  }
 
   &:first-child {
     color: $te-black;

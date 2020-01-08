@@ -1,0 +1,19 @@
+// Add all variations for buttons
+.sidebar-item.formbutton-edit {
+
+}
+
+// used on pageheader
+.pageheader-form-button.formbutton-add {
+
+}
+
+// Save and Preview buttons
+.formbuttons {
+
+  input[name="wpSave"] {}
+
+  input[name="wpPreview"] {}
+
+  .formEditCancel {}
+}

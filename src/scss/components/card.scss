@@ -7,10 +7,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: column;
 
   .card {
+    min-width: 320px;
     padding-right: 15px;
     padding-left: 15px;
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    flex-flow: row;
+
+    .card {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -62,6 +77,7 @@
   text-decoration: none;
   color: $te-black;
   transition: color 150ms ease-in-out;
+  background-color: transparent;
 
   &:nth-child(2n+1) {
     .card-header::after {
@@ -118,6 +134,7 @@
 
 .card-body {
   position: relative;
+  background-color: $te-white;
   z-index: 10;
 }
 

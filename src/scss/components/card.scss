@@ -15,10 +15,6 @@
 }
 
 .card-grid-4 {
-  @include media-breakpoint-down(sm) {
-
-  }
-
   @include media-breakpoint-up(xl) {
     display: grid;
 
@@ -42,7 +38,15 @@
       max-width: 320px;
       margin: 15px;
     }
+
+    @include media-breakpoint-up(lg) {
+      min-width: 320px;
+      margin: 20px 20px;
+    }
+
     @include media-breakpoint-up(xl) {
+      min-width: auto;
+      margin: 0;
       grid-column: span 3;
     }
 
@@ -57,10 +61,33 @@
   border-radius: 0;
   text-decoration: none;
   color: $te-black;
+  transition: color 150ms ease-in-out;
 
   &:nth-child(2n+1) {
     .card-header::after {
       transform: skewY(-5deg);
+    }
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  a {
+    color: $te-black;
+    text-decoration: none;
+
+    &:hover {
+      color: $te-sunfloweryellow;
+      text-decoration: none;
+    }
+  }
+
+  &.is-themes {
+    .card-header {
+      a:hover {
+        color: $te-blue;
+      }
     }
   }
 }
@@ -118,4 +145,10 @@
   .card-header {
     background-color: $te-sunfloweryellow;
   }
+}
+
+// when card grid are inside `wrapper` element
+.wrapper .card-grid-4,
+.wrapper .card-grid {
+  margin-bottom: 50px;
 }

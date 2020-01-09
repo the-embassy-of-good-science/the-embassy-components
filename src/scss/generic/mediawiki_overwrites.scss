@@ -65,4 +65,22 @@ body.page-Main_Page {
       margin-right: 15px;
     }
   }
+
+  .label-tag {
+    display: inline-flex;
+    margin-bottom: 5px;
+    margin-right: 7px;
+    font-size: rem-calc(16);
+
+    a {
+      padding: 5px 10px;
+      background-color: $te-verylightblue;
+
+      &:hover {
+        background-color: $te-sunfloweryellow;
+        text-decoration: none;
+        color: $te-black;
+      }
+    }
+  }
 }

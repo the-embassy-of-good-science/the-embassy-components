@@ -2,14 +2,15 @@
 .sidebar-item.formbutton-edit {
   a {
     position: relative;
-    color: $te-black;
-    background-color: $te-lightblue;
-    padding: 10px 20px;
     display: inline-block;
     height: 44px;
-    transition: background-color 150ms ease-in-out;
+    padding: 10px 20px;
     font-family: $te-font-bold;
     font-size: rem-calc(16);
+    text-transform: lowercase;
+    color: $te-black;
+    background-color: $te-lightblue;
+    transition: background-color 150ms ease-in-out;
 
     &::before,
     &::after {
@@ -26,13 +27,13 @@
     }
 
     &::before {
-      left: auto;
       right: -10px;
+      left: auto;
     }
 
     &:hover {
-      background-color: $te-sunfloweryellow;
       text-decoration: none;
+      background-color: $te-sunfloweryellow;
 
       &::before,
       &::after {
@@ -44,7 +45,54 @@
 
 // used on pageheader
 .pageheader-form-button.formbutton-add {
+  form {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding-top: 2px;
+    background-color: $te-lightblue;
+    transition: background-color 150ms ease-in-out;
 
+    &::before,
+    &::after {
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      left: -10px;
+      width: 20px;
+      height: 100%;
+      content: ' ';
+      transform: skewX(-25deg);
+      background-color: $te-lightblue;
+      transition: background-color 150ms ease-in-out;
+    }
+
+    &::before {
+      right: -10px;
+      left: auto;
+    }
+
+    button {
+      display: inline-block;
+      height: 42px;
+      padding: 10px 20px;
+      font-family: $te-font-bold;
+      font-size: rem-calc(16);
+      text-transform: lowercase;
+      border: none;
+      background-color: transparent;
+    }
+
+    &:hover {
+      text-decoration: none;
+      background-color: $te-sunfloweryellow;
+
+      &::before,
+      &::after {
+        background-color: $te-sunfloweryellow;
+      }
+    }
+  }
 }
 
 // Save and Preview buttons
@@ -53,13 +101,14 @@
   align-items: center;
 
   input {
-    border: none;
-    background-color: $te-lightblue;
-    font-family: $te-font-bold;
-    font-size: rem-calc(16);
-    padding: 10px 20px;
     display: inline-block;
     height: 44px;
+    padding: 10px 20px;
+    font-family: $te-font-bold;
+    font-size: rem-calc(16);
+    text-transform: lowercase;
+    border: none;
+    background-color: $te-lightblue;
     transition: background-color 150ms ease-in-out;
 
     &:hover {
@@ -67,10 +116,8 @@
     }
   }
 
-  input[name="wpSave"] {
-  }
 
-  input[name="wpPreview"] {
+  input[name='wpPreview'] {
     margin-left: 15px;
   }
 
@@ -78,6 +125,7 @@
     margin-left: 15px;
     font-family: $te-font-bold;
     font-size: rem-calc(16);
+    text-transform: lowercase;
 
     &:hover {
       a {

@@ -108,6 +108,13 @@
       &:hover {
         cursor: pointer;
         color: $te-lightblue;
+
+        // homepage
+        .is-homepage &,
+        .page-Main_Page & {
+          color: $te-black;
+          opacity: 0.4;
+        }
       }
     }
 
@@ -143,6 +150,12 @@
       content: ' ';
       transform: translateX(-50%);
       background-color: $te-sunfloweryellow;
+
+      // homepage
+      .is-homepage &,
+      .page-Main_Page & {
+        background-color: $te-black;
+      }
     }
   }
 }

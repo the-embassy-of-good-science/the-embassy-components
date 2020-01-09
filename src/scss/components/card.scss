@@ -169,3 +169,21 @@
 .wrapper .card-grid {
   margin-bottom: 50px;
 }
+
+
+// special exeptions for themes and resources page
+.page-Resources .card-grid-4,
+.page-Themes .card-grid {
+  position: relative;
+
+  &:after {
+    position: absolute;
+    z-index: -1;
+    top: 70px;
+    left: -50vw;
+    width: 150vw;
+    height: 100%;
+    content: ' ';
+    background-color: $te-verylightblue;
+  }
+}

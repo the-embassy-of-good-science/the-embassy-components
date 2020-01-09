@@ -1,9 +1,68 @@
 // Overwrite MediaWiki styles or use its classnames to add styles
 .mw-body {
-  padding: 0;
   margin-bottom: 0;
+  padding: 0;
 }
 
 body.page-Main_Page {
   background-color: $te-verylightblue;
+}
+
+// Styles on content generic area
+.content.mw-body .bodyContent,
+.content {
+
+  p {
+    &:empty,
+    &:blank{
+      margin-bottom: 0;
+    }
+  }
+
+  div {
+    @include media-breakpoint-up(md) {
+      margin-bottom: map_get($paragraph-bottom-margins, md);
+    }
+    @include media-breakpoint-up(lg) {
+      margin-bottom: map_get($paragraph-bottom-margins, lg);
+    }
+    @include media-breakpoint-up(lg) {
+      margin-bottom: map_get($paragraph-bottom-margins, xl);
+    }
+
+    margin-bottom: map_get($paragraph-bottom-margins, sm);
+
+    & *:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  // Some form adjustments
+  textarea,
+  input {
+    max-width: 100%;
+  }
+
+  .panel-heading {
+    font-size: rem-calc(30);
+    line-height: rem-calc(52);
+  }
+
+  form {
+    ul li {
+      margin-bottom: 0;
+      background: transparent;
+    }
+
+    .sfFieldLabel {
+      margin-bottom: 5px;
+      font-family: $te-font-bold;
+      font-size: rem-calc(20);
+      line-height: unitless-calc(32, 20);
+    }
+
+    .radioButtonItem {
+      margin-right: 15px;
+    }
+  }
 }

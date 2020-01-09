@@ -1,0 +1,136 @@
+// Add all variations for buttons
+.sidebar-item.formbutton-edit {
+  a {
+    position: relative;
+    display: inline-block;
+    height: 44px;
+    padding: 10px 20px;
+    font-family: $te-font-bold;
+    font-size: rem-calc(16);
+    text-transform: lowercase;
+    color: $te-black;
+    background-color: $te-lightblue;
+    transition: background-color 150ms ease-in-out;
+
+    &::before,
+    &::after {
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      left: -10px;
+      width: 20px;
+      height: 100%;
+      content: ' ';
+      transform: skewX(-25deg);
+      background-color: $te-lightblue;
+      transition: background-color 150ms ease-in-out;
+    }
+
+    &::before {
+      right: -10px;
+      left: auto;
+    }
+
+    &:hover {
+      text-decoration: none;
+      background-color: $te-sunfloweryellow;
+
+      &::before,
+      &::after {
+        background-color: $te-sunfloweryellow;
+      }
+    }
+  }
+}
+
+// used on pageheader
+.pageheader-form-button.formbutton-add {
+  form {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding-top: 2px;
+    background-color: $te-lightblue;
+    transition: background-color 150ms ease-in-out;
+
+    &::before,
+    &::after {
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      left: -10px;
+      width: 20px;
+      height: 100%;
+      content: ' ';
+      transform: skewX(-25deg);
+      background-color: $te-lightblue;
+      transition: background-color 150ms ease-in-out;
+    }
+
+    &::before {
+      right: -10px;
+      left: auto;
+    }
+
+    button {
+      display: inline-block;
+      height: 42px;
+      padding: 10px 20px;
+      font-family: $te-font-bold;
+      font-size: rem-calc(16);
+      text-transform: lowercase;
+      border: none;
+      background-color: transparent;
+    }
+
+    &:hover {
+      text-decoration: none;
+      background-color: $te-sunfloweryellow;
+
+      &::before,
+      &::after {
+        background-color: $te-sunfloweryellow;
+      }
+    }
+  }
+}
+
+// Save and Preview buttons
+.formbuttons {
+  display: flex;
+  align-items: center;
+
+  input {
+    display: inline-block;
+    height: 44px;
+    padding: 10px 20px;
+    font-family: $te-font-bold;
+    font-size: rem-calc(16);
+    text-transform: lowercase;
+    border: none;
+    background-color: $te-lightblue;
+    transition: background-color 150ms ease-in-out;
+
+    &:hover {
+      background-color: $te-sunfloweryellow;
+    }
+  }
+
+
+  input[name='wpPreview'] {
+    margin-left: 15px;
+  }
+
+  .formEditCancel {
+    margin-left: 15px;
+    font-family: $te-font-bold;
+    font-size: rem-calc(16);
+    text-transform: lowercase;
+
+    &:hover {
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}

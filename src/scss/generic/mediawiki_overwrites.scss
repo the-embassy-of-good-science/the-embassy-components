@@ -7,3 +7,32 @@
 body.page-Main_Page {
   background-color: $te-verylightblue;
 }
+
+// Styles on content generic area
+.content {
+
+  textarea,
+  input {
+    max-width: 100%;
+  }
+
+  div {
+    margin-bottom: map_get($paragraph-bottom-margins, sm);
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: map_get($paragraph-bottom-margins, md);
+    }
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: map_get($paragraph-bottom-margins, lg);
+    }
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: map_get($paragraph-bottom-margins, xl);
+    }
+
+    & *:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

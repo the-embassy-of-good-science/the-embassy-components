@@ -49,13 +49,40 @@
 
 // Save and Preview buttons
 .formbuttons {
+  display: flex;
+  align-items: center;
+
+  input {
+    border: none;
+    background-color: $te-lightblue;
+    font-family: $te-font-bold;
+    font-size: rem-calc(16);
+    padding: 10px 20px;
+    display: inline-block;
+    height: 44px;
+    transition: background-color 150ms ease-in-out;
+
+    &:hover {
+      background-color: $te-sunfloweryellow;
+    }
+  }
 
   input[name="wpSave"] {
   }
 
   input[name="wpPreview"] {
+    margin-left: 15px;
   }
 
   .formEditCancel {
+    margin-left: 15px;
+    font-family: $te-font-bold;
+    font-size: rem-calc(16);
+
+    &:hover {
+      a {
+        text-decoration: none;
+      }
+    }
   }
 }

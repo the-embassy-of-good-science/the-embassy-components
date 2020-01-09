@@ -19,24 +19,6 @@ body.page-Main_Page {
     }
   }
 
-  div {
-    @include media-breakpoint-up(md) {
-      margin-bottom: map_get($paragraph-bottom-margins, md);
-    }
-    @include media-breakpoint-up(lg) {
-      margin-bottom: map_get($paragraph-bottom-margins, lg);
-    }
-    @include media-breakpoint-up(lg) {
-      margin-bottom: map_get($paragraph-bottom-margins, xl);
-    }
-
-    margin-bottom: map_get($paragraph-bottom-margins, sm);
-
-    & *:last-child {
-      margin-bottom: 0;
-    }
-  }
-
   // Some form adjustments
   textarea,
   input {

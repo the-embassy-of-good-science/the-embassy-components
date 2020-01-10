@@ -130,6 +130,9 @@
 
     &:hover {
       color: $te-white;
+      @include media-breakpoint-up(lg) {
+        color: $te-lightblue;
+      }
     }
   }
 

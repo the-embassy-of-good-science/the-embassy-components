@@ -87,6 +87,7 @@
 
   &:hover {
     text-decoration: none;
+    color: $te-blue;
   }
 
   a {
@@ -94,7 +95,7 @@
     text-decoration: none;
 
     &:hover {
-      color: $te-sunfloweryellow;
+      color: $te-blue;
       text-decoration: none;
     }
   }

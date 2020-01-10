@@ -6,7 +6,7 @@
   background: $te-white;
 
   a {
-    color: $te-blue;
+    color: $te-black;
   }
 }
 
@@ -16,13 +16,13 @@
   justify-content: space-between;
   margin: 10px 15px;
   padding: 10px 0;
-  color: $te-blue;
+  color: $te-black;
   border-bottom: solid 1px $te-verylightblue;
 
   &:hover {
-    color: $te-sunfloweryellow;
+    color: $te-blue;
     a {
-      color: $te-sunfloweryellow;
+      color: $te-blue;
     }
   }
 
@@ -31,6 +31,13 @@
     font-family: $font-headings-bold;
     padding: 20px 15px 15px;
     margin: 0;
+
+    &:hover {
+      color: $te-blue;
+      a {
+        color: $te-blue;
+      }
+    }
   }
 
   &:last-child {

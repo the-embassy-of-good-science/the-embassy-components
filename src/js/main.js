@@ -5,6 +5,11 @@ import $ from 'jquery';
 // SCSS files from bootstrap
 import '../scss/main.scss';
 
+/**
+ * Navigation module
+ */
+import './navigation';
+
 // The Embassy content MediaWiki hyperlinks
 // const mediaWikiContentHyperlinks = document.querySelectorAll('.te-mw-link');
 
@@ -64,4 +69,4 @@ $('.te-mw-link').on('click', function(e) {
   }
 });
 
-// console.log($('.te-mw-link'));
+

@@ -9,6 +9,12 @@
   align-items: center;
   flex-flow: column;
 
+  position: relative;
+
+  @include media-breakpoint-down(lg) {
+    z-index: 0;
+  }
+
   .card {
     min-width: 320px;
     padding-right: 15px;
@@ -88,6 +94,10 @@
   &:hover {
     text-decoration: none;
     color: $te-blue;
+
+    a {
+      color: $te-blue;
+    }
   }
 
   a {
@@ -176,6 +186,10 @@
 .page-Resources .card-grid-4,
 .page-Themes .card-grid {
   position: relative;
+
+  @include media-breakpoint-down(lg) {
+    z-index: 0;
+  }
 
   &:after {
     position: absolute;

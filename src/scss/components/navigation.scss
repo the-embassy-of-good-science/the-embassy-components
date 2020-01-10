@@ -127,6 +127,10 @@
     text-decoration: none;
     text-transform: lowercase;
     color: $te-black;
+
+    &:hover {
+      color: $te-white;
+    }
   }
 
   a.is-active {

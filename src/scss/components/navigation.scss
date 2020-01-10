@@ -61,6 +61,8 @@
     }
 
     &:checked + .nav-trigger {
+      position: fixed;
+      top: 0;
       .open-icon {
         display: none;
       }
@@ -75,7 +77,12 @@
     }
 
     &:checked ~ .nav {
+      position: fixed;
+      top: 0;
       display: flex;
+      overflow: auto;
+      height: auto;
+      min-height: 100vh;
     }
   }
 
@@ -161,8 +168,23 @@
       // homepage
       .is-homepage &,
       .page-Main_Page & {
-        background-color: $te-black;
+        @include media-breakpoint-up(lg){
+          background-color: $te-black;
+        }
       }
+    }
+  }
+
+  &.is-open {
+    overflow: auto;
+  }
+
+  @media (max-width: 1024px) and (orientation: landscape) {
+    min-height: 100vh;
+    padding-top: 100px;
+    a {
+      font-size: 18px;
+      padding: 6px;
     }
   }
 }
@@ -196,6 +218,7 @@
 .navigation.is-homepage {
   a.is-active {
     &::after {
+      background-color: transparent;
       @include media-breakpoint-up(lg) {
         background-color: $te-black;
       }

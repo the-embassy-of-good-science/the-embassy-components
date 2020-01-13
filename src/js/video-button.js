@@ -150,25 +150,25 @@ function videoButton(el) {
       width = height * _this.ratio
     }
 
-    _this.player.style.width = `${width}px`
-    _this.player.style.height = `${height}px`
+    _this.player.style.width = width + 'px';
+    _this.player.style.height = height + 'px';
   }
 
   function setPlayerPosition() {
     var top = ((getWindowHeight() - _this.player.getBoundingClientRect().height) / 2) + getScrollTop()
     var left = ((getWindowWidth() - _this.player.getBoundingClientRect().width) / 2) + getScrollLeft()
 
-    _this.player.style.top = `${top}px`
-    _this.player.style.left = `${left}px`
+    _this.player.style.top = top + 'px';
+    _this.player.style.left = left + 'px';
   }
 
   function getAvailableWidth() {
-    var padding = 2 * _this.padding
+    var padding = 2 * _this.padding;
     return getWindowWidth() - padding
   }
 
   function getAvailableHeight() {
-    var padding = (2 * _this.padding) + 100 // some extra space for close button
+    var padding = (2 * _this.padding) + 100; // some extra space for close button
     return getWindowHeight() - padding
   }
 

@@ -4,15 +4,15 @@
  * @returns {string|*}
  */
 function parseUrl(url) {
-  let isYoutube = url.match(/^.*(youtu.be\/|v\/|u\/\w\/|watch\?v=)([^#&?]*).*/)
-  let isVimeo = url.match(/https?:\/\/(?:www\.)?vimeo.com\/(?:channels\/|groups\/([^/]*)\/videos\/|album\/(\d+)\/video\/|)(\d+)(?:$|\/|\?)/)
+  var isYoutube = url.match(/^.*(youtu.be\/|v\/|u\/\w\/|watch\?v=)([^#&?]*).*/);
+  var isVimeo = url.match(/https?:\/\/(?:www\.)?vimeo.com\/(?:channels\/|groups\/([^/]*)\/videos\/|album\/(\d+)\/video\/|)(\d+)(?:$|\/|\?)/);
 
   if (isYoutube) {
-    let id = isYoutube[2]
-    return `https://youtube.com/embed/${id}?rel=0&autoplay=1&enablejsapi=1`
+    var id = isYoutube[2];
+    return 'https://youtube.com/embed/' + id + 'rel=0&autoplay=1&enablejsapi=1';
   } else if (isVimeo) {
-    let id = isVimeo[3]
-    return `https://player.vimeo.com/video/${id}?autoplay=1&dnt=1`
+    var id = isVimeo[3];
+    return 'https://player.vimeo.com/video/' + id + '?autoplay=1&dnt=1';
   }
 
   return url
@@ -163,12 +163,12 @@ function videoButton(el) {
   }
 
   function getAvailableWidth() {
-    let padding = 2 * _this.padding
+    var padding = 2 * _this.padding
     return getWindowWidth() - padding
   }
 
   function getAvailableHeight() {
-    let padding = (2 * _this.padding) + 100 // some extra space for close button
+    var padding = (2 * _this.padding) + 100 // some extra space for close button
     return getWindowHeight() - padding
   }
 

@@ -1,0 +1,8 @@
+<div class="other-information-block">
+    <h5 class="other-information-title">{{ otherInfoBlockData.title }}</h5>
+    <ul class="other-information-items">        
+        {% for item in otherInfoBlockData.items %}
+            <li><a href="#">{{ item.label }}</a></li>        
+        {% endfor %}
+    </ul>
+</div>

@@ -1,0 +1,49 @@
+.other-information-wrapper {   
+    @include media-breakpoint-up(lg) {
+     display: flex;
+     flex-wrap: wrap;
+    } 
+
+    // &::after {
+    //     content: "."; 
+    //     display: block; 
+    //     height: 0; 
+    //     clear: both; 
+    //     visibility: hidden;
+    // }
+}
+
+.other-information-block {
+    width: 100%;
+    display: block;
+
+    @include media-breakpoint-up(lg) {
+        display: inline-block;
+        // float: left;
+        width: 50%;        
+    }
+
+    ul {
+        margin-left: 0;
+
+        li {
+            font-size: rem-calc(15);
+            line-height: unitless-calc(18, 15);
+            padding-left: 0;
+            background: none;
+        }
+
+        li a {
+            padding: 10px 20px;
+            background-color: $te-verylightblue;
+
+            &:hover {
+                text-decoration: underline;
+                color: $te-blue;
+            }
+        }
+    }
+
+
+    
+}

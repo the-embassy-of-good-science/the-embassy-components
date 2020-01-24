@@ -1,0 +1,12 @@
+.spacer {
+  @include media-breakpoint-up(lg) {
+    transform: translateX(-50vw);
+    margin: 80px -30px;
+  }
+
+  display: block;
+  width: 110vw;
+  height: 10px;
+  margin: 40px -30px;
+  background: $te-verylightblue;
+}

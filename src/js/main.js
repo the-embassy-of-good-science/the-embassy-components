@@ -16,6 +16,11 @@ import './mk-link';
 import './navigation';
 
 /**
+ * Other information block
+ */
+import './other-infomation-block.js';
+
+/**
  * Video button module
  */
 import './video-button';

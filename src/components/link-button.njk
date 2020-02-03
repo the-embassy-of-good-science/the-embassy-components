@@ -1,0 +1,55 @@
+---
+layout: layouts/base.njk
+---
+
+<h3>Link button</h3>
+
+<div class="code-sample">
+    <p>
+        <a class="link-button" href="https://www.embassy.science/uploads/files/The-Embassy-of-Good-Science-Declaration.pdf">
+            <span class="link-button-label">The Embassy Declaration</span>
+        </a>
+    </p>
+    <p>
+        <a class="link-button link--download" href="https://www.embassy.science/uploads/files/The-Embassy-of-Good-Science-Declaration.pdf">
+            <span class="link-button-label">The Embassy Declaration</span>
+        </a>
+    </p>
+
+    <p>
+        <div class="link-button" data-href="https://www.embassy.science/uploads/files/The-Embassy-of-Good-Science-Declaration.pdf">
+            <span class="link-button-label">The Embassy Declaration</span>
+        </div>
+    </p>
+
+    <p>
+        <div class="link-button link--download" data-href="https://www.embassy.science/uploads/files/The-Embassy-of-Good-Science-Declaration.pdf">
+            <span class="link-button-label">The Embassy Declaration</span>
+        </div>
+    </p>
+</div>
+
+{% highlight "html" %}
+<p>
+    <a class="link-button" href="https://www.embassy.science/uploads/files/The-Embassy-of-Good-Science-Declaration.pdf">
+        <span class="link-button-label">The Embassy Declaration</span>
+    </a>
+</p>
+<p>
+    <a class="link-button link--download" href="https://www.embassy.science/uploads/files/The-Embassy-of-Good-Science-Declaration.pdf">
+        <span class="link-button-label">The Embassy Declaration</span>
+    </a>
+</p>
+
+<p>
+    <div class="link-button" data-href="https://www.embassy.science/uploads/files/The-Embassy-of-Good-Science-Declaration.pdf">
+        <span class="link-button-label">The Embassy Declaration</span>
+    </div>
+</p>
+
+<p>
+    <div class="link-button link--download" data-href="https://www.embassy.science/uploads/files/The-Embassy-of-Good-Science-Declaration.pdf">
+        <span class="link-button-label">The Embassy Declaration</span>
+    </div>
+</p>
+{% endhighlight %}

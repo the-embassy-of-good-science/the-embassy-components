@@ -42,3 +42,15 @@
     }
   }
 }
+
+.contributors-list.contributors-list--long {
+  margin-bottom: 100px;
+  li {
+    @include media-breakpoint-up(lg) {
+      text-align: left;
+    }
+
+    display: block;
+    text-align: center;
+  }
+}

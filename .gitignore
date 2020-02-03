@@ -259,3 +259,6 @@ src/static/js/main*
 src/static/js/vendor*
 src/static/js/library*
 src/static/css/*
+docs/
+!docs/.nojekyll
+!docs/CNAME

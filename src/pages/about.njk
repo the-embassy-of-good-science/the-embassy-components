@@ -1,0 +1,42 @@
+{# Extends the sidebar layout #}
+{% extends "../_includes/layouts/sidebar.njk" %}
+
+{% block content %}
+
+    <h1>About</h1>
+
+    <h2 id="our-mission">Our Mission</h2>
+
+    <p>The goal of The Embassy of Good Science is to promote research integrity among all those involved in research. The platform is open to anyone willing to learn or support others in fostering understanding and awareness around Good Science.</p>
+
+    <p>The Embassy aims to become a unique ‘go to’ place, a public square where the community of researchers can gather to discuss ‘hot topics’, share knowledge, and find guidance and support to perform science responsibly and with integrity.</p>
+
+    <p>We want to focus on researchers’ daily practice. Our ambition is to collaboratively map the laws, policies and guidelines informing good practices and highlight relevant cases, experiences, educational materials and good practice examples. We will also support educators to develop training on research integrity and ethics.</p>
+
+    <p>
+        <div class="video-button" data-href="https://vimeo.com/338636333">
+            <span class="video-button-label">The Embassy story</span>
+        </div>
+    </p>
+
+    <h2 id="community">Let our community take over</h2>
+    <p>The Embassy of Good Science is developed by and for researchers, who are willing to gather and join forces to preserve and safeguard good science. No embassy can function without its ambassadors. And that’s where you come in.</p>
+
+    [Declaration >]
+    {# @todo make button for declaration download    #}
+
+{% endblock %}
+
+{% block sidebar %}
+
+    <div class="sidebar-anchors">
+        <h2>On this page:</h2>
+        <ul class="sidebar-anchors-wrapper">
+            <li><a href="#our-mission">Our Mission</a></li>
+            <li><a href="#community">Let our community take over</a></li>
+            <li><a href="#be-part">How you can be part of The Embassy</a></li>
+            <li><a href="#acknowledgements">Acknowledgements</a></li>
+        </ul>
+    </div>
+
+{% endblock %}

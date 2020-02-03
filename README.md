@@ -10,6 +10,9 @@ Our components library is hosted with [GitHub Pages](https://pages.github.com/) 
 * Bootstrap - [docs](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
 * Eleventy - static generator [docs](https://www.11ty.io/docs/)
 * Nunjucks - sophisticated templating engine for JavaScript [docs](https://mozilla.github.io/nunjucks/templating.html)
+* Travis CI - used to [deploy to github pages](https://travis-ci.com/the-embassy-of-good-science/the-embassy-components)
+
+[![Build Status](https://travis-ci.com/the-embassy-of-good-science/the-embassy-components.svg?branch=master)](https://travis-ci.com/the-embassy-of-good-science/the-embassy-components)
 
 ## CLI 
 

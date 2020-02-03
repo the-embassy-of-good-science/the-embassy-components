@@ -66,4 +66,40 @@ body.page-Main_Page {
       }
     }
   }
+
+  figure img,
+  img {
+    max-width: 100%;
+  }
+}
+
+.generic-content-break {
+  position: relative;
+  order: 3;
+  padding: 30px 0 0 0;
+  margin: 30px 0 90px;
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 55px 0 35px 0;
+    margin-bottom: 90px;
+  }
+
+  &:before {
+    position: absolute;
+    z-index: -1;
+    transform-origin: top left;
+    width: 150vw;
+    height: calc(100% + 60px);
+    content: ' ';
+    transform: skewY(-2.8deg) translateX(-40vw) translateY(-35px) ;
+    background-color: $te-verylightblue;
+
+    @include media-breakpoint-up(lg) {
+      transform: skewY(-2.8deg) translateX(-40vw) translateY(-65px) ;
+    }
+  }
 }

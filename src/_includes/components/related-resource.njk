@@ -1,0 +1,12 @@
+<div class="related-resource {{ relatedResourceData.modifier | default }}">
+    <div class="related-resource-category">
+        {{ relatedResourceData.category }}
+    </div>
+    <h4 class="related-resource-title">
+        {{ relatedResourceData.title | default('RELATED RESOURCE TITLE') }}
+    </h4>
+    <div class="related-resource-navigation">
+        <a class="resource-link" href="{{ relatedResourceData.url }}">Open</a>
+        <a class="resource-info" href="{{ relatedResourceData.info }}">About</a>
+    </div>
+</div>

@@ -77,5 +77,19 @@
   .other-information-last,
   .other-information-item {
     background-color: $te-white;
+    white-space: nowrap;
+  }
+}
+
+.grid-item-last {
+  display: none;
+
+  &.is-visible {
+    display: inline-flex;
+  }
+}
+.grid-item {
+  &.is-hidden {
+    display: none;
   }
 }

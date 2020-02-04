@@ -12,21 +12,22 @@ if(elem) {
 }
 
 // Grab number of grid items
-var gridItems = document.querySelectorAll('.other-information-block');
+var gridItems = document.querySelectorAll('.grid-block');
 
 if(gridItems) {
-
   // Set collapse of grid items
   for (var i = 0; i < gridItems.length; i++) {
-    new otherInformationBlock(gridItems[i]);
+    new gridBlock(gridItems[i]);
   }
 }
 
-function otherInformationBlock(el) {
+// Created grid elements block
+// Used by other-information-block and related-discussion components
+function gridBlock(el) {
   this.el = el;
-  this.trigger = this.el.querySelector('.other-information-last');
-  this.items = this.el.querySelectorAll('.other-information-item');
-  this.length = this.el.querySelectorAll('.other-information-item').length;
+  this.trigger = this.el.querySelector('.grid-item-last');
+  this.items = this.el.querySelectorAll('.grid-item');
+  this.length = this.el.querySelectorAll('.grid-item').length;
 
   var open = function(e) {
     e.preventDefault()
@@ -55,3 +56,4 @@ function otherInformationBlock(el) {
   }
 }
 
+//

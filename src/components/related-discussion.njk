@@ -5,9 +5,10 @@
     <h4 class="related-discusssion-title">
         {{ relatedDiscussionData.title | default('RELATED RESOURCE TITLE') }}
     </h4>
-    <div class="related-discusssion-tags">
+    <div class="related-discusssion-tags grid-block">
         {% for tag in relatedDiscussionData.tags %}
-            <a class="discusssion-tag" href="{{ tag.url|default('') }}">{{ tag.label }}</a>
+            <a class="discusssion-tag grid-item" href="{{ tag.url|default('') }}">{{ tag.label }}</a>
         {% endfor %}
+        <span class="discusssion-tag grid-item-last"><a href="#"></a></span>
     </div>
 </div>

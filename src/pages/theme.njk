@@ -223,5 +223,10 @@
                     class="tag-item">SH 01.02 - Development, economic growth</span><span class="tag-item">SH 01.05 - Political economy, institutional economics, law and economics</span><span
                     class="tag-item">SH 01.06 - Econometrics, statistical methods</span></span>
     </div>
+
+
+    {% set otherInfoBlockData = { title: 'Related themes', items: [ { label: 'authorship', url: '#' }, { label: 'plagiarism', url: '#' }, { label: 'self-plagiarism', url: '#' }, { label: 'legal-research', url: '#' }, { label: 'lorem ipsum', url: '#' }, { label: 'dolor amet', url: '#' } ] } %}
+    {% include "../components/other-information-block.njk" %}
+
 {% endblock %}
 

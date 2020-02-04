@@ -260,12 +260,25 @@
     </div>
     #}
 
+    <div class="sidebar-item">
+        <h4 class="sidebar-title">Related discussions</h4>
+        {% set relatedDiscussionData = { title: 'How to request that collaborators add my supervisor\'s name to a manuscript?', url: '#', date: '2 weeks ago', tags: [{label: 'something', url: '#'}] } %}
+        {% include '../components/related-discussion.njk' %}
+
+        {% set relatedDiscussionData = { title: 'Is it unethical to edit grammatical errors in a letter of recommendation?', url: '#', date: '19 December 2018', tags: [{label: 'supervision', url: '#'}, {label: 'medical research', url: '#'}] } %}
+        {% include '../components/related-discussion.njk' %}
+
+        <div class="related-discusssion-seeMore">See more discussions</div>
+    </div>
+
     <div class="sidebar-item" data-template="RelatedResources">
         <h4 class="sidebar-title">Related resources</h4>
         {% set relatedResourceData = { modifier: 'is-caseStudies', category: 'Case studies collection', title: 'The European Network of Research Integrity Offices (ENRIO) - Collection', info: '#', url: '#' } %}
         {% include '../components/related-resource.njk' %}
+
         {% set relatedResourceData = { modifier: 'is-caseStudies', category: 'Case studies collection', title: 'Responsible Conduct of Research (RCR) - Casebook', info: '#', url: '#' } %}
         {% include '../components/related-resource.njk' %}
+
         {% set relatedResourceData = { modifier: 'is-experts', category: 'Experts', title: 'Maura Hiney - Health Research Board ', info: '#', url: '#' } %}
         {% include '../components/related-resource.njk' %}
     </div>

@@ -22,27 +22,31 @@
     background-repeat: no-repeat;
     background-position: left top 7px;
     background-size: 18px 13px;
-    padding-left: 25px;
+    padding-left: 30px;
   }
 
   .related-resource.is-experts & {
     background-repeat: no-repeat;
     background-position: left top 4px;
     background-size: 13px 18px;
-    padding-left: 25px;
+    padding-left: 30px;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13 18'%3E%3Cpath fill='%23567C83' fill-rule='evenodd' d='M6.8646 12.7458c3.232-.1735 5.8607-2.6896 6.115-5.8525.1505-1.872-.5358-3.7035-1.8833-5.0256C9.7491.546 7.8822-.1286 5.9746.0203 2.7516.2698.1874 2.849.0099 6.0195c-.0218.39-.0076.7823.0417 1.166l1.697-.211a4.72 4.72 0 01-.0308-.863c.1307-2.3352 2.0186-4.2346 4.3915-4.4183 1.4079-.1087 2.7848.3872 3.7777 1.3615.9928.974 1.4984 2.325 1.3874 3.7066-.187 2.3284-2.123 4.1808-4.5034 4.3088-1.1387.0604-2.2636-.2753-3.1654-.9476l-.352-.2622-1.608.7378.0002 5.563c0 .7183.4114 1.3546 1.0735 1.6609.2581.1193.5313.178.8022.178.4112 0 .8168-.1352 1.155-.3977l1.276-.9591.0571-.0424c.2844-.2303.6966-.2301.981-.0002l1.3329 1.0015c.5612.4357 1.3074.5207 1.9572.2197.6623-.3061 1.0737-.9426 1.0737-1.6609V13.929l-1.7105.7664v1.4894c0 .0248 0 .1-.0923.1427-.0926.0421-.1516-.0055-.171-.021l-1.3317-.9363c-.9037-.7088-2.1936-.7088-3.0976 0l-1.2748.894-.0568.0425c-.0195.0155-.078.0642-.1713.0208-.0921-.0426-.0921-.118-.0921-.1425l-.0003-4.2246c1.0631.5756 2.2788.8498 3.5086.7854'/%3E%3C/svg%3E");
   }
 }
 
-.related-resource-navigation {
-  font-size: rem-calc(16);
+.related-resource-title {
+  margin-bottom: 15px;
+  font-size: rem-calc(18);
+  line-height: unitless-calc(24, 18);
+}
 
+.related-resource-navigation {
   // this was added in case it isn't possible to add hyperlink as element
   // in the project and in SMW sometimes we use divs with the te-link module so we can open
   // pages in a different way
   & > * {
     color: $te-black;
-    font-size: rem-calc(16);
+    font-size: rem-calc(14);
     font-family: $te-font-bold;
     text-decoration: underline;
 

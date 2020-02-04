@@ -129,5 +129,8 @@
     font-size: rem-calc(16);
     line-height: unitless-calc(24, 16);
     color: $te-black;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='6px' height='8px' viewBox='0 0 6 8' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: Sketch 62 (91390) - https://sketch.com --%3E%3Ctitle%3Earrow-right%3C/title%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cpath d='M1.42748564,7.61325676 L6.06943384e-11,6.18577112 L2.379,3.806 L2.12387885e-11,1.42748564 L1.42748564,-7.29689642e-11 L5.23411402,3.80662838 L1.42748564,7.61325676 Z' id='arrow-right' fill='%23000000' fill-rule='nonzero'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+    background-position: right 40px center;
+    background-repeat: no-repeat;
   }
 }

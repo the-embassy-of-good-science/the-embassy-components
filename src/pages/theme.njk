@@ -124,22 +124,22 @@
 
         <div class="other-information-wrapper other-information-grid">
             {% set otherInfoBlockData = { title: 'Who', items: [ { label: 'Chinelo Chyke', url: '#' }, {label: 'Deveeprasad Acharya', url: '#'}, {label: 'Diego Morata', url: '#'} ] } %}
-            {% include "../components/other-information-block.njk" %}
+            {% include "../_includes/components/other-information-block.njk" %}
 
             {% set otherInfoBlockData = { title: 'When', items: [ { label: '1987 - 2019', url: '#' } ] } %}
-            {% include "../components/other-information-block.njk" %}
+            {% include "../_includes/components/other-information-block.njk" %}
 
             {% set otherInfoBlockData = { title: 'Virtue or value', items: [ { label: 'Accountability', url: '#' }, {label: 'Attentiveness', url: '#'}, {label: 'Reflexivity', url: '#'}, {label: 'Something else', url: '#'} ] } %}
-            {% include "../components/other-information-block.njk" %}
+            {% include "../_includes/components/other-information-block.njk" %}
 
             {% set otherInfoBlockData = { title: 'Misconduct', items: [ { label: 'Chinelo Chyke', url: '#' }, {label: 'Deveeprasad Acharya', url: '#'}, {label: 'Diego Morata', url: '#'} ] } %}
-            {% include "../components/other-information-block.njk" %}
+            {% include "../_includes/components/other-information-block.njk" %}
 
             {% set otherInfoBlockData = { title: 'Good practice', items: [ { label: 'Institutional responsibilities', url: '#' }, {label: 'Responsible supervision', url: '#'}, {label: 'Reasonable standards for career advisors', url: '#'} ] } %}
-            {% include "../components/other-information-block.njk" %}
+            {% include "../_includes/components/other-information-block.njk" %}
 
             {% set otherInfoBlockData = { title: 'Other', items: [ { label: 'Euismod dolor fusce', url: '#' }, {label: 'Ridiculus males', url: '#'}, {label: 'Lorem', url: '#'}, {label: 'Something else', url: '#'}, {label: 'Mator Panner', url: '#'} ] } %}
-            {% include "../components/other-information-block.njk" %}
+            {% include "../_includes/components/other-information-block.njk" %}
         </div>
     </div>
 
@@ -263,10 +263,10 @@
     <div class="sidebar-item">
         <h4 class="sidebar-title">Related discussions</h4>
         {% set relatedDiscussionData = { title: 'How to request that collaborators add my supervisor\'s name to a manuscript?', url: '#', date: '2 weeks ago', tags: [{label: 'something', url: '#'}] } %}
-        {% include '../components/related-discussion.njk' %}
+        {% include '../_includes/components/related-discussion.njk' %}
 
         {% set relatedDiscussionData = { title: 'Is it unethical to edit grammatical errors in a letter of recommendation?', url: '#', date: '19 December 2018', tags: [{label: 'supervision', url: '#'}, {label: 'medical research', url: '#'},{label: 'supervision', url: '#'}, {label: 'medical research', url: '#'}, {label: 'supervision', url: '#'}, {label: 'medical research', url: '#'}] } %}
-        {% include '../components/related-discussion.njk' %}
+        {% include '../_includes/components/related-discussion.njk' %}
 
         <div class="related-discusssion-seeMore">See more discussions</div>
     </div>
@@ -279,19 +279,19 @@
     <div class="sidebar-item" data-template="RelatedResources">
         <h4 class="sidebar-title">Related resources</h4>
         {% set relatedResourceData = { modifier: 'is-caseStudies', category: 'Case studies collection', title: 'The European Network of Research Integrity Offices (ENRIO) - Collection', info: '#', url: '#' } %}
-        {% include '../components/related-resource.njk' %}
+        {% include '../_includes/components/related-resource.njk' %}
 
         {% set relatedResourceData = { modifier: 'is-caseStudies', category: 'Case studies collection', title: 'Responsible Conduct of Research (RCR) - Casebook', info: '#', url: '#' } %}
-        {% include '../components/related-resource.njk' %}
+        {% include '../_includes/components/related-resource.njk' %}
 
         {% set relatedResourceData = { modifier: 'is-experts', category: 'Experts', title: 'Maura Hiney - Health Research Board ', info: '#', url: '#' } %}
-        {% include '../components/related-resource.njk' %}
+        {% include '../_includes/components/related-resource.njk' %}
     </div>
 
     {# Related themes using other-info-block component #}
     <div class="sidebar-item" data-template="RelatedThemes">
         {% set otherInfoBlockData = { title: 'Related themes', items: [ { label: 'authorship', url: '#' }, { label: 'plagiarism', url: '#' }, { label: 'self-plagiarism', url: '#' }, { label: 'legal-research', url: '#' }, { label: 'lorem ipsum', url: '#' }, { label: 'dolor amet', url: '#' } ] } %}
-        {% include "../components/other-information-block.njk" %}
+        {% include "../_includes/components/other-information-block.njk" %}
     </div>
 {% endblock %}
 

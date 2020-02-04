@@ -28,16 +28,13 @@ body {
 }
 
 .te-sidebar {
+    z-index: 0;
+    position: relative;
     height: auto;
 
-    padding-top: 0;
-    padding-bottom: 30px;
+    overflow: auto;
     background-color: var(--te-verylightblue);
-
-    .sticky-top {
-        padding-top: 30px;
-        top: 90px;
-    }
+    padding: 30px;
 }
 
 .te-content {

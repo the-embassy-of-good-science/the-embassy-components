@@ -3,11 +3,13 @@
  */
 var elem = document.querySelector('.other-information-grid');
 
-var msnry = new Masonry( elem, {
-  itemSelector: '.other-information-block',
-  percentPosition: true,
-  gutter: 10
-});
+if(elem) {
+  var msnry = new Masonry( elem, {
+    itemSelector: '.other-information-block',
+    percentPosition: true,
+    gutter: 10
+  });
+}
 
 // Grab number of grid items
 var gridItems = document.querySelectorAll('.other-information-block');

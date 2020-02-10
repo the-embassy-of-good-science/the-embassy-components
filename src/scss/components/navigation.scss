@@ -222,7 +222,7 @@
   @include media-breakpoint-up(lg) {
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: flex-end;
   }
 }
 

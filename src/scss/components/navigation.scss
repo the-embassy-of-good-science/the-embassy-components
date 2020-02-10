@@ -222,7 +222,17 @@
   @include media-breakpoint-up(lg) {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    margin-left: -15px;
+    padding-left: 0;
+  }
+
+  .is-homepage &,
+  .page-Main_Page & {
+    @include media-breakpoint-up(lg) {
+      justify-content: flex-end;
+      margin-left: 0;
+      padding-left: 30px;
+    }
   }
 }
 

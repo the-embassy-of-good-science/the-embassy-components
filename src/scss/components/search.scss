@@ -9,7 +9,7 @@
   input[type="text"] {
     border: none;
     background: transparent;
-    border-bottom: solid 2px $te-black;
+    border-bottom: solid 2px rgba($te-black, 0.24);
     font-size: rem-calc(16);
     padding-right: 35px;
 
@@ -42,15 +42,6 @@
 
     &:hover {
       cursor: pointer;
-      // color: rgba($te-black, 0.24);
     }
-  }
-}
-
-// exeptions for homepage
-.is-homepage .search,
-.page-Main_Page .search {
-  input[type="text"] {
-    border-bottom: solid 2px rgba($te-black, 0.24);
   }
 }

@@ -1,6 +1,11 @@
 .search {
+  display: none;
   position: relative;
   height: 23px;
+
+  @include media-breakpoint-up(lg) {
+    display: inline-flex;
+  }
 
   input, button {
     transition: color 150ms ease-in-out;
@@ -43,5 +48,27 @@
     &:hover {
       cursor: pointer;
     }
+  }
+}
+
+.search-trigger {
+  background-color: $te-white;
+  border: 0;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  right: 30px;
+  top: 0;
+  svg {
+    width: 19px;
+    height: 18px;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+
+  @include media-breakpoint-up(lg ){
+    display: none;
   }
 }

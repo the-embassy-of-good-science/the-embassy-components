@@ -221,9 +221,10 @@
 
 // Search & Profile
 .nav-search-profile {
-  display: none;
+  position: absolute;
 
   @include media-breakpoint-up(lg) {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: flex-end;

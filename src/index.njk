@@ -1,6 +1,6 @@
----
-layout: layouts/base.njk
----
+{% extends './_includes/layouts/base.njk' %}
+
+{% block content %}
 
 <h1>The Embassy Components</h1>
 
@@ -26,3 +26,5 @@ layout: layouts/base.njk
 <p>All code how this page is generated can be found on The Embassy github repository, see more <a
         href="https://github.com/the-embassy-of-good-science/the-embassy-components" target="_blank"
         rel="nofollow noreferrer">here</a>.</p>
+
+{% endblock %}

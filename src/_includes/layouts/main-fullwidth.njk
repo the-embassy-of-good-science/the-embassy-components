@@ -6,7 +6,7 @@ bodyclasses:
 ---
 <!doctype html>
 <html lang="en">
-{% include '../_head.njk' %}
+    {% include '../_head.njk' %}
 <head>
 
 </head>
@@ -35,13 +35,16 @@ bodyclasses:
                 <img class="navigation-logo" src="/static/images/the-embassy-logo-white.png" />
             </a>
         </div>
-        <div class="nav col-lg-10">
+        <div class="nav col-lg-7">
             <a href="#" class="is-active">Home</a>
             <a href="#">Themes</a>
             <a href="#">Resources</a>
             <a href="#">Discussions</a>
             <a href="#">Training</a>
             <a href="#">About</a>
+        </div>
+        <div class="nav-search-profile col-lg3">
+            {% include '../components/search.njk' %}
         </div>
     </div>
 </div>

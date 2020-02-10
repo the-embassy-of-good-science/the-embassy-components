@@ -215,6 +215,17 @@
   max-width: 60px;
 }
 
+// Search & Profile
+.nav-search-profile {
+  display: none;
+
+  @include media-breakpoint-up(lg) {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  }
+}
+
 .navigation.is-homepage {
   a.is-active {
     &::after {

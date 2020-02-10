@@ -1,155 +1,177 @@
----
-layout: layouts/base.njk
----
+{% extends '../_includes/layouts/base.njk' %}
 
-<h3>Typography</h3>
+{% block content %}
+    <h3>Typography</h3>
 
-<h6>Headings</h6>
+    <h6>Headings</h6>
 
-<div class="code-sample">
-    <h1>h1. Bootstrap heading</h1>
-    <h2>h2. Bootstrap heading</h2>
-    <h3>h3. Bootstrap heading</h3>
-    <h4>h4. Bootstrap heading</h4>
-    <h5>h5. Bootstrap heading</h5>
-    <h6>h6. Bootstrap heading</h6>
-</div>
+    <div class="code-sample">
+        <h1>h1. Bootstrap heading</h1>
+        <h2>h2. Bootstrap heading</h2>
+        <h3>h3. Bootstrap heading</h3>
+        <h4>h4. Bootstrap heading</h4>
+        <h5>h5. Bootstrap heading</h5>
+        <h6>h6. Bootstrap heading</h6>
+    </div>
 
-{% highlight "html" %}
-<h1>h1. Bootstrap heading</h1>
-<h2>h2. Bootstrap heading</h2>
-<h3>h3. Bootstrap heading</h3>
-<h4>h4. Bootstrap heading</h4>
-<h5>h5. Bootstrap heading</h5>
-<h6>h6. Bootstrap heading</h6>
-{% endhighlight %}
+    {% highlight "html" %}
+        <h1>h1. Bootstrap heading</h1>
+        <h2>h2. Bootstrap heading</h2>
+        <h3>h3. Bootstrap heading</h3>
+        <h4>h4. Bootstrap heading</h4>
+        <h5>h5. Bootstrap heading</h5>
+        <h6>h6. Bootstrap heading</h6>
+    {% endhighlight %}
 
-<h6>MediaWiki content hyperlinks</h6>
+    <h6>MediaWiki content hyperlinks</h6>
 
-<div class="code-sample">    
-    <div class="te-mw-link" data-href="https://components.embassy.science/" data-target="_self">This is a link that does not open a new page</div>
-    <div class="te-mw-link" data-href="https://components.embassy.science/" data-target="_blank">This is a link that opens a new page</div>    
-    <div class="te-mw-link" data-href="#" data-target="back">go back button wrapper</div>
-</div>
-
-
-{% highlight "html" %}
-<div class="te-mw-link" data-href="https://components.embassy.science/" data-target="_self">This is a link that does not open a new page</div>
-<div class="te-mw-link" data-href="https://components.embassy.science/" data-target="_blank">This is a link that opens a new page</div>    
-<div class="te-mw-link" data-href="#" data-target="back">go back button wrapper</div>
-{% endhighlight %}
+    <div class="code-sample">
+        <div class="te-mw-link" data-href="https://components.embassy.science/" data-target="_self">This is a link that
+            does not open a new page
+        </div>
+        <div class="te-mw-link" data-href="https://components.embassy.science/" data-target="_blank">This is a link that
+            opens a new page
+        </div>
+        <div class="te-mw-link" data-href="#" data-target="back">go back button wrapper</div>
+    </div>
 
 
-<div class="code-sample">    
-    Javascript module below:
-</div>
-{% highlight "javascript" %}
-/**
- * Module to open links inside MediaWiki context
- */
-$('.te-mw-link').on('click', function(e) {
-  e.preventDefault();
-
-  // does not do anything if href is undefined
-  if (this.dataset.href === undefined) {
-    return;
-  }
-
-  // specific to go back
-  if (this.dataset.href === '#' && this.dataset.target === 'back') {
-    window.history.back();
-    return;
-  }
-
-  // check if its target
-  if (this.dataset.target === '_self' || this.dataset.target === undefined) {
-    window.location.href = this.dataset.href;
-  } else if (
-    this.dataset.target === '_blank' ||
-    this.dataset.href !== undefined
-  ) {
-    window.open(this.dataset.href);
-  }
-});
-{% endhighlight %}
+    {% highlight "html" %}
+        <div class="te-mw-link" data-href="https://components.embassy.science/" data-target="_self">This is a link that
+            does not open a new page
+        </div>
+        <div class="te-mw-link" data-href="https://components.embassy.science/" data-target="_blank">This is a link that
+            opens a new page
+        </div>
+        <div class="te-mw-link" data-href="#" data-target="back">go back button wrapper</div>
+    {% endhighlight %}
 
 
-<h6>Display</h6>
+    <div class="code-sample">
+        Javascript module below:
+    </div>
+    {% highlight "javascript" %}
+        /**
+        * Module to open links inside MediaWiki context
+        */
+        $('.te-mw-link').on('click', function(e) {
+        e.preventDefault();
 
-<div class="code-sample">
-    <h1 class="display-1">Display 1</h1>
-    <h1 class="display-2">Display 2</h1>
-    <h1 class="display-3">Display 3</h1>
-    <h1 class="display-4">Display 4</h1>
-</div>
+        // does not do anything if href is undefined
+        if (this.dataset.href === undefined) {
+        return;
+        }
 
-{% highlight "html" %}
-<h1 class="display-1">Display 1</h1>
-<h1 class="display-2">Display 2</h1>
-<h1 class="display-3">Display 3</h1>
-<h1 class="display-4">Display 4</h1>
-{% endhighlight %}
+        // specific to go back
+        if (this.dataset.href === '#' && this.dataset.target === 'back') {
+        window.history.back();
+        return;
+        }
+
+        // check if its target
+        if (this.dataset.target === '_self' || this.dataset.target === undefined) {
+        window.location.href = this.dataset.href;
+        } else if (
+        this.dataset.target === '_blank' ||
+        this.dataset.href !== undefined
+        ) {
+        window.open(this.dataset.href);
+        }
+        });
+    {% endhighlight %}
 
 
-<h6>Inline text elements</h6>
+    <h6>Display</h6>
 
-<div class="code-sample">
-    <p>You can use the mark tag to <mark>highlight</mark> text.</p>
-    <p><del>This line of text is meant to be treated as deleted text.</del></p>
-    <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
-    <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
-    <p><u>This line of text will render as underlined</u></p>
-    <p><small>This line of text is meant to be treated as fine print.</small></p>
-    <p><strong>This line rendered as bold text.</strong></p>
-    <p><em>This line rendered as italicized text.</em></p>
-</div>
+    <div class="code-sample">
+        <h1 class="display-1">Display 1</h1>
+        <h1 class="display-2">Display 2</h1>
+        <h1 class="display-3">Display 3</h1>
+        <h1 class="display-4">Display 4</h1>
+    </div>
 
-{% highlight "html" %}
-<p>You can use the mark tag to <mark>highlight</mark> text.</p>
-<p><del>This line of text is meant to be treated as deleted text.</del></p>
-<p><s>This line of text is meant to be treated as no longer accurate.</s></p>
-<p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
-<p><u>This line of text will render as underlined</u></p>
-<p><small>This line of text is meant to be treated as fine print.</small></p>
-<p><strong>This line rendered as bold text.</strong></p>
-<p><em>This line rendered as italicized text.</em></p>
-{% endhighlight %}
+    {% highlight "html" %}
+        <h1 class="display-1">Display 1</h1>
+        <h1 class="display-2">Display 2</h1>
+        <h1 class="display-3">Display 3</h1>
+        <h1 class="display-4">Display 4</h1>
+    {% endhighlight %}
 
-<h6>Lists</h6>
 
-<div class="code-sample">
-    <ul>
-        <li>Lorem ipsum dolor sit amet</li>
-        <li>Consectetur adipiscing elit</li>
-        <li>Integer molestie lorem at massa</li>
-        <li>Facilisis in pretium nisl aliquet</li>
-        <li>Faucibus porta lacus fringilla vel</li>
-        <li>Aenean sit amet erat nunc</li>
-        <li>Eget porttitor lorem</li>
-    </ul>
-    <ol>
-        <li>Phasellus iaculis neque</li>
-        <li>Purus sodales ultricies</li>
-        <li>Vestibulum laoreet porttitor sem</li>
-        <li>Ac tristique libero volutpat at</li>
-    </ol>
-</div>
+    <h6>Inline text elements</h6>
 
-{% highlight "html" %}
-<ul>
-    <li>Lorem ipsum dolor sit amet</li>
-    <li>Consectetur adipiscing elit</li>
-    <li>Integer molestie lorem at massa</li>
-    <li>Facilisis in pretium nisl aliquet</li>
-    <li>Faucibus porta lacus fringilla vel</li>
-    <li>Aenean sit amet erat nunc</li>
-    <li>Eget porttitor lorem</li>
-</ul>
-<ol>
-    <li>Phasellus iaculis neque</li>
-    <li>Purus sodales ultricies</li>
-    <li>Vestibulum laoreet porttitor sem</li>
-    <li>Ac tristique libero volutpat at</li>
-</ol>
-{% endhighlight %}
+    <div class="code-sample">
+        <p>You can use the mark tag to
+            <mark>highlight</mark>
+            text.
+        </p>
+        <p>
+            <del>This line of text is meant to be treated as deleted text.</del>
+        </p>
+        <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+        <p>
+            <ins>This line of text is meant to be treated as an addition to the document.</ins>
+        </p>
+        <p><u>This line of text will render as underlined</u></p>
+        <p><small>This line of text is meant to be treated as fine print.</small></p>
+        <p><strong>This line rendered as bold text.</strong></p>
+        <p><em>This line rendered as italicized text.</em></p>
+    </div>
 
+    {% highlight "html" %}
+        <p>You can use the mark tag to
+            <mark>highlight</mark>
+            text.
+        </p>
+        <p>
+            <del>This line of text is meant to be treated as deleted text.</del>
+        </p>
+        <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+        <p>
+            <ins>This line of text is meant to be treated as an addition to the document.</ins>
+        </p>
+        <p><u>This line of text will render as underlined</u></p>
+        <p><small>This line of text is meant to be treated as fine print.</small></p>
+        <p><strong>This line rendered as bold text.</strong></p>
+        <p><em>This line rendered as italicized text.</em></p>
+    {% endhighlight %}
+
+    <h6>Lists</h6>
+
+    <div class="code-sample">
+        <ul>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Consectetur adipiscing elit</li>
+            <li>Integer molestie lorem at massa</li>
+            <li>Facilisis in pretium nisl aliquet</li>
+            <li>Faucibus porta lacus fringilla vel</li>
+            <li>Aenean sit amet erat nunc</li>
+            <li>Eget porttitor lorem</li>
+        </ul>
+        <ol>
+            <li>Phasellus iaculis neque</li>
+            <li>Purus sodales ultricies</li>
+            <li>Vestibulum laoreet porttitor sem</li>
+            <li>Ac tristique libero volutpat at</li>
+        </ol>
+    </div>
+
+    {% highlight "html" %}
+        <ul>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Consectetur adipiscing elit</li>
+            <li>Integer molestie lorem at massa</li>
+            <li>Facilisis in pretium nisl aliquet</li>
+            <li>Faucibus porta lacus fringilla vel</li>
+            <li>Aenean sit amet erat nunc</li>
+            <li>Eget porttitor lorem</li>
+        </ul>
+        <ol>
+            <li>Phasellus iaculis neque</li>
+            <li>Purus sodales ultricies</li>
+            <li>Vestibulum laoreet porttitor sem</li>
+            <li>Ac tristique libero volutpat at</li>
+        </ol>
+    {% endhighlight %}
+
+{% endblock %}

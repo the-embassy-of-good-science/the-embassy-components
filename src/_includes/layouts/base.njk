@@ -1,8 +1,3 @@
----
-title: The Embassy of Good Science - Components Library
-description:
-url: https://components.embassy.science
----
 <!doctype html>
 <html lang="en">
 <head>
@@ -19,7 +14,7 @@ url: https://components.embassy.science
         {% include '../components/sidebar.njk' %}
 
         <main class="te-content col-md-9 col-xl-10">
-            {{ content | safe }}
+            {% block content %}{% endblock %}
         </main>
     </div>
 </div>

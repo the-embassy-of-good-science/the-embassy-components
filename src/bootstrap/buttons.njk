@@ -1,33 +1,34 @@
----
-layout: layouts/base.njk
----
+{% extends '../_includes/layouts/base.njk' %}
 
-<h3>Buttons</h3>
+{% block content %}
+    <h3>Buttons</h3>
 
-<div class="code-sample">
-    <button type="button" class="btn btn-primary">Primary</button>
-    <button type="button" class="btn btn-secondary">Secondary</button>
-    <button type="button" class="btn btn-success">Success</button>
-    <button type="button" class="btn btn-danger">Danger</button>
-    <button type="button" class="btn btn-warning">Warning</button>
-    <button type="button" class="btn btn-info">Info</button>
-    <button type="button" class="btn btn-light">Light</button>
-    <button type="button" class="btn btn-dark">Dark</button>
+    <div class="code-sample">
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
 
-    <button type="button" class="btn btn-link">Link</button>
-</div>
+        <button type="button" class="btn btn-link">Link</button>
+    </div>
 
-{% highlight "html" %}
-<button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-secondary">Secondary</button>
-<button type="button" class="btn btn-success">Success</button>
-<button type="button" class="btn btn-danger">Danger</button>
-<button type="button" class="btn btn-warning">Warning</button>
-<button type="button" class="btn btn-info">Info</button>
-<button type="button" class="btn btn-light">Light</button>
-<button type="button" class="btn btn-dark">Dark</button>
+    {% highlight "html" %}
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
 
-<button type="button" class="btn btn-link">Link</button>
-{% endhighlight %}
+        <button type="button" class="btn btn-link">Link</button>
+    {% endhighlight %}
 
-<p>Read more and know more from Bootstrap buttons <a href="https://getbootstrap.com/docs/4.3/components/buttons/" target="_blank" rel="nofollow noreferrer">here</a>.</p>
+    <p>Read more and know more from Bootstrap buttons <a href="https://getbootstrap.com/docs/4.3/components/buttons/"
+                                                         target="_blank" rel="nofollow noreferrer">here</a>.</p>
+{% endblock %}

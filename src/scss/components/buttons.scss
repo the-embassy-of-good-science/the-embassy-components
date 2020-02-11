@@ -1,10 +1,12 @@
 // Add all variations for buttons
 .sidebar-item.formbutton-edit {
-  a {
+  display: flex;
+  align-items: center;
+
+  & > a {
     position: relative;
     display: inline-block;
     height: 44px;
-    margin-left: 20px;
     padding: 10px 20px;
     font-family: $te-font-bold;
     font-size: rem-calc(16);
@@ -12,25 +14,12 @@
     color: $te-black;
     background-color: $te-lightblue;
     transition: background-color 150ms ease-in-out;
-
-    &::before,
-    &::after {
-      position: absolute;
-      z-index: 0;
-      top: 0;
-      left: -10px;
-      width: 20px;
-      height: 100%;
-      content: ' ';
-      transform: skewX(-25deg);
-      background-color: $te-lightblue;
-      transition: background-color 150ms ease-in-out;
-    }
-
-    &::before {
-      right: -10px;
-      left: auto;
-    }
+    width: 100%;
+    text-align: center;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 17'%3E%3Cpath fill='%23000' fill-rule='evenodd' d='M4.6547 16.5159H0v-4.6547c0-.4257.169-.8342.4702-1.1354l7.7282-7.7282 2.8813 2.8817-.9989.9991-1.7464-1.7461L1.74 11.727a.459.459 0 00-.1344.3245v3.0882h2.6202a.4585.4585 0 00.3243-.1344l9.3652-9.3558a.4585.4585 0 000-.6489l-3.8652-3.8655L11.1852 0l4.19 4.1896c.6271.627.6271 1.6436 0 2.2707l-9.5851 9.5854a1.6057 1.6057 0 01-1.1354.4702'/%3E%3C/svg%3E");
+    background-position: 30% center;
+    background-size: 16px 17px;
+    background-repeat: no-repeat;
 
     &:hover {
       text-decoration: none;

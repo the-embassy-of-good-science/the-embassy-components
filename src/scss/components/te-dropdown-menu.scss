@@ -73,3 +73,39 @@
     opacity: 1;
   }
 }
+
+// Edit dropdown
+.smw-edit-dropdown {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  border: solid 1px $te-lightblue;
+  background: $te-lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+
+  .te-dropdown-menu {
+    transform: translateY(120px) translateX(-17px);
+  }
+
+
+  &.is-open {
+    background: $te-white;
+    border: solid 1px $te-blue;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  a {
+    font-family: $te-font-bold;
+  }
+
+  svg {
+    width: 3px;
+    height: 13px;
+  }
+}

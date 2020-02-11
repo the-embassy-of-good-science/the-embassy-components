@@ -168,7 +168,24 @@
 {% block sidebar %}
     <!-- example of edit button -->
     <div class="sidebar-item formbutton-edit">
-        <a href="/wiki/Special:FormEdit/Theme/Theme:651b40c7-f0b8-4742-a816-e7b8438e3fcd" title="" target="_self">edit theme</a>
+        <a href="/wiki/Special:FormEdit/Theme/Theme:651b40c7-f0b8-4742-a816-e7b8438e3fcd" title="" target="_self">edit</a>
+        <div class="smw-edit-dropdown" data-dropdown-trigger>
+            <div class="menu-dots">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 13">
+                    <g fill="currentColor" fill-rule="evenodd">
+                        <circle cx="1.4619" cy="11.1083" r="1.4619"/>
+                        <circle cx="1.4619" cy="6.2851" r="1.4619"/>
+                        <circle cx="1.4619" cy="1.4619" r="1.4619"/>
+                    </g>
+                </svg>
+            </div>
+
+            <div class="te-dropdown-menu">
+                <a href="#"><span>Share</span></a>
+                <a href="#"><span>View source</span></a>
+                <a href="#"><span>History</span></a>
+            </div>
+        </div>
     </div>
 
     {#

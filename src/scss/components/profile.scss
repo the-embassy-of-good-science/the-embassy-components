@@ -44,3 +44,21 @@
     position: relative;
   }
 }
+
+.profile.is-open {
+  background-color: $te-white;
+  color: $te-blue;
+  border-color: $te-blue;
+
+  @include media-breakpoint-up(lg) {
+    border: solid 1px rgba($te-black, 0.24);
+  }
+
+  .is-homepage &,
+  .page-Main_Page & {
+    @include media-breakpoint-up(lg) {
+      color: $te-black;
+      border-color: $te-dusty-gray;
+    }
+  }
+}

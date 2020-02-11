@@ -25,6 +25,11 @@ import './other-infomation-block.js';
  */
 import './video-button';
 
+/**
+ * Dropdown menus
+ */
+import './te-dropdown-menu'
+
 // The Embassy content MediaWiki hyperlinks
 // const mediaWikiContentHyperlinks = document.querySelectorAll('.te-mw-link');
 

@@ -1,4 +1,5 @@
 .te-dropdown-menu {
+  display: none;
   position: absolute;
   background-color: $te-white;
   right: 0;
@@ -6,6 +7,8 @@
   padding: 15px 20px;
   outline: solid 1px $te-dusty-gray;
   min-width: 100px;
+  opacity: 0;
+  transition: all 100ms ease-in-out;
 
   font-size: rem-calc(16);
   box-sizing: content-box;
@@ -59,5 +62,14 @@
     &:last-child {
       margin-bottom: -10px;
     }
+  }
+}
+
+[data-dropdown-trigger].is-open {
+  outline: none;
+
+  .te-dropdown-menu {
+    display: block;
+    opacity: 1;
   }
 }

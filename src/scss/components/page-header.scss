@@ -61,6 +61,7 @@
     }
     @include media-breakpoint-up(lg) {
         display: flex;
+        align-items: flex-start;
         svg {
             transform: translateY(5px);
             margin-right: 20px;

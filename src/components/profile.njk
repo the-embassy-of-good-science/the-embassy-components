@@ -1,0 +1,28 @@
+{% extends '../_includes/layouts/base.njk' %}
+
+{% block content %}
+
+ <h3>Navigation - login dropdown</h3>
+
+
+    <h5>User is not logged in</h5>
+    <div class="code-sample">
+        {% set loggedin = false %}
+        {% include '../_includes/components/navigation.njk' %}
+    </div>
+    {% highlight "html" %}
+        {% include '../_includes/components/navigation.njk' %}
+    {% endhighlight %}
+
+
+    <h5>User in user</h5>
+    
+    <div class="code-sample">
+        {% set loggedin = true %}
+        {% include '../_includes/components/navigation.njk' %}
+    </div>
+    {% highlight "html" %}
+        {% include '../_includes/components/navigation.njk' %}
+    {% endhighlight %}
+
+{% endblock %}

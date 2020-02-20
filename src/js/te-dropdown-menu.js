@@ -5,13 +5,10 @@
  */
 var TeDropdownMenu;
 TeDropdownMenu = function(el) {
-  this.el = el;
-
-  this.open = function(e) {
-    if (e) {
-      e.preventDefault();
-    }
-    this.el.classList.toggle('is-open');
+  this.el = el;  
+  
+  this.open = function(e) {     
+    this.el.classList.toggle('is-open');   
   }.bind(this);
 
   this.resize = function() {

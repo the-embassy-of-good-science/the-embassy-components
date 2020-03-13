@@ -4,7 +4,7 @@
 // Code from CDN
 // <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
 
-// eslint-disable-next-line no-unused-var
+// eslint-ignore-next-line no-unused-var
 var macyInstance = Macy({
   // for all available options: https://github.com/bigbite/macy.js
   container: '#columns-container',

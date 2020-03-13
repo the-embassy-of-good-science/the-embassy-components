@@ -281,15 +281,26 @@
     </div>
     #}
 
-    <div class="sidebar-item">
+    <div class="sidebar-item" data-template="RelatedDiscussions">
         <h4 class="sidebar-title">Related discussions</h4>
+        <input type="checkbox" id="discussions" >
+
         {% set relatedDiscussionData = { title: 'How to request that collaborators add my supervisor\'s name to a manuscript?', url: '#', date: '2 weeks ago', tags: [{label: 'something', url: '#'}] } %}
         {% include '../_includes/components/related-discussion.njk' %}
 
         {% set relatedDiscussionData = { title: 'Is it unethical to edit grammatical errors in a letter of recommendation?', url: '#', date: '19 December 2018', tags: [{label: 'supervision', url: '#'}, {label: 'medical research', url: '#'},{label: 'supervision', url: '#'}, {label: 'medical research', url: '#'}, {label: 'supervision', url: '#'}, {label: 'medical research', url: '#'}] } %}
         {% include '../_includes/components/related-discussion.njk' %}
 
-        <div class="related-discusssion-seeMore">See more discussions</div>
+        {% set relatedDiscussionData = { title: 'Is it unethical to edit grammatical errors in a letter of recommendation?', url: '#', date: '19 December 2020', tags: [{label: 'supervision', url: '#'}, {label: 'medical research', url: '#'},{label: 'supervision', url: '#'}, {label: 'medical research', url: '#'}, {label: 'supervision', url: '#'}, {label: 'medical research', url: '#'}] } %}
+        {% include '../_includes/components/related-discussion.njk' %}
+
+        {% set relatedDiscussionData = { title: 'Is it unethical to edit grammatical errors in a letter of recommendation?', url: '#', date: '19 January 2018', tags: [{label: 'supervision', url: '#'}, {label: 'medical research', url: '#'},{label: 'supervision', url: '#'}, {label: 'medical research', url: '#'}, {label: 'supervision', url: '#'}, {label: 'medical research', url: '#'}] } %}
+        {% include '../_includes/components/related-discussion.njk' %}
+
+        {% set relatedDiscussionData = { title: 'Is it unethical to edit grammatical errors in a letter of recommendation?', url: '#', date: '19 December 2018', tags: [{label: 'supervision', url: '#'}, {label: 'medical research', url: '#'},{label: 'supervision', url: '#'}, {label: 'medical research', url: '#'}, {label: 'supervision', url: '#'}, {label: 'medical research', url: '#'}] } %}
+        {% include '../_includes/components/related-discussion.njk' %}
+
+        <label for="discussions" class="related-discussions-seeMore">See more discussions</label>
     </div>
 
     <div class="sidebar-item sidebar--discusssions" data-template="MoreDiscussions">
@@ -299,6 +310,8 @@
 
     <div class="sidebar-item" data-template="RelatedResources">
         <h4 class="sidebar-title">Related resources</h4>
+        <input type="checkbox" id="resources" >
+
         {% set relatedResourceData = { modifier: 'is-caseStudies', category: 'Case studies collection', title: 'The European Network of Research Integrity Offices (ENRIO) - Collection', info: '#', url: '#' } %}
         {% include '../_includes/components/related-resource.njk' %}
 
@@ -307,6 +320,14 @@
 
         {% set relatedResourceData = { modifier: 'is-experts', category: 'Experts', title: 'Maura Hiney - Health Research Board ', info: '#', url: '#' } %}
         {% include '../_includes/components/related-resource.njk' %}
+
+        {% set relatedResourceData = { modifier: 'is-caseStudies', category: 'Case studies collection', title: 'Responsible Conduct of Research (RCR) - Casebook', info: '#', url: '#' } %}
+        {% include '../_includes/components/related-resource.njk' %}
+
+        {% set relatedResourceData = { modifier: 'is-experts', category: 'Experts', title: 'Maura Hiney - Health Research Board ', info: '#', url: '#' } %}
+        {% include '../_includes/components/related-resource.njk' %}
+
+        <label for="resources" class="related-resources-seeMore">See more resources</label>
     </div>
 
     {# Related themes using other-info-block component #}

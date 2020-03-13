@@ -34,7 +34,7 @@
     }
   }
 }
-
+.card-grid-5,
 .card-grid-4 {
   @include media-breakpoint-up(xl) {
     display: grid;
@@ -72,6 +72,28 @@
     }
 
     grid-column: span 12;
+  }
+}
+
+.card-grid-5 {
+  @include media-breakpoint-up(xl) {
+    grid-template-columns: repeat(16, 1fr);
+  }
+
+  .card {
+    @include media-breakpoint-up(xl) {
+      grid-column: span 4;
+
+      &:nth-child(1) {
+        grid-column-start: 3;
+        grid-column-end: 7;
+      }
+
+      &:nth-child(4) {
+        grid-column-start: 5;
+        grid-column-end: 9;
+      }
+    }
   }
 }
 
@@ -176,6 +198,7 @@
 }
 
 // when card grid are inside `wrapper` element
+.wrapper .card-grid-5,
 .wrapper .card-grid-4,
 .wrapper .card-grid {
   margin-bottom: 50px;
@@ -183,6 +206,7 @@
 
 
 // special exeptions for themes and resources page
+.page-Resources .card-grid-5,
 .page-Resources .card-grid-4,
 .page-Themes .card-grid {
   position: relative;

@@ -4,21 +4,23 @@
 // Code from CDN
 // <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
 
-// eslint-ignore-next-line no-unused-var
-var macyInstance = Macy({
-  // for all available options: https://github.com/bigbite/macy.js
-  container: '#columns-container',
-  columns: 3,
-  margin: {
-    x: 30,
-    y: 30,
-  },
-  breakAt: {
-    600: {
-      columns: 1,
+if(document.querySelector('#columns-container')) {
+  // eslint-ignore-next-line no-unused-var
+  var macyInstance = Macy({
+    // for all available options: https://github.com/bigbite/macy.js
+    container: '#columns-container',
+    columns: 3,
+    margin: {
+      x: 30,
+      y: 30,
     },
-    960: {
-      columns: 2,
+    breakAt: {
+      600: {
+        columns: 1,
+      },
+      960: {
+        columns: 2,
+      },
     },
-  },
-});
+  });
+}

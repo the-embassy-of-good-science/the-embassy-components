@@ -1,7 +1,7 @@
 div#drilldown-header {
   display: flex;
   margin-bottom: 20px;
-  font-size: 0;
+  font-size: 0 !important;
 
   * {
     display: none;

@@ -18,10 +18,14 @@
     a {
       color: $te-blue;
       text-decoration: none;
+    }
+  }
 
-      &.new {
-        color: $te-blue;
-      }
+  a.new {
+    color: $te-black;
+
+    &:hover {
+      color: $te-blue;
     }
   }
 
@@ -88,8 +92,12 @@
       color: $te-blue;
       text-decoration: none;
     }
+  }
 
-    &.new {
+  a.new {
+    color: $te-black;
+
+    &:hover {
       color: $te-blue;
     }
   }

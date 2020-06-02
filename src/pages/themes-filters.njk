@@ -1,0 +1,65 @@
+---
+layout: layouts/main.njk
+bodyclasses: is-verylightblue
+---
+
+<!-- page header starts here -->
+<div class="pageheader row no-gutters">
+    <a class="pageheader-back" href="#">
+        <svg>
+            <use xlink:href="#icon-back"></use>
+        </svg>
+        <span>Back</span>
+    </a>
+    <div class="content text-center text-lg-left col col-lg-7 offset-lg-2">
+        <div class="pageheader-title">
+            <svg>
+                <use xlink:href="#icon-themes"></use>
+            </svg>
+            <h1>Good practices</h1>
+        </div>
+        <div class="pageheader-description">
+            <p>Find out more about the concepts and practices that inform our ideas about what Good Science is and how
+                to perform it.</p>
+        </div>
+    </div>
+    <div class="pageheader-form-button formbutton-add">
+        <form action="/wiki/Special:FormEdit/Theme" method="get" target="_self">
+            <button type="submit" value="Add Theme" title="">Add Theme</button>
+        </form>
+    </div>
+</div>
+
+{% include '../_includes/components/drilldown-filters.njk' %}
+
+<div class="masonry-columns" id="masonry-columns-container">
+    <div class="masonry-columns-section-has-parent-theme">
+        <div class="masonry-column-header">
+            <a href="/wiki/Theme:28a0859b-9e52-4af4-97f0-b0f8eeac1f1c"
+               title="Theme:28a0859b-9e52-4af4-97f0-b0f8eeac1f1c">Research misconduct</a>
+        </div>
+        <div class="masonry-columns-items">
+            <div class="masonry-columns-item">
+                <div class="masonry-column-link">
+                    <a href="/wiki/Theme:5f65272f-6e95-4768-8236-bc821a97f3d8"
+                       title="Theme:5f65272f-6e95-4768-8236-bc821a97f3d8">Fabrication</a></div>
+            </div>
+            <div class="masonry-columns-item">
+                <div class="masonry-column-link">
+                    <a href="/wiki/Theme:047c3bec-1747-499b-b6d5-684cbfb81edd"
+                       title="Theme:047c3bec-1747-499b-b6d5-684cbfb81edd">Falsification</a></div>
+            </div>
+            <div class="masonry-columns-item">
+                <div class="masonry-column-link">
+                    <a href="/wiki/Theme:02592695-e4f8-473c-a944-adfe0d8094c0"
+                       title="Theme:02592695-e4f8-473c-a944-adfe0d8094c0">Plagiarism</a></div>
+            </div>
+            <div class="masonry-columns-item">
+                <div class="masonry-column-link">
+                    <a href="/wiki/Theme:28a0859b-9e52-4af4-97f0-b0f8eeac1f1c"
+                       title="Theme:28a0859b-9e52-4af4-97f0-b0f8eeac1f1c">Research misconduct</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

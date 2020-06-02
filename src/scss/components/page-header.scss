@@ -1,76 +1,89 @@
 .pageheader {
-    @include media-breakpoint-up(lg) {
-        display: block;
-        margin-top: 0;
-    }
-
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 65px 0;
+  @include media-breakpoint-up(lg) {
+    display: block;
+    margin-top: 0;
+  }
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 65px 0;
 }
 
+// Back button
 .pageheader-back {
-    @include media-breakpoint-up(lg) {
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
+  @include media-breakpoint-up(lg) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  display: flex;
+  align-items: center;
+  font-family: $font-headings-bold;
+  font-size: rem-calc(16);
+  color: $te-black;
 
-    display: flex;
-    align-items: center;
-    font-family: $font-headings-bold;
-    font-size: rem-calc(16);
-    color: $te-black;
+  img,
+  svg {
+    width: 7px;
+    height: 47px;
+    margin-right: 10px;
+  }
 
-    svg {
-        width: 7px;
-        height: 47px;
-        margin-right: 10px;
-    }
+  span {
+    transform: translateY(2px);
+  }
 
-    span {
-        transform: translateY(2px);
-    }
+  &:hover {
+    text-decoration: none;
+    color: $te-blue;
+  }
+}
 
-    &:hover {
-        text-decoration: none;
-        color: $te-blue;
-    }
+// Special styles for form pages
+.pageheader-back.is-forms {
+  margin: 65px 0 0;
+
+  @include media-breakpoint-up(lg) {
+    position: absolute;
+    margin: 0;
+    transform: translateX(-150px);
+  }
+  @include media-breakpoint-up(xl) {
+    transform: translateX(-185px);
+  }
 }
 
 .pageheader-description {
-    @include media-breakpoint-up(lg) {
-        max-width: 100%;
-        font-size: rem-calc(22);
-    }
+  @include media-breakpoint-up(lg) {
+    max-width: 100%;
+    font-size: rem-calc(22);
+  }
+  max-width: 70%;
+  margin: 0 auto;
 
-    max-width: 70%;
-    margin: 0 auto;
-
-    p:last-child {
-        margin-bottom: 0;
-    }
+  p:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .pageheader-title {
+  @include media-breakpoint-up(lg) {
+    display: flex;
+    align-items: flex-start;
     svg {
-        width: 58px;
-        height: 47px;
+      margin-right: 20px;
+      transform: translateY(5px);
     }
-    @include media-breakpoint-up(lg) {
-        display: flex;
-        align-items: flex-start;
-        svg {
-            transform: translateY(5px);
-            margin-right: 20px;
-        }
-    }
+  }
+  svg {
+    width: 58px;
+    height: 47px;
+  }
 }
 
 .pageheader-form-button {
-    position: absolute;
-    top: 0;
-    right: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
 }

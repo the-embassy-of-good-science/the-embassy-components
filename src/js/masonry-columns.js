@@ -4,11 +4,11 @@
 // Code from CDN
 // <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
 
-if(document.querySelector('#columns-container')) {
+if(document.querySelector('#masonry-columns-container')) {
   // eslint-ignore-next-line no-unused-var
   var macyInstance = Macy({
     // for all available options: https://github.com/bigbite/macy.js
-    container: '#columns-container',
+    container: '#masonry-columns-container',
     columns: 3,
     margin: {
       x: 30,

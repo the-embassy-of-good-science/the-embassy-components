@@ -1,0 +1,77 @@
+{% extends '../_includes/layouts/base.njk' %}
+
+{% block content %}
+    <h3>Masonry Columns</h3>
+
+    <p>Columns use <a href="https://github.com/bigbite/macy.js" target="_blank" rel="noreferrer">Macy</a> script. You
+        always need to add the CDN version when injecting the javascript file <i>masonry-columns.js</i></p>
+
+    <div class="code-sample" style="background-color: #DFF0F3;">
+        <div class="masonry-columns" id="masonry-columns-container">
+            <div class="masonry-columns-section-has-parent-theme">
+                <div class="masonry-column-header">
+                    <a href="/wiki/Theme:28a0859b-9e52-4af4-97f0-b0f8eeac1f1c"
+                       title="Theme:28a0859b-9e52-4af4-97f0-b0f8eeac1f1c">Research misconduct</a>
+                </div>
+                <div class="masonry-columns-items">
+                    <div class="masonry-columns-item">
+                        <div class="masonry-column-link">
+                            <a href="/wiki/Theme:5f65272f-6e95-4768-8236-bc821a97f3d8"
+                               title="Theme:5f65272f-6e95-4768-8236-bc821a97f3d8">Fabrication</a></div>
+                    </div>
+                    <div class="masonry-columns-item">
+                        <div class="masonry-column-link">
+                            <a href="/wiki/Theme:047c3bec-1747-499b-b6d5-684cbfb81edd"
+                               title="Theme:047c3bec-1747-499b-b6d5-684cbfb81edd">Falsification</a></div>
+                    </div>
+                    <div class="masonry-columns-item">
+                        <div class="masonry-column-link">
+                            <a href="/wiki/Theme:02592695-e4f8-473c-a944-adfe0d8094c0"
+                               title="Theme:02592695-e4f8-473c-a944-adfe0d8094c0">Plagiarism</a></div>
+                    </div>
+                    <div class="masonry-columns-item">
+                        <div class="masonry-column-link">
+                            <a href="/wiki/Theme:28a0859b-9e52-4af4-97f0-b0f8eeac1f1c"
+                               title="Theme:28a0859b-9e52-4af4-97f0-b0f8eeac1f1c">Research misconduct</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% highlight "html" %}
+        <div class="masonry-columns" id="masonry-columns-container">
+            <div class="masonry-columns-section-has-parent-theme">
+                <div class="masonry-column-header">
+                    <a href="/wiki/Theme:28a0859b-9e52-4af4-97f0-b0f8eeac1f1c"
+                       title="Theme:28a0859b-9e52-4af4-97f0-b0f8eeac1f1c">Research misconduct</a>
+                </div>
+                <div class="masonry-columns-items">
+                    <div class="masonry-columns-item">
+                        <div class="masonry-column-link">
+                            <a href="/wiki/Theme:5f65272f-6e95-4768-8236-bc821a97f3d8"
+                               title="Theme:5f65272f-6e95-4768-8236-bc821a97f3d8">Fabrication</a></div>
+                    </div>
+                    <div class="masonry-columns-item">
+                        <div class="masonry-column-link">
+                            <a href="/wiki/Theme:047c3bec-1747-499b-b6d5-684cbfb81edd"
+                               title="Theme:047c3bec-1747-499b-b6d5-684cbfb81edd">Falsification</a></div>
+                    </div>
+                    <div class="masonry-columns-item">
+                        <div class="masonry-column-link">
+                            <a href="/wiki/Theme:02592695-e4f8-473c-a944-adfe0d8094c0"
+                               title="Theme:02592695-e4f8-473c-a944-adfe0d8094c0">Plagiarism</a></div>
+                    </div>
+                    <div class="masonry-columns-item">
+                        <div class="masonry-column-link">
+                            <a href="/wiki/Theme:28a0859b-9e52-4af4-97f0-b0f8eeac1f1c"
+                               title="Theme:28a0859b-9e52-4af4-97f0-b0f8eeac1f1c">Research misconduct</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endhighlight %}
+
+{% endblock %}

@@ -1,4 +1,4 @@
-#drilldown-header {
+div#drilldown-header {
   display: flex;
   margin-bottom: 20px;
   font-size: 0;
@@ -46,7 +46,7 @@
   }
 }
 
-#drilldown-header + p {
+div#drilldown-header + p {
   margin-bottom: 0;
   padding: 20px 0 30px;
 }

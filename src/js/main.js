@@ -35,6 +35,12 @@ import './te-dropdown-menu'
  */
 import './masonry-columns'
 
+/**
+ * Drilldown cleanup
+ */
+import './drilldown-cleanup'
+
+
 // The Embassy content MediaWiki hyperlinks
 // const mediaWikiContentHyperlinks = document.querySelectorAll('.te-mw-link');
 

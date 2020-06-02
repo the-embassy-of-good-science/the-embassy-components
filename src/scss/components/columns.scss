@@ -2,56 +2,6 @@
   margin: 50px 0;
 }
 
-.columns-item {
-  background: $te-white;
-
-  a {
-    color: $te-black;
-  }
-}
-
-.column-link {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 10px 15px;
-  padding: 10px 0;
-  color: $te-black;
-  border-bottom: solid 1px $te-verylightblue;
-
-  &:hover {
-    color: $te-blue;
-    text-decoration: none;
-    a {
-      color: $te-blue;
-      text-decoration: none;
-    }
-  }
-
-  &:first-child {
-    color: $te-black;
-    font-family: $font-headings-bold;
-    padding: 20px 15px 15px;
-    margin: 0;
-
-    &:hover {
-      color: $te-blue;
-      text-decoration: none;
-      a {
-        color: $te-blue;
-      }
-    }
-  }
-
-  &:last-child {
-    border-bottom: none;
-  }
-
-  &:hover {
-    text-decoration: none;
-  }
-}
-
 // component was
 .masonry-column-link {
   display: flex;
@@ -68,6 +18,10 @@
     a {
       color: $te-blue;
       text-decoration: none;
+
+      &.new {
+        color: $te-blue;
+      }
     }
   }
 
@@ -133,6 +87,10 @@
     &:hover {
       color: $te-blue;
       text-decoration: none;
+    }
+
+    &.new {
+      color: $te-blue;
     }
   }
 

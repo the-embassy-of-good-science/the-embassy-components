@@ -50,6 +50,10 @@ var FormDrilldown = function(element) {
   var submit = el.querySelector('input[type="submit"]')
   var select = el.querySelector('select')
   var label = el.querySelector('select ~ input[type="text"]')
+  var automcompleteTrigger = el.querySelector('button')
+
+  // Make sure the button automcomplete trigger has correct classenames 
+  automcompleteTrigger.classList.remove('ui-button ui-widget ui-state-default ui-button-icon-only')
 
   // @todo to disable in server
   // select.removeAttribute('style')

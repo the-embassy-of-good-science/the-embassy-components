@@ -54,7 +54,8 @@ var FormDrilldown = function(element) {
 
   // Make sure the button automcomplete trigger has correct classenames
   automcompleteTrigger.classList.remove('ui-button', 'ui-widget', 'ui-state-default', 'ui-button-icon-only')
-
+  automcompleteTrigger.innerHTML = ''
+  
   // @todo to disable in server
   // select.removeAttribute('style')
 

@@ -50,3 +50,70 @@ div#drilldown-header + p {
   margin-bottom: 0;
   padding: 20px 0 30px;
 }
+
+div.drilldown-filters {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.drilldown-filter {
+  margin-right: 15px;
+  width: 100%;
+
+  .drilldown-filter-values {
+
+    form {
+      width: 100%;
+      position: relative;
+
+      // submit button
+      input[type="submit"] {
+        display: none;
+      }
+    }
+
+    form .ui-widget {
+      width: 100%;
+      float: none;
+
+      button {
+        border: 0;
+        background-color: transparent;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 6'%3E%3Cpath fill='%23567C83' fill-rule='nonzero' d='M9 1.6364L4.5 6 2.8125 4.3636 0 1.6364 1.6875 0 4.5 2.727 7.3125 0 9 1.6364z'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 9px 6px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+      }
+    }
+
+    form input.ui-widget-content {
+      width: 100%;
+      float: none;
+      background-color: $te-verylightblue;
+      border: solid 1px $te-lightblue;
+      color: $te-blue;
+      font-size: rem-calc(18);
+      line-height: unitless-calc(30, 18);
+      border-radius: 0;
+
+      &:focus {
+        outline: none;
+        border-radius: 0;
+      }
+    }
+  }
+}
+
+// Styles from UI dropdown
+.ui-menu .ui-menu-item {
+  background: none;
+
+  .ui-state-focus {
+    border: 0;
+    background: none;
+  }
+}

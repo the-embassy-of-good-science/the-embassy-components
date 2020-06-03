@@ -54,26 +54,26 @@ var FormDrilldown = function(element) {
   // @todo to disable in server
   // select.removeAttribute('style')
 
-  console.log(el);
-  console.log(select);
-  console.log(submit);
-  console.log(label);
-  console.log('--')
+  // console.log(el);
+  // console.log(select);
+  // console.log(submit);
+  // console.log(label);
+  // console.log('--')
 
   // detect change on select element
-  label.addEventListener('input', function() {
-    console.log('trigger input in label', label)
-    console.log(label.value)
-    // trigger submit button
-    // submit.click()
-  })
+  // label.addEventListener('input', function() {
+  //   console.log('trigger input in label', label)
+  //   console.log(label.value)
+  //   // trigger submit button
+  //   // submit.click()
+  // })
 
-  label.addEventListener('change', function() {
-    console.log('trigger change in label', label)
-    console.log(label.value)
-    // trigger submit button
-    submit.click()
-  })
+  // label.addEventListener('change', function() {
+  //   console.log('trigger change in label', label)
+  //   console.log(label.value)
+  //   // trigger submit button
+  //   submit.click()
+  // })
 }
 
 /**
@@ -106,6 +106,9 @@ var cleanupSelectedFilters = function() {
       }
     }
   }
+
+  drilldownHead.classList.add('is-visible')
+  drilldownFilters.classList.add('is-visible')
 }
 
 // We use a setTimeout to wait for the DOM to be loaded

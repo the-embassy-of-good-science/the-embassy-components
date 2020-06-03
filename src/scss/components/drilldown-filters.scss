@@ -130,6 +130,7 @@ div.drilldown-filter {
       &:focus {
         border-radius: 0;
         outline: none;
+        border: solid 1px $te-blue;
       }
     }
   }

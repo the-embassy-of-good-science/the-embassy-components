@@ -57,52 +57,70 @@ div.drilldown-filters {
 }
 
 div.drilldown-filter {
-  margin-right: 15px;
   width: 100%;
+  margin-right: 15px;
 
   .drilldown-filter-values {
-
     form {
-      width: 100%;
+      display: flex;
+      align-items: center;
       position: relative;
+      width: 100%;
 
       // submit button
-      input[type="submit"] {
-        display: none;
+      input[type='submit'] {
+        margin-top: 8px !important;
+        width: 44px;
+        height: 44px;
+        font-size: 0;
+        margin-left: 20px;
+        border: 0;
+        background-color: $te-lightblue;
+        background-image: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 19 18\'%3E%3Cpath fill=\'%23000\' fill-rule=\'evenodd\' d=\'M15.3912 16.1264l-3.328-4.1323h.0002l-1.1031-1.37c-.9708 1.0635-2.365 1.7225-3.9045 1.7225a5.445 5.445 0 01-.577-.031c-1.4071-.1519-2.671-.8426-3.5588-1.945-.8876-1.1024-1.293-2.4844-1.1411-3.8916.2908-2.6975 2.552-4.7315 5.2597-4.7315.191 0 .3852.0107.5767.0315 2.905.313 5.0136 2.9314 4.7002 5.8364-.047.4364-.1507.853-.2945 1.249l1.4822 1.0062a7.0388 7.0388 0 00.55-2.0678c.417-3.8693-2.3813-7.3441-6.2503-7.7614a7.1198 7.1198 0 00-.7643-.0415C3.4858-.0001.4309 2.679.0413 6.2916c-.4174 3.869 2.381 7.3443 6.2502 7.7616.2568.0275.512.041.7643.041 1.342 0 2.612-.3835 3.6948-1.0543l3.839 4.7668.0002-.0004v.0004h4.2999v-1.6803h-3.4985z\'/%3E%3C/svg%3E');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 19px 18px;
+        //display: none;
+
+        &:focus {
+          outline: none;
+        }
       }
     }
 
     form .ui-widget {
-      width: 100%;
       float: none;
+      width: calc(100% - 60px);
+      margin-right: 10px;
 
       button {
+        position: absolute;
+        top: 0;
+        right: 60px;
+        height: 100%;
         border: 0;
         background-color: transparent;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 6'%3E%3Cpath fill='%23567C83' fill-rule='nonzero' d='M9 1.6364L4.5 6 2.8125 4.3636 0 1.6364 1.6875 0 4.5 2.727 7.3125 0 9 1.6364z'/%3E%3C/svg%3E");
+        background-image: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 9 6\'%3E%3Cpath fill=\'%23567C83\' fill-rule=\'nonzero\' d=\'M9 1.6364L4.5 6 2.8125 4.3636 0 1.6364 1.6875 0 4.5 2.727 7.3125 0 9 1.6364z\'/%3E%3C/svg%3E');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: 9px 6px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        height: 100%;
       }
     }
 
     form input.ui-widget-content {
-      width: 100%;
       float: none;
-      background-color: $te-verylightblue;
-      border: solid 1px $te-lightblue;
-      color: $te-blue;
+      width: 100%;
+      font-family: $font-family-base;
       font-size: rem-calc(18);
       line-height: unitless-calc(30, 18);
+      color: $te-blue;
+      border: solid 1px $te-lightblue;
       border-radius: 0;
+      background: $te-verylightblue;
 
       &:focus {
-        outline: none;
         border-radius: 0;
+        outline: none;
       }
     }
   }

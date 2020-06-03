@@ -30,7 +30,10 @@ var drilldownHead = document.querySelector('#drilldown-header')
 
 // DOM drilldown form filters
 var drilldownFilters = document.querySelector('div.drilldown-filters')
-var drilldownForms = drilldownFilters.querySelectorAll('form')
+if(drilldownFilters) {
+  var drilldownForms = drilldownFilters.querySelectorAll('form')
+}
+
 
 /**
  * This method created some simple funcionality on current drilldown forms
@@ -91,6 +94,8 @@ var cleanupSelectedFilters = function() {
 
 // We use a setTimeout to wait for the DOM to be loaded
 setTimeout(function(){
+
+  if(!drilldownFilters) return;
 
   // On load we do a clean up on selected filters
   // The purpose is to remove inconsistences from SMW / Drilldown Filters

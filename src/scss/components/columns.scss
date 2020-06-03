@@ -41,7 +41,7 @@
 
 .masonry-columns-section-has-parent-theme {
   background-color: $white;
-  padding-bottom: 10px;
+  padding-bottom: 0;
 
   a {
     color: $te-black;
@@ -55,6 +55,7 @@
 
   &:last-child {
     border-bottom: none;
+    padding-bottom: 10px;
   }
 }
 

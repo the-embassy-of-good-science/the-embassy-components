@@ -43,14 +43,23 @@ div#drilldown-header {
     }
   }
 
+  @include media-breakpoint-up(md) {
+    margin-bottom: 30px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 40px;
+  }
+
   a {
     display: inline-flex;
   }
 }
 
 div#drilldown-header + p {
-  margin-bottom: 0;
-  padding: 20px 0 30px;
+  display: none;
+  //margin-bottom: 0;
+  //padding: 20px 0 30px;
 }
 
 div.drilldown-filters {
@@ -60,14 +69,32 @@ div.drilldown-filters {
 }
 
 div.drilldown-filter {
-  width: 100%;
-  max-width: calc(50% - 15px);
-  margin-right: 15px;
+  @include media-breakpoint-up(md) {
+    max-width: calc(50% - 15px);
+    margin-right: 15px;
 
-  &:nth-child(even) {
-    max-width: 50%;
-    margin-right: 0;
+    &:nth-child(even) {
+      max-width: 50%;
+      margin-right: 0;
+    }
   }
+  @include media-breakpoint-up(lg) {
+    max-width: calc(30%);
+
+    &:nth-child(even) {
+      max-width: 30%;
+      margin-right: 15px;
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    max-width: calc(25% - 15px);
+
+    &:nth-child(even) {
+      max-width: calc(25% - 15px);
+      margin-right: 15px;
+    }
+  }
+  width: 100%;
 
   .drilldown-filter-values {
     form {
@@ -89,7 +116,6 @@ div.drilldown-filter {
         background-repeat: no-repeat;
         background-position: center center;
         background-size: 19px 18px;
-        //display: none;
 
         &:focus {
           outline: none;
@@ -128,9 +154,9 @@ div.drilldown-filter {
       background: $te-verylightblue;
 
       &:focus {
+        border: solid 1px $te-blue;
         border-radius: 0;
         outline: none;
-        border: solid 1px $te-blue;
       }
     }
   }
@@ -152,14 +178,26 @@ div.drilldown-filters {
   }
 }
 
-  // Styles from UI dropdown
+// Styles for UI autocomplete
+div.drilldown-filters .drilldown-filter-values form .ui-autocomplete-input {
+  &:focus {
+    //background-color: $te-white;
+  }
+
+  // Hide the arrow link dropdownbutton
+  &:focus ~ button {
+    transform: scaleY(-1);
+  }
+}
+
+// Styles from UI dropdown
 .ui-menu .ui-menu-item {
   font-family: $font-family-base;
   font-size: rem-calc(18);
   font-style: normal;
   line-height: unitless-calc(30, 18);
-  color: $te-blue;
-  background: none;
+  color: $te-black;
+  background: $te-verylightblue;
 
   a {
     font-family: $font-family-base;
@@ -167,14 +205,19 @@ div.drilldown-filters {
     line-height: unitless-calc(30, 18);
   }
 
+  strong {
+    font-family: $font-headings-bold;
+  }
+
   .ui-state-focus {
     color: $te-black;
     border: 0;
-    background: none;
+    background: $te-lightblue;
   }
 }
 
 ul.ui-menu {
   transform: translateY(-1px);
   border: 1px solid $te-lightblue;
+  background: $te-verylightblue;
 }

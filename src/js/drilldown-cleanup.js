@@ -40,7 +40,7 @@ if(drilldownFilters) {
 var seeMoreFilters = function() {
   var element = document.createElement('div')
   element.className = 'drilldown-seeMore'
-  element.innerHTML = '<label for="drilldown-seeMore">See more</label>'
+  element.innerHTML = '<label for="drilldown-seeMore">Filters</label>'
 
   var checkbox = document.createElement('input')
   checkbox.type = "checkbox"

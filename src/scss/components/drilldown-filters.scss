@@ -212,8 +212,8 @@ div.drilldown-filters .drilldown-filter-values form .ui-autocomplete-input {
   a {
     color: $te-black;
     font-family: $font-family-base;
-    font-size: rem-calc(18);
-    line-height: unitless-calc(30, 18);
+    font-size: rem-calc(18) !important;
+    line-height: unitless-calc(30, 18) !important;
     padding: 7px 4px !important;
 
     &:empty {

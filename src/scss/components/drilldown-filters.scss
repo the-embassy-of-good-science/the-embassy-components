@@ -161,11 +161,13 @@ div.drilldown-filters {
   color: $te-blue;
   background: none;
 
-  .ui-state-focus {
+  a {
     font-family: $font-family-base;
     font-size: rem-calc(18);
-    font-style: normal;
     line-height: unitless-calc(30, 18);
+  }
+
+  .ui-state-focus {
     color: $te-black;
     border: 0;
     background: none;

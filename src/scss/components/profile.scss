@@ -70,3 +70,10 @@
   height: 100%;
   transform: translateY(2px);
 }
+
+// profile name on dropdown menu that will probably become a link to ORCID account
+.te-dropdown-menu span.profile-name {
+  color: $te-black;
+  margin-bottom: 7px;
+  display: block;
+}

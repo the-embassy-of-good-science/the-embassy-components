@@ -66,6 +66,14 @@ div.drilldown-filters {
   display: flex;
   flex-wrap: wrap;
   opacity: 0;
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 30px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 40px;
+  }
 }
 
 div.drilldown-filter {

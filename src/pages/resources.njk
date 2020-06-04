@@ -1,0 +1,43 @@
+---
+layout: layouts/main.njk
+bodyclasses: is-verylightblue
+---
+
+<div class="pageheader row no-gutters">
+    <a class="pageheader-back" href="#">
+        <svg>
+            <use xlink:href="#icon-back"></use>
+        </svg>
+        <span>Back</span>
+    </a>
+    <div class="content text-center text-lg-left col col-lg-7 offset-lg-2">
+        <div class="pageheader-title">
+            <svg>
+                <use xlink:href="#icon-resources"></use>
+            </svg>
+            <h1>Resources</h1>
+        </div>
+        <div class="pageheader-description">
+            <p>Materials that help you in your every-day research practice to do Good Science.</p>
+        </div>
+    </div>
+    <div class="pageheader-form-button formbutton-add">
+        <form action="/wiki/Special:FormEdit/Theme" method="get" target="_self">
+            <button type="submit" value="Add Theme" title="">Add Resource</button>
+        </form>
+    </div>
+</div>
+
+{% include '../_includes/components/drilldown-filters.njk' %}
+
+<div class="resources-list">
+
+    {% set resources = [
+        { icon: 'icon-resources-guidelines', type: 'guidelines', title: 'Research ethics training of trainers: Developing capacity of Bolivian health science and civil society leaders', authors: 'Aalborg A, Sullivan S, Cortes J, Basagoitia A, Illanes D, Green M', published_year: '2016' },
+        { icon: 'icon-resources-training-materials', type: 'tool', title: 'Integrating Ethics Into a Research Experience for Undergraduates', authors: 'Acharya M,  Davis M,  Weil V', published_year: '1995' }
+    ] %}
+    {% for resource in resources %}
+        {% include '../_includes/components/resource-block.njk'  %}
+    {% endfor %}
+
+</div>

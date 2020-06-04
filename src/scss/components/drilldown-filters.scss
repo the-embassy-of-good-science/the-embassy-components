@@ -82,6 +82,11 @@ div.drilldown-filter {
       max-width: 50%;
       margin-right: 0;
     }
+
+    // added to hide filters
+    &:nth-child(n+4) {
+      display: none;
+    }
   }
   @include media-breakpoint-up(lg) {
     max-width: calc(30%);
@@ -164,13 +169,6 @@ div.drilldown-filter {
         border-radius: 0;
         outline: none;
       }
-    }
-  }
-
-  // added to hide filters
-  &:nth-child(2n + 1) {
-    @include media-breakpoint-up(md) {
-      display: none;
     }
   }
 }

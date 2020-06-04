@@ -68,11 +68,11 @@ div.drilldown-filters {
   opacity: 0;
 
   @include media-breakpoint-up(md) {
-    margin-bottom: 30px;
+    margin-bottom: 30px !important;
   }
 
   @include media-breakpoint-up(lg) {
-    margin-bottom: 40px;
+    margin-bottom: 40px !important;
   }
 }
 

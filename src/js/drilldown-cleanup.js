@@ -34,6 +34,22 @@ if(drilldownFilters) {
   var drilldownForms = drilldownFilters.querySelectorAll('form')
 }
 
+/**
+ * Generate see more button
+ */
+var seeMoreFilters = function() {
+  var element = document.createElement('div')
+  element.className = 'drilldown-seeMore'
+  element.innerHTML = '<label for="drilldown-seeMore">See more</label>'
+
+  var checkbox = document.createElement('input')
+  checkbox.type = "checkbox"
+  checkbox.id = "drilldown-seeMore"
+  checkbox.className = "drilldown-seeMore-checkbox"
+
+  drilldownFilters.insertBefore(checkbox, drilldownFilters.querySelectorAll('.drilldown-filter')[0])
+  drilldownFilters.appendChild(element)
+}
 
 /**
  * This method created some simple funcionality on current drilldown forms
@@ -87,6 +103,9 @@ var FormDrilldown = function(element) {
  */
 var cleanupSelectedFilters = function() {
   var selectedTags =  drilldownHead.querySelectorAll('.drilldown-header-value')
+
+  // Create see more filters
+  seeMoreFilters()
 
   // We loop over the selected filters to clean these
   for (i = 0; i < selectedTags.length; i++) {

@@ -3,6 +3,15 @@
   margin: 40px 0;
 }
 
+.resources-list-count {
+  display: flex;
+  width: 100%;
+  text-align: right;
+  justify-content: flex-end;
+  margin-bottom: 40px;
+  font-size: rem-calc(18);
+}
+
 // styles for resource block
 .resource-block {
   @include media-breakpoint-up(md) {
@@ -59,6 +68,14 @@
   font-family: $font-headings-bold;
   font-size: rem-calc(20);
   line-height: unitless-calc(26, 20);
+
+  a {
+    color: $te-black;
+
+    &:hover {
+      color: $te-black;
+    }
+  }
 }
 
 .resource-block-authors {

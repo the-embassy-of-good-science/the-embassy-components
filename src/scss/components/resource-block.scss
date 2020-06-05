@@ -3,6 +3,15 @@
   margin: 40px 0;
 }
 
+.resources-list-count {
+  display: flex;
+  width: 100%;
+  text-align: right;
+  justify-content: flex-end;
+  margin-bottom: 40px;
+  font-size: rem-calc(18);
+}
+
 // styles for resource block
 .resource-block {
   @include media-breakpoint-up(md) {

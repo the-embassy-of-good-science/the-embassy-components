@@ -4,6 +4,7 @@
   padding: 0;
 }
 
+// Special pages background colours
 body.page-Main_Page,
 body.page-Special_Search {
   background-color: $te-verylightblue;
@@ -160,6 +161,15 @@ body.page-Special_Search {
 
 // Form in search page
 form#search {
+  @include media-breakpoint-up(lg) {
+    margin-top: 20px;
+  }
+  margin-top: 60px;
+
+  &:last-child {
+    margin-bottom: 40px;
+  }
+
   &::after {
     clear: both;
   }
@@ -221,7 +231,10 @@ form#search {
     }
 
     .results-info {
-      align-self: flex-end;
+      @include media-breakpoint-up(lg) {
+        align-self: flex-end;
+      }
+      align-self: center;
       margin-top: 30px;
     }
   }
@@ -258,8 +271,6 @@ form#search {
           text-transform: none;
           color: $te-black;
         }
-
-        .searchalttitle {}
       }
       .searchresult {
         margin: 15px 0 0;
@@ -268,9 +279,9 @@ form#search {
         font-family: $font-headings-bold;
       }
       .mw-search-result-data {
+        margin-top: 20px;
         font-size: rem-calc(16);
         color: $te-blue;
-        margin-top: 20px;
       }
 
       table.searchResultImage {
@@ -279,8 +290,8 @@ form#search {
         a {
           font-family: $font-headings-bold;
           font-size: rem-calc(24);
-          color: $te-black;
           text-transform: none;
+          color: $te-black;
         }
 
         td {
@@ -293,6 +304,26 @@ form#search {
             padding-left: 60px;
           }
         }
+      }
+    }
+  }
+
+  .mw-search-pager-bottom {
+    @include media-breakpoint-up(lg) {
+      padding: 0 50px;
+    }
+    @include media-breakpoint-up(xl) {
+      padding: 0 160px;
+    }
+
+    padding: 0 30px;
+    font-size: rem-calc(18);
+
+    a {
+      color: $te-blue;
+
+      &:hover {
+        color: $te-blue
       }
     }
   }

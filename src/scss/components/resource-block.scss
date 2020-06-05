@@ -68,6 +68,14 @@
   font-family: $font-headings-bold;
   font-size: rem-calc(20);
   line-height: unitless-calc(26, 20);
+
+  a {
+    color: $te-black;
+
+    &:hover {
+      color: $te-black;
+    }
+  }
 }
 
 .resource-block-authors {

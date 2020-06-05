@@ -17,17 +17,18 @@ var gridItems = document.querySelectorAll('.grid-block');
 if(gridItems) {
   // Set collapse of grid items
   for (var i = 0; i < gridItems.length; i++) {
-    new gridBlock(gridItems[i]);
+    new gridBlock(gridItems[i], msnry);
   }
 }
 
 // Created grid elements block
 // Used by other-information-block and related-discussion components
-function gridBlock(el) {
+function gridBlock(el, msnry) {
   this.el = el;
   this.trigger = this.el.querySelector('.grid-item-last');
   this.items = this.el.querySelectorAll('.grid-item');
   this.length = this.el.querySelectorAll('.grid-item').length;
+  this.msnry = msnry
 
   var open = function(e) {
     e.preventDefault()
@@ -36,6 +37,10 @@ function gridBlock(el) {
     for (var i = 3; i < this.items.length; i++) {
       this.items[i].classList.remove('is-hidden');
     }
+
+    // Lays out all item elements.
+    // See https://masonry.desandro.com/methods.html#layout
+    this.msnry.layout()
 
     setTimeout(cleanup, 100)
   }.bind(this);
@@ -55,5 +60,3 @@ function gridBlock(el) {
     this.trigger.addEventListener('click', open);
   }
 }
-
-//

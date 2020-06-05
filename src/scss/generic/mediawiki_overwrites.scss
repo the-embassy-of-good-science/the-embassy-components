@@ -12,10 +12,9 @@ body.page-Special_Search {
 // Styles on content generic area
 .content.mw-body .bodyContent,
 .content {
-
   p {
     &:empty,
-    &:blank{
+    &:blank {
       margin-bottom: 0;
     }
   }
@@ -51,19 +50,19 @@ body.page-Special_Search {
 
   .label-tag {
     display: inline-flex;
-    margin-bottom: 5px;
     margin-right: 7px;
+    margin-bottom: 5px;
     font-size: rem-calc(16);
 
     a {
-      color: $te-black;
       padding: 5px 10px;
+      color: $te-black;
       background-color: $te-verylightblue;
 
       &:hover {
-        background-color: $te-sunfloweryellow;
         text-decoration: none;
         color: $te-black;
+        background-color: $te-sunfloweryellow;
       }
     }
   }
@@ -76,33 +75,31 @@ body.page-Special_Search {
 }
 
 .generic-content-break {
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 90px;
+    padding: 55px 0 35px 0;
+  }
   position: relative;
   order: 3;
-  padding: 30px 0 0 0;
   margin: 30px 0 90px;
+  padding: 30px 0 0 0;
 
   > *:last-child {
     margin-bottom: 0;
   }
 
-  @include media-breakpoint-up(lg) {
-    padding: 55px 0 35px 0;
-    margin-bottom: 90px;
-  }
-
   &:before {
+    @include media-breakpoint-up(lg) {
+      transform: skewY(-2.8deg) translateX(-40vw) translateY(-65px);
+    }
     position: absolute;
     z-index: -1;
-    transform-origin: top left;
     width: 150vw;
     height: calc(100% + 60px);
     content: ' ';
-    transform: skewY(-2.8deg) translateX(-40vw) translateY(-35px) ;
+    transform: skewY(-2.8deg) translateX(-40vw) translateY(-35px);
+    transform-origin: top left;
     background-color: $te-verylightblue;
-
-    @include media-breakpoint-up(lg) {
-      transform: skewY(-2.8deg) translateX(-40vw) translateY(-65px) ;
-    }
   }
 }
 
@@ -110,16 +107,17 @@ body.page-Special_Search {
 .suggestions {
   .suggestions-special {
     padding: 0 25px 10px;
-    background-color: $te-white;
     border-top: none;
+    background-color: $te-white;
 
-    .special-label, .special-query {
+    .special-label,
+    .special-query {
       color: $te-black;
     }
 
     .special-label {
       padding-top: 10px;
-      border-top: solid 1px rgba($te-black, 0.24);
+      border-top: solid 1px rgba($te-black, .24);
     }
 
     .special-query {
@@ -127,7 +125,8 @@ body.page-Special_Search {
     }
 
     &.suggestions-result-current {
-      .special-label, .special-query {
+      .special-label,
+      .special-query {
         color: $te-blue;
       }
     }
@@ -147,8 +146,8 @@ body.page-Special_Search {
     }
 
     .suggestions-result-current {
-      background-color: transparent;
       color: $te-blue;
+      background-color: transparent;
     }
 
     &:last-child {
@@ -157,4 +156,150 @@ body.page-Special_Search {
       }
     }
   }
+}
+
+// Form in search page
+form#search {
+  &::after {
+    clear: both;
+  }
+
+  .mw-search-profile-tabs {
+    display: none;
+  }
+
+  #mw-search-top-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    // target the div element that wraps the input
+    div:first-child {
+      float: none;
+
+      .oo-ui-fieldLayout-header {
+        display: none !important;
+      }
+
+      input[type='search'] {
+        padding: 20px;
+        color: $te-blue;
+        border: solid 1px $te-lightblue;
+        border-radius: 0;
+        background: none;
+
+        & ~ .oo-ui-icon-search {
+          display: none;
+        }
+
+        & ~ .oo-ui-indicator-clear {
+          max-height: 100%;
+        }
+
+        &:focus {
+          border-color: $te-blue;
+          box-shadow: none;
+        }
+      }
+    }
+
+    button[type='submit'] {
+      width: 60px;
+      height: 60px;
+      max-height: 100%;
+      border: 0;
+      border-radius: 0;
+      background-color: $te-lightblue;
+      background-image: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 19 18\'%3E%3Cpath fill=\'%23000\' fill-rule=\'evenodd\' d=\'M15.3911 16.1265l-3.328-4.1323h.0003l-1.1031-1.37c-.9708 1.0636-2.365 1.7225-3.9045 1.7225a5.445 5.445 0 01-.577-.031c-1.4072-.1519-2.671-.8426-3.5589-1.945-.8875-1.1024-1.293-2.4844-1.141-3.8916.2908-2.6974 2.552-4.7315 5.2597-4.7315.191 0 .3851.0108.5767.0315 2.905.313 5.0136 2.9314 4.7002 5.8364-.047.4365-.1508.8531-.2945 1.249l1.4822 1.0062a7.0388 7.0388 0 00.55-2.0678c.417-3.8693-2.3813-7.344-6.2503-7.7614A7.1198 7.1198 0 007.0386 0C3.4857 0 .4308 2.6793.0412 6.2917c-.4173 3.869 2.381 7.3443 6.2503 7.7617.2568.0275.512.041.7643.041 1.342 0 2.6119-.3836 3.6947-1.0544l3.839 4.7668.0003-.0004v.0004h4.2999v-1.6803H15.391z\'/%3E%3C/svg%3E');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 19px 18px;
+
+      .oo-ui-labelElement-label {
+        font-size: 0;
+      }
+    }
+
+    .results-info {
+      align-self: flex-end;
+      margin-top: 30px;
+    }
+  }
+}
+
+.searchresults {
+  .mw-search-createlink {
+    display: none;
+  }
+
+  .mw-search-results {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 40px;
+    list-style: none;
+
+    li {
+      @include media-breakpoint-up(lg) {
+        padding: 35px 50px;
+      }
+      @include media-breakpoint-up(xl) {
+        padding: 50px 160px;
+      }
+      padding: 30px;
+      background: $te-white;
+
+      .mw-search-result-heading {
+        font-family: $font-headings-bold;
+        font-size: rem-calc(24);
+        color: $te-black;
+
+        a {
+          font-family: $font-headings-bold;
+          text-transform: none;
+          color: $te-black;
+        }
+
+        .searchalttitle {}
+      }
+      .searchresult {
+        margin: 15px 0 0;
+      }
+      .searchmatch {
+        font-family: $font-headings-bold;
+      }
+      .mw-search-result-data {
+        font-size: rem-calc(16);
+        color: $te-blue;
+        margin-top: 20px;
+      }
+
+      table.searchResultImage {
+        width: 100%;
+
+        a {
+          font-family: $font-headings-bold;
+          font-size: rem-calc(24);
+          color: $te-black;
+          text-transform: none;
+        }
+
+        td {
+          &:first-child {
+            position: absolute;
+            width: 50px !important;
+          }
+
+          &:nth-child(2) {
+            padding-left: 60px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// overlay from search
+.oo-ui-menuSelectWidget {
+  border-color: $te-lightblue;
+  box-shadow: none;
 }

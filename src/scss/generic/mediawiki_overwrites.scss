@@ -32,7 +32,7 @@ body.page-Special_Search {
   }
 
   form {
-    ul li {
+    ul li:not(.ve-ce-branchNode) {
       margin-bottom: 0;
       background: transparent;
     }

@@ -65,7 +65,8 @@ ul {
     padding-left: 25px;
     font-size: rem-calc(18);
     line-height: rem-calc(24);
-    background: url('/static/images/te-ul-bullet.svg') no-repeat 0 6px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath fill='%23BCD5DA' fill-rule='evenodd' d='M0 0v12h6l6-6v-.0001L6 0z'/%3E%3C/svg%3E") no-repeat 0 6px;
+    background-size: 12px;
 
     &:last-child {
       margin-bottom: 0;
@@ -89,4 +90,8 @@ ol {
       color: $te-lightblue;
     }
   }
+}
+
+b, strong {
+  font-family: $font-headings-bold;
 }

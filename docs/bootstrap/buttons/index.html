@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>The Embassy of Good Science - Components Library</title>
+<title></title>
 
 <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <meta name="application-name" content="The Embassy of Good Science"/>
@@ -23,9 +23,9 @@
 
 <meta property="fb:app_id" content="">
 <meta property="og:type" content="website"/>
-<meta property="og:url" content="https://components.embassy.science"/>
-<meta property="og:site_name" content="The Embassy of Good Science - Components Library"/>
-<meta property="og:title" content="The Embassy of Good Science - Components Library"/>
+<meta property="og:url" content=""/>
+<meta property="og:site_name" content=""/>
+<meta property="og:title" content=""/>
 <meta property="og:description" content=""/>
 <meta property="og:image" content="/static/images/og-image.png"/>
 
@@ -33,12 +33,14 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="@EmbassySci"/>
 <meta name="twitter:url" content=""/>
-<meta name="twitter:title" content="https://components.embassy.science"/>
+<meta name="twitter:title" content=""/>
 <meta name="twitter:description" content="">
 <meta name="twitter:image" content="/static/images/og-image.png"/>
 
-<link rel="stylesheet" href="/static/css/main.efdda98d.css" />
-<link rel="stylesheet" href="/static/css/library.dca07f08.css" />
+<link href="/static/css/smw-temp.css" rel="stylesheet" />
+
+<link rel="stylesheet" href="/static/css/main.40906c89.css" />
+<link rel="stylesheet" href="/static/css/library.72d79ff8.css" />
 <link rel="stylesheet" href="/static/css/prism.css" />
 
 </head>
@@ -54,13 +56,16 @@
     <div class="sticky-top">
         <h5>The Embassy Components</h5>
         <a href="/components/card">Cards</a><br>
-        <a href="/components/columns">Columns</a><br>
+        <a href="/components/masonry-columns">Masonry Columns</a><br>
         <a href="/components/homeblock">Home Block</a><br>
+        <a href="/components/link-button">Link Button</a><br>
         <a href="/components/navigation">Navigation</a><br>
         <a href="/components/pageheader">Page header</a><br>
         <a href="/components/footer">Footer</a><br>
         <a href="/components/icons">Icons</a><br>
         <a href="/components/video-button">Video Button</a><br>
+        <a href="/components/profile">Profile</a><br>
+        <a href="/components/resource-block">Resource Block</a><br>
         <p></p>
         <p></p>
         <h5>Bootstrap Components</h5>
@@ -80,37 +85,46 @@
         <a href="/pages/home" target="_blank">Homepage</a><br>
         <a href="/pages/theme" target="_blank">Thematic page</a><br>
         <a href="/pages/themes" target="_blank">Themes page</a><br>
+        <a href="/pages/resources" target="_blank">Resources</a><br>
+        <a href="/pages/about" target="_blank">About</a><br>
+        <a href="/pages/founders" target="_blank">Founders</a><br>
+        <a href="/pages/contributors" target="_blank">Contributors</a><br>
     </div>
 </aside>
 
 
         <main class="te-content col-md-9 col-xl-10">
             
-<h3>Buttons</h3>
+    <h3>Buttons</h3>
 
-<div class="code-sample">
-    <button type="button" class="btn btn-primary">Primary</button>
-    <button type="button" class="btn btn-secondary">Secondary</button>
-    <button type="button" class="btn btn-success">Success</button>
-    <button type="button" class="btn btn-danger">Danger</button>
-    <button type="button" class="btn btn-warning">Warning</button>
-    <button type="button" class="btn btn-info">Info</button>
-    <button type="button" class="btn btn-light">Light</button>
-    <button type="button" class="btn btn-dark">Dark</button>
+    <div class="code-sample">
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
 
-    <button type="button" class="btn btn-link">Link</button>
-</div>
+        <button type="button" class="btn btn-link">Link</button>
+    </div>
 
-<pre class="language-html"><code class="language-html"><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-primary<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Primary<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span></span><br><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-secondary<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Secondary<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span></span><br><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-success<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Success<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span></span><br><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-danger<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Danger<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span></span><br><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-warning<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Warning<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span></span><br><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-info<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Info<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span></span><br><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-light<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Light<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span></span><br><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-dark<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Dark<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span></span><br><span class="highlight-line"></span><br><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-link<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Link<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span></span></code></pre>
+    <pre class="language-html"><code class="language-html"><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-primary<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Primary<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span></span><br><span class="highlight-line">        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-secondary<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Secondary<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span></span><br><span class="highlight-line">        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-success<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Success<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span></span><br><span class="highlight-line">        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-danger<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Danger<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span></span><br><span class="highlight-line">        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-warning<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Warning<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span></span><br><span class="highlight-line">        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-info<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Info<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span></span><br><span class="highlight-line">        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-light<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Light<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span></span><br><span class="highlight-line">        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-dark<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Dark<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span></span><br><span class="highlight-line"></span><br><span class="highlight-line">        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>btn btn-link<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Link<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span></span></code></pre>
 
-<p>Read more and know more from Bootstrap buttons <a href="https://getbootstrap.com/docs/4.3/components/buttons/" target="_blank" rel="nofollow noreferrer">here</a>.</p>
+    <p>Read more and know more from Bootstrap buttons <a href="https://getbootstrap.com/docs/4.3/components/buttons/"
+                                                         target="_blank" rel="nofollow noreferrer">here</a>.</p>
 
         </main>
     </div>
 </div>
 
-<script type="text/javascript" src="/static/js/vendors.efde2605.js"></script>
-<script type="text/javascript" src="/static/js/library.dca07f08.js"></script>
-<script type="text/javascript" src="/static/js/main.efdda98d.js"></script>
+<script type="text/javascript" src="/static/js/vendors.4a52d98c.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
+
+<script type="text/javascript" src="/static/js/library.72d79ff8.js"></script>
+<script type="text/javascript" src="/static/js/main.40906c89.js"></script>
 </body>
 </html>

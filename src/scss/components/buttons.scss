@@ -1,5 +1,5 @@
 // Add all variations for buttons
-.sidebar-item.formbutton-edit {
+.formbutton-edit {
   display: flex;
   align-items: center;
 
@@ -31,6 +31,23 @@
       }
     }
   }
+
+  .content & {
+    .smw-edit-dropdown {
+      margin-left: 5px;
+    }
+    a {
+      width: auto;
+      padding-left: 50px;
+      background-position: 25px center;
+      padding-right: 35px;
+    }
+    margin: -10px 0 40px;
+    @include media-breakpoint-up(lg) {
+      display: none;
+    }
+  }
+
 }
 
 // used on pageheader

@@ -1,7 +1,9 @@
 .navigation {
+  margin-bottom: -25px;
   @include media-breakpoint-up(lg) {
     height: 200px;
     background-color: transparent;
+    margin-bottom: 25px;
   }
 
   position: relative;

@@ -36,21 +36,23 @@
 <meta name="twitter:description" content="">
 <meta name="twitter:image" content="/static/images/og-image.png"/>
 
-<link rel="stylesheet" href="/static/css/main.efdda98d.css" />
-<link rel="stylesheet" href="/static/css/library.dca07f08.css" />
+<link href="/static/css/smw-temp.css" rel="stylesheet" />
+
+<link rel="stylesheet" href="/static/css/main.587ad003.css" />
+<link rel="stylesheet" href="/static/css/library.72d79ff8.css" />
 <link rel="stylesheet" href="/static/css/prism.css" />
 
 <head>
 
 </head>
-<body class="">
+<body class="is-sidebar">
 
 <div class="navigation container">
     <div class="row">
         <input type="checkbox" id="nav-trigger-home" />
         <label class="nav-trigger" for="nav-trigger-home">
             <svg class="open-icon" viewBox="0 0 20 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <g id="icon-hamburguer" fill="#678B91">
+                <g id="icon-hamburguer" fill="currentColor">
                     <rect id="rectangle-03" x="0" y="0" width="20" height="2"></rect>
                     <rect id="rectangle-02" x="0" y="5" width="20" height="2"></rect>
                     <rect id="rectangle-01" x="0" y="10" width="20" height="2"></rect>
@@ -64,19 +66,64 @@
         </label>
         <div class="nav-brand col-lg-2">
             <a href="#">
-                <img class="navigation-logo" src="/static/images/the-embassy-logo.png" />
+                <img class="navigation-logo" src="/static/images/the-embassy-logo-white.png" />
             </a>
         </div>
-        <div class="nav col-lg-10">
-            <a href="#">Home</a>
-            <a href="#" class="is-active">Themes</a>
+        <div class="nav col-lg-7">
+            <a href="/pages/home" class="is-active">Home</a>
+            <a href="/pages/themes">Themes</a>
             <a href="#">Resources</a>
             <a href="#">Discussions</a>
             <a href="#">Training</a>
-            <a href="#">About</a>
+            <a href="/pages/about">About</a>
+        </div>
+        <div class="nav-search-profile col-lg-3">
+            <div id="p-search" class="p-search" role="search">
+    <form id="searchform" class="mw-search" action="/wiki-wiki/index.php">
+        <input type="hidden" name="title" value=" Special:Search">
+        <div class="input-group">
+            <input name="search" placeholder="Search wiki" title="Search wiki [ctrl-option-f]" accesskey="f" id="searchInput" class="form-control" autocomplete="off">
+            <div class="input-group-append">
+                <button value="Go" id="searchGoButton" name="go" type="submit" class="go-btn searchGoButton" aria-label="Go to page" title="Go to a page with this exact name if it exists"></button>
+                <button value="Search" id="mw-searchButton" name="fulltext" type="submit" class="search-btn mw-searchButton" aria-label="Go to page" title="Search the pages for this text"></button>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<button class="search-trigger">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 18">
+        <path fill="currentColor" fill-rule="evenodd" d="M15.3912 16.1264l-3.328-4.1323h.0002l-1.1031-1.37c-.9708 1.0635-2.365 1.7225-3.9045 1.7225a5.445 5.445 0 01-.577-.031c-1.4071-.1519-2.671-.8426-3.5588-1.945-.8876-1.1024-1.293-2.4844-1.1411-3.8916.2908-2.6975 2.552-4.7315 5.2597-4.7315.191 0 .3852.0107.5767.0315 2.905.313 5.0136 2.9314 4.7002 5.8364-.047.4364-.1507.853-.2945 1.249l1.4822 1.0062a7.0388 7.0388 0 00.55-2.0678c.417-3.8693-2.3813-7.3441-6.2503-7.7614a7.1198 7.1198 0 00-.7643-.0415C3.4858-.0001.4309 2.679.0413 6.2916c-.4174 3.869 2.381 7.3443 6.2502 7.7616.2568.0275.512.041.7643.041 1.342 0 2.612-.3835 3.6948-1.0543l3.839 4.7668.0002-.0004v.0004h4.2999v-1.6803h-3.4985z"/>
+    </svg>
+</button>
+
+
+            
+                <div class="profile" data-dropdown-trigger>
+    <span class="profile-initials">R</span>
+
+    <div class="te-dropdown-menu">
+        <a href="#profile-page"><span>Ruben Nascimento</span></a>
+        <a href="#logout"><span>Logout</span></a>        
+    </div>
+</div>
+
+            
         </div>
     </div>
 </div>
+
 
 
 
@@ -85,6 +132,12 @@
     <div class="row no-gutters">
         
         <main class="content col-sm-12 col-lg-6 offset-lg-2">
+    <div class="pageheader-back is-forms te-mw-link" data-href="Category:Theme" data-target="_self"><a href="/wiki/Category:Themes" title="Category:Themes">
+            <svg>
+                <use xlink:href="#icon-back"></use>
+            </svg></a>
+            <span>Themes</span></div>
+
     <h1>Thematic page</h1>
 
     <!-- sampled from SMW -->
@@ -185,99 +238,109 @@
 
         <div class="other-information-wrapper other-information-grid">
             
-            <div class="other-information-block">
+            <div class="other-information-block grid-block">
     <h5 class="other-information-title">Who</h5>
     <ul class="other-information-items">
         
-            <li class="other-information-item"><a href="#">Chinelo Chyke</a></li>
+            <li class="other-information-item grid-item"><a href="#">Chinelo</a></li>
         
-            <li class="other-information-item"><a href="#">Deveeprasad Acharya</a></li>
+            <li class="other-information-item grid-item"><a href="#">Acharya</a></li>
         
-            <li class="other-information-item"><a href="#">Diego Morata</a></li>
+            <li class="other-information-item grid-item"><a href="#">Morata</a></li>
         
-        <li class="other-information-last"><a href="#">+ more</a></li>
+            <li class="other-information-item grid-item"><a href="#">Chinelo Chyke</a></li>
+        
+            <li class="other-information-item grid-item"><a href="#">Diego Morata</a></li>
+        
+            <li class="other-information-item grid-item"><a href="#">Chinelo Chyke</a></li>
+        
+            <li class="other-information-item grid-item"><a href="#">Deveeprasad Acharya</a></li>
+        
+            <li class="other-information-item grid-item"><a href="#">Diego Morata</a></li>
+        
+        <li class="other-information-last grid-item-last"><a href="#">+ more</a></li>
     </ul>
 </div>
 
 
             
-            <div class="other-information-block">
+            <div class="other-information-block grid-block">
     <h5 class="other-information-title">When</h5>
     <ul class="other-information-items">
         
-            <li class="other-information-item"><a href="#">1987 - 2019</a></li>
+            <li class="other-information-item grid-item"><a href="#">1987 - 2019</a></li>
         
-        <li class="other-information-last"><a href="#">+ more</a></li>
+        <li class="other-information-last grid-item-last"><a href="#">+ more</a></li>
     </ul>
 </div>
 
 
             
-            <div class="other-information-block">
+            <div class="other-information-block grid-block">
     <h5 class="other-information-title">Virtue or value</h5>
     <ul class="other-information-items">
         
-            <li class="other-information-item"><a href="#">Accountability</a></li>
+            <li class="other-information-item grid-item"><a href="#">Accountability</a></li>
         
-            <li class="other-information-item"><a href="#">Attentiveness</a></li>
+            <li class="other-information-item grid-item"><a href="#">Attentiveness</a></li>
         
-            <li class="other-information-item"><a href="#">Reflexivity</a></li>
+            <li class="other-information-item grid-item"><a href="#">Reflexivity</a></li>
         
-            <li class="other-information-item"><a href="#">Something else</a></li>
+            <li class="other-information-item grid-item"><a href="#">Something else</a></li>
         
-        <li class="other-information-last"><a href="#">+ more</a></li>
+        <li class="other-information-last grid-item-last"><a href="#">+ more</a></li>
     </ul>
 </div>
 
 
             
-            <div class="other-information-block">
+            <div class="other-information-block grid-block">
     <h5 class="other-information-title">Misconduct</h5>
     <ul class="other-information-items">
         
-            <li class="other-information-item"><a href="#">Chinelo Chyke</a></li>
+            <li class="other-information-item grid-item"><a href="#">Chinelo Chyke</a></li>
         
-            <li class="other-information-item"><a href="#">Deveeprasad Acharya</a></li>
+            <li class="other-information-item grid-item"><a href="#">Deveeprasad Acharya</a></li>
         
-            <li class="other-information-item"><a href="#">Diego Morata</a></li>
+            <li class="other-information-item grid-item"><a href="#">Diego Morata</a></li>
         
-        <li class="other-information-last"><a href="#">+ more</a></li>
+        <li class="other-information-last grid-item-last"><a href="#">+ more</a></li>
     </ul>
 </div>
 
 
             
-            <div class="other-information-block">
+            <div class="other-information-block grid-block">
     <h5 class="other-information-title">Good practice</h5>
     <ul class="other-information-items">
         
-            <li class="other-information-item"><a href="#">Institutional responsibilities</a></li>
+            <li class="other-information-item grid-item"><a href="#">Institutional responsibilities</a></li>
         
-            <li class="other-information-item"><a href="#">Responsible supervision</a></li>
+            <li class="other-information-item grid-item"><a href="#">Responsible supervision</a></li>
         
-            <li class="other-information-item"><a href="#">Reasonable standards for career advisors</a></li>
+            <li class="other-information-item grid-item"><a href="#">Reasonable standards for career advisors</a></li>
         
-        <li class="other-information-last"><a href="#">+ more</a></li>
+        <li class="other-information-last grid-item-last"><a href="#">+ more</a></li>
     </ul>
 </div>
 
 
             
-            <div class="other-information-block">
+            <div class="other-information-block grid-block">
     <h5 class="other-information-title">Other</h5>
     <ul class="other-information-items">
         
-            <li class="other-information-item"><a href="#">Euismod dolor fusce</a></li>
+            <li class="other-information-item grid-item"><a href="#">Euismod dolor fusce</a></li>
         
-            <li class="other-information-item"><a href="#">Ridiculus males</a></li>
+            <li class="other-information-item grid-item"><a href="#">Ridiculus males</a></li>
         
-            <li class="other-information-item"><a href="#">Lorem</a></li>
+            <li class="other-information-item grid-item"><a href="#">Lorem</a></li>
         
-            <li class="other-information-item"><a href="#">Something else</a></li>
+            <li class="other-information-item grid-item"><a href="#">Something else</a></li>
         
-            <li class="other-information-item"><a href="#">Mator Panner</a></li>
+            <li class="other-information-item grid-item"><a href="#">Mator Panner</a></li>
         
-        <li class="other-information-last"><a href="#">+ more</a></li>
+        <li class="other-information-last grid-item-last"><a href="#">+ more</a></li>
     </ul>
 </div>
 
@@ -307,62 +370,270 @@
         <aside class="sidebar col-sm-12 col-lg-3 offset-lg-1">
     <!-- example of edit button -->
     <div class="sidebar-item formbutton-edit">
-        <a href="/wiki/Special:FormEdit/Theme/Theme:651b40c7-f0b8-4742-a816-e7b8438e3fcd" title="" target="_self">edit
-            theme</a>
+        <a href="/wiki/Special:FormEdit/Theme/Theme:651b40c7-f0b8-4742-a816-e7b8438e3fcd" title="" target="_self">edit</a>
+        <div class="smw-edit-dropdown" data-dropdown-trigger>
+            <div class="menu-dots">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 13">
+                    <g fill="currentColor" fill-rule="evenodd">
+                        <circle cx="1.4619" cy="11.1083" r="1.4619"/>
+                        <circle cx="1.4619" cy="6.2851" r="1.4619"/>
+                        <circle cx="1.4619" cy="1.4619" r="1.4619"/>
+                    </g>
+                </svg>
+            </div>
+
+            <div class="te-dropdown-menu">
+                <a href="#"><span>Share</span></a>
+                <a href="#"><span>View source</span></a>
+                <a href="#"><span>History</span></a>
+            </div>
+        </div>
     </div>
-    <div class="sidebar-item" data-template="Related To"><h4 class="sidebar-title"><span class="mw-headline"
-                                                                                         id="Related_Themes">Related Themes </span>
-        </h4>
-        <span class="related-items"><span class="related-item"><a
-                        href="/wiki/Theme:651b40c7-f0b8-4742-a816-e7b8438e3fcd"
-                        title="Theme:651b40c7-f0b8-4742-a816-e7b8438e3fcd">AllTrials campaign</a></span><span
-                    class="related-item"><a href="/wiki/Theme:0bb5e4f7-9336-4ca8-92e3-c506413d1450"
-                                            title="Theme:0bb5e4f7-9336-4ca8-92e3-c506413d1450">AllTrials campaign</a></span><span
-                    class="related-item"><a href="/wiki/Theme:B84659ea-3fc8-4c93-86cf-6aa4db253ad4"
-                                            title="Theme:B84659ea-3fc8-4c93-86cf-6aa4db253ad4">Altmetrics</a></span></span>
-        <h4 class="sidebar-title"><span class="mw-headline" id="Related_Resources">Related Resources </span></h4>
-        <span class="related-items"><span class="related-item"><a
-                        href="/wiki/Resource:D36a9ef8-af46-4f4c-b987-fea4c49547d5"
-                        title="Resource:D36a9ef8-af46-4f4c-b987-fea4c49547d5">Code of Ethics for Researchers of the Czech Academy of Sciences</a></span><span
-                    class="related-item"><a href="/wiki/Resource:5e26d3d7-a1f4-4ba6-9a6f-de515988c771"
-                                            title="Resource:5e26d3d7-a1f4-4ba6-9a6f-de515988c771">Code of Ethics for Researchers of the Czech Academy of Sciences</a></span></span>
-        <h4 class="sidebar-title"><span class="mw-headline" id="Related_Discussions">Related Discussions </span></h4>
-        <span class="related-items"><span class="related-item"><a
-                        href="/wiki-wiki/index.php?title=Related_Discoussions&amp;action=edit&amp;redlink=1" class="new"
-                        title="Related Discoussions (page does not exist)">Related Discoussions</a></span><span
-                    class="related-item"><a
-                        href="/wiki-wiki/index.php?title=Related_Discoussins_2&amp;action=edit&amp;redlink=1"
-                        class="new" title="Related Discoussins 2 (page does not exist)">Related Discoussins 2</a></span></span>
+
+    
+
+    <div class="sidebar-item" data-template="RelatedDiscussions">
+        <h4 class="sidebar-title">Related discussions</h4>
+        <input type="checkbox" id="discussions" >
+
+        
+        <div class="related-discussion">
+    <div class="related-discussion-date">
+        2 weeks ago
     </div>
-    <div class="sidebar-item" data-template="Tags"><h4 class="sidebar-title"><span class="mw-headline"
-                                                                                   id="Who">Who </span></h4>
-        <span class="tags"><span class="tag-item">ALLEA</span><span class="tag-item">The Who</span></span><h4
-                class="sidebar-title"><span class="mw-headline" id="When">When </span></h4>
-        <span class="tags"><span class="tag-item">2019</span><span class="tag-item">second world war</span></span><h4
-                class="sidebar-title"><span class="mw-headline" id="Where">Where </span></h4>
-        <span class="tags"><span class="tag-item"><a href="/wiki/Austria" title="Austria">Austria</a></span><span
-                    class="tag-item"><a href="/wiki-wiki/index.php?title=Belgium&amp;action=edit&amp;redlink=1"
-                                        class="new" title="Belgium (page does not exist)">Belgium</a></span><span
-                    class="tag-item"><a href="/wiki-wiki/index.php?title=Croatia&amp;action=edit&amp;redlink=1"
-                                        class="new" title="Croatia (page does not exist)">Croatia</a></span><span
-                    class="tag-item"><a href="/wiki-wiki/index.php?title=Czech_Republic&amp;action=edit&amp;redlink=1"
-                                        class="new"
-                                        title="Czech Republic (page does not exist)">Czech Republic</a></span></span><h4
-                class="sidebar-title"><span id="Virtues_&amp;_Values"></span><span class="mw-headline"
-                                                                                   id="Virtues_.26_Values">Virtues &amp; Values </span>
-        </h4>
-        <span class="tags"><span class="tag-item">Transparency</span><span class="tag-item">V &amp; V 1</span><span
-                    class="tag-item">honesty</span></span><h4 class="sidebar-title"><span
-                    id="Good_Practices_&amp;_Misconduct"></span><span class="mw-headline"
-                                                                      id="Good_Practices_.26_Misconduct">Good Practices &amp; Misconduct </span>
-        </h4>
-        <span class="tags"><span class="tag-item">123</span><span class="tag-item">456</span><span
-                    class="tag-item">789</span></span><h4 class="sidebar-title"><span class="mw-headline"
-                                                                                      id="Research_Area">Research Area </span>
-        </h4>
-        <span class="tags"><span class="tag-item">SH 01 - Individuals,Institutions and Markets</span><span
-                    class="tag-item">SH 01.02 - Development, economic growth</span><span class="tag-item">SH 01.05 - Political economy, institutional economics, law and economics</span><span
-                    class="tag-item">SH 01.06 - Econometrics, statistical methods</span></span>
+    <h4 class="related-discussion-title">
+        How to request that collaborators add my supervisor&#39;s name to a manuscript?
+    </h4>
+    <div class="related-discussion-tags grid-block">
+        
+            <a class="discussion-tag grid-item" href="#">something</a>
+        
+        <span class="discussion-tag grid-item-last"><a href="#"></a></span>
+    </div>
+</div>
+
+
+        
+        <div class="related-discussion">
+    <div class="related-discussion-date">
+        19 December 2018
+    </div>
+    <h4 class="related-discussion-title">
+        Is it unethical to edit grammatical errors in a letter of recommendation?
+    </h4>
+    <div class="related-discussion-tags grid-block">
+        
+            <a class="discussion-tag grid-item" href="#">supervision</a>
+        
+            <a class="discussion-tag grid-item" href="#">medical research</a>
+        
+            <a class="discussion-tag grid-item" href="#">supervision</a>
+        
+            <a class="discussion-tag grid-item" href="#">medical research</a>
+        
+            <a class="discussion-tag grid-item" href="#">supervision</a>
+        
+            <a class="discussion-tag grid-item" href="#">medical research</a>
+        
+        <span class="discussion-tag grid-item-last"><a href="#"></a></span>
+    </div>
+</div>
+
+
+        
+        <div class="related-discussion">
+    <div class="related-discussion-date">
+        19 December 2020
+    </div>
+    <h4 class="related-discussion-title">
+        Is it unethical to edit grammatical errors in a letter of recommendation?
+    </h4>
+    <div class="related-discussion-tags grid-block">
+        
+            <a class="discussion-tag grid-item" href="#">supervision</a>
+        
+            <a class="discussion-tag grid-item" href="#">medical research</a>
+        
+            <a class="discussion-tag grid-item" href="#">supervision</a>
+        
+            <a class="discussion-tag grid-item" href="#">medical research</a>
+        
+            <a class="discussion-tag grid-item" href="#">supervision</a>
+        
+            <a class="discussion-tag grid-item" href="#">medical research</a>
+        
+        <span class="discussion-tag grid-item-last"><a href="#"></a></span>
+    </div>
+</div>
+
+
+        
+        <div class="related-discussion">
+    <div class="related-discussion-date">
+        19 January 2018
+    </div>
+    <h4 class="related-discussion-title">
+        Is it unethical to edit grammatical errors in a letter of recommendation?
+    </h4>
+    <div class="related-discussion-tags grid-block">
+        
+            <a class="discussion-tag grid-item" href="#">supervision</a>
+        
+            <a class="discussion-tag grid-item" href="#">medical research</a>
+        
+            <a class="discussion-tag grid-item" href="#">supervision</a>
+        
+            <a class="discussion-tag grid-item" href="#">medical research</a>
+        
+            <a class="discussion-tag grid-item" href="#">supervision</a>
+        
+            <a class="discussion-tag grid-item" href="#">medical research</a>
+        
+        <span class="discussion-tag grid-item-last"><a href="#"></a></span>
+    </div>
+</div>
+
+
+        
+        <div class="related-discussion">
+    <div class="related-discussion-date">
+        19 December 2018
+    </div>
+    <h4 class="related-discussion-title">
+        Is it unethical to edit grammatical errors in a letter of recommendation?
+    </h4>
+    <div class="related-discussion-tags grid-block">
+        
+            <a class="discussion-tag grid-item" href="#">supervision</a>
+        
+            <a class="discussion-tag grid-item" href="#">medical research</a>
+        
+            <a class="discussion-tag grid-item" href="#">supervision</a>
+        
+            <a class="discussion-tag grid-item" href="#">medical research</a>
+        
+            <a class="discussion-tag grid-item" href="#">supervision</a>
+        
+            <a class="discussion-tag grid-item" href="#">medical research</a>
+        
+        <span class="discussion-tag grid-item-last"><a href="#"></a></span>
+    </div>
+</div>
+
+
+        <label for="discussions" class="related-discussions-seeMore">See more discussions</label>
+    </div>
+
+    <div class="sidebar-item sidebar--discusssions" data-template="MoreDiscussions">
+        <h3>Any questions or experiences to share?</h3>
+        <a class="link-button">Join our discussions</a>
+    </div>
+
+    <div class="sidebar-item" data-template="RelatedResources">
+        <h4 class="sidebar-title">Related resources</h4>
+        <input type="checkbox" id="resources" >
+
+        
+        <div class="related-resource is-caseStudies">
+    <div class="related-resource-category">
+        Case studies collection
+    </div>
+    <h4 class="related-resource-title">
+        The European Network of Research Integrity Offices (ENRIO) - Collection
+    </h4>
+    <div class="related-resource-navigation">
+        <a class="resource-link" href="#">Open</a>
+        <a class="resource-info" href="#">About</a>
+    </div>
+</div>
+
+
+        
+        <div class="related-resource is-caseStudies">
+    <div class="related-resource-category">
+        Case studies collection
+    </div>
+    <h4 class="related-resource-title">
+        Responsible Conduct of Research (RCR) - Casebook
+    </h4>
+    <div class="related-resource-navigation">
+        <a class="resource-link" href="#">Open</a>
+        <a class="resource-info" href="#">About</a>
+    </div>
+</div>
+
+
+        
+        <div class="related-resource is-experts">
+    <div class="related-resource-category">
+        Experts
+    </div>
+    <h4 class="related-resource-title">
+        Maura Hiney - Health Research Board 
+    </h4>
+    <div class="related-resource-navigation">
+        <a class="resource-link" href="#">Open</a>
+        <a class="resource-info" href="#">About</a>
+    </div>
+</div>
+
+
+        
+        <div class="related-resource is-caseStudies">
+    <div class="related-resource-category">
+        Case studies collection
+    </div>
+    <h4 class="related-resource-title">
+        Responsible Conduct of Research (RCR) - Casebook
+    </h4>
+    <div class="related-resource-navigation">
+        <a class="resource-link" href="#">Open</a>
+        <a class="resource-info" href="#">About</a>
+    </div>
+</div>
+
+
+        
+        <div class="related-resource is-experts">
+    <div class="related-resource-category">
+        Experts
+    </div>
+    <h4 class="related-resource-title">
+        Maura Hiney - Health Research Board 
+    </h4>
+    <div class="related-resource-navigation">
+        <a class="resource-link" href="#">Open</a>
+        <a class="resource-info" href="#">About</a>
+    </div>
+</div>
+
+
+        <label for="resources" class="related-resources-seeMore">See more resources</label>
+    </div>
+
+    
+    <div class="sidebar-item" data-template="RelatedThemes">
+        
+        <div class="other-information-block grid-block">
+    <h5 class="other-information-title">Related themes</h5>
+    <ul class="other-information-items">
+        
+            <li class="other-information-item grid-item"><a href="#">authorship</a></li>
+        
+            <li class="other-information-item grid-item"><a href="#">plagiarism</a></li>
+        
+            <li class="other-information-item grid-item"><a href="#">self-plagiarism</a></li>
+        
+            <li class="other-information-item grid-item"><a href="#">legal-research</a></li>
+        
+            <li class="other-information-item grid-item"><a href="#">lorem ipsum</a></li>
+        
+            <li class="other-information-item grid-item"><a href="#">dolor amet</a></li>
+        
+        <li class="other-information-last grid-item-last"><a href="#">+ more</a></li>
+    </ul>
+</div>
+
     </div>
 </aside>
     </div>
@@ -432,8 +703,12 @@
 
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
 
-<script type="text/javascript" src="/static/js/vendors.efde2605.js"></script>
-<script type="text/javascript" src="/static/js/library.dca07f08.js"></script>
-<script type="text/javascript" src="/static/js/main.efdda98d.js"></script>
+<script type="text/javascript" src="/static/js/vendors.4a52d98c.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
+
+<script type="text/javascript" src="/static/js/library.72d79ff8.js"></script>
+<script type="text/javascript" src="/static/js/main.587ad003.js"></script>
 </body>
 </html>

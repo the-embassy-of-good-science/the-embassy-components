@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>404 - Not found</title>
+<title></title>
 
 <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <meta name="application-name" content="The Embassy of Good Science"/>
@@ -23,9 +23,9 @@
 
 <meta property="fb:app_id" content="">
 <meta property="og:type" content="website"/>
-<meta property="og:url" content="https://components.embassy.science"/>
-<meta property="og:site_name" content="404 - Not found"/>
-<meta property="og:title" content="404 - Not found"/>
+<meta property="og:url" content=""/>
+<meta property="og:site_name" content=""/>
+<meta property="og:title" content=""/>
 <meta property="og:description" content=""/>
 <meta property="og:image" content="/static/images/og-image.png"/>
 
@@ -33,12 +33,14 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="@EmbassySci"/>
 <meta name="twitter:url" content=""/>
-<meta name="twitter:title" content="https://components.embassy.science"/>
+<meta name="twitter:title" content=""/>
 <meta name="twitter:description" content="">
 <meta name="twitter:image" content="/static/images/og-image.png"/>
 
-<link rel="stylesheet" href="/static/css/main.efdda98d.css" />
-<link rel="stylesheet" href="/static/css/library.dca07f08.css" />
+<link href="/static/css/smw-temp.css" rel="stylesheet" />
+
+<link rel="stylesheet" href="/static/css/main.587ad003.css" />
+<link rel="stylesheet" href="/static/css/library.72d79ff8.css" />
 <link rel="stylesheet" href="/static/css/prism.css" />
 
 </head>
@@ -54,13 +56,16 @@
     <div class="sticky-top">
         <h5>The Embassy Components</h5>
         <a href="/components/card">Cards</a><br>
-        <a href="/components/columns">Columns</a><br>
+        <a href="/components/masonry-columns">Masonry Columns</a><br>
         <a href="/components/homeblock">Home Block</a><br>
+        <a href="/components/link-button">Link Button</a><br>
         <a href="/components/navigation">Navigation</a><br>
         <a href="/components/pageheader">Page header</a><br>
         <a href="/components/footer">Footer</a><br>
         <a href="/components/icons">Icons</a><br>
         <a href="/components/video-button">Video Button</a><br>
+        <a href="/components/profile">Profile</a><br>
+        <a href="/components/resource-block">Resource Block</a><br>
         <p></p>
         <p></p>
         <h5>Bootstrap Components</h5>
@@ -80,73 +85,82 @@
         <a href="/pages/home" target="_blank">Homepage</a><br>
         <a href="/pages/theme" target="_blank">Thematic page</a><br>
         <a href="/pages/themes" target="_blank">Themes page</a><br>
+        <a href="/pages/resources" target="_blank">Resources</a><br>
+        <a href="/pages/about" target="_blank">About</a><br>
+        <a href="/pages/founders" target="_blank">Founders</a><br>
+        <a href="/pages/contributors" target="_blank">Contributors</a><br>
     </div>
 </aside>
 
 
         <main class="te-content col-md-9 col-xl-10">
             
-<h3>The Embassy Icons</h3>
 
-<p></p>
-<p>Special svg icons for The Embassy. These icons use Webpack SVG loader to add it to the page</p>
+    <h3>The Embassy Icons</h3>
 
-<div class="code-sample">
-    <svg>
-        <use xlink:href="#icon-resources"></use>
-    </svg>
-</div>
+    <p></p>
+    <p>Special svg icons for The Embassy. These icons use Webpack SVG loader to add it to the page</p>
 
-<pre class="language-html"><code class="language-html"><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span><span class="token punctuation">></span></span></span><br><span class="highlight-line">    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span class="token attr-name"><span class="token namespace">xlink:</span>href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#icon-resources<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>use</span><span class="token punctuation">></span></span></span><br><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span></span></code></pre>
+    <div class="code-sample">
+        <svg>
+            <use xlink:href="#icon-resources"></use>
+        </svg>
+    </div>
 
-<div class="code-sample">
-    <svg>
-        <use xlink:href="#icon-resources-cases"></use>
-    </svg>
-</div>
+    <pre class="language-html"><code class="language-html"><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span><span class="token punctuation">></span></span></span><br><span class="highlight-line">            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span class="token attr-name"><span class="token namespace">xlink:</span>href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#icon-resources<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>use</span><span class="token punctuation">></span></span></span><br><span class="highlight-line">        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span></span></code></pre>
 
-<pre class="language-html"><code class="language-html"><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span><span class="token punctuation">></span></span></span><br><span class="highlight-line">    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span class="token attr-name"><span class="token namespace">xlink:</span>href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#icon-resources-cases<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>use</span><span class="token punctuation">></span></span></span><br><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span></span></code></pre>
+    <div class="code-sample">
+        <svg>
+            <use xlink:href="#icon-resources-cases"></use>
+        </svg>
+    </div>
 
-<div class="code-sample">
-    <svg>
-        <use xlink:href="#icon-resources-education"></use>
-    </svg>
-</div>
+    <pre class="language-html"><code class="language-html"><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span><span class="token punctuation">></span></span></span><br><span class="highlight-line">            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span class="token attr-name"><span class="token namespace">xlink:</span>href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#icon-resources-cases<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>use</span><span class="token punctuation">></span></span></span><br><span class="highlight-line">        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span></span></code></pre>
 
-<pre class="language-html"><code class="language-html"><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span><span class="token punctuation">></span></span></span><br><span class="highlight-line">    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span class="token attr-name"><span class="token namespace">xlink:</span>href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#icon-resources-education<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>use</span><span class="token punctuation">></span></span></span><br><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span></span></code></pre>
+    <div class="code-sample">
+        <svg>
+            <use xlink:href="#icon-resources-education"></use>
+        </svg>
+    </div>
 
-<div class="code-sample">
-    <svg>
-        <use xlink:href="#icon-resources-experts-committees"></use>
-    </svg>
-</div>
+    <pre class="language-html"><code class="language-html"><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span><span class="token punctuation">></span></span></span><br><span class="highlight-line">            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span class="token attr-name"><span class="token namespace">xlink:</span>href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#icon-resources-education<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>use</span><span class="token punctuation">></span></span></span><br><span class="highlight-line">        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span></span></code></pre>
 
-<pre class="language-html"><code class="language-html"><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span><span class="token punctuation">></span></span></span><br><span class="highlight-line">    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span class="token attr-name"><span class="token namespace">xlink:</span>href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#icon-resources-experts-committees<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>use</span><span class="token punctuation">></span></span></span><br><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span></span></code></pre>
+    <div class="code-sample">
+        <svg>
+            <use xlink:href="#icon-resources-experts-committees"></use>
+        </svg>
+    </div>
 
-<div class="code-sample">
-    <svg>
-        <use xlink:href="#icon-resources-guidelines"></use>
-    </svg>
-</div>
+    <pre class="language-html"><code class="language-html"><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span><span class="token punctuation">></span></span></span><br><span class="highlight-line">            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span class="token attr-name"><span class="token namespace">xlink:</span>href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#icon-resources-experts-committees<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>use</span><span class="token punctuation">></span></span></span><br><span class="highlight-line">        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span></span></code></pre>
 
-<pre class="language-html"><code class="language-html"><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span><span class="token punctuation">></span></span></span><br><span class="highlight-line">    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span class="token attr-name"><span class="token namespace">xlink:</span>href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#icon-resources-guidelines<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>use</span><span class="token punctuation">></span></span></span><br><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span></span></code></pre>
+    <div class="code-sample">
+        <svg>
+            <use xlink:href="#icon-resources-guidelines"></use>
+        </svg>
+    </div>
+
+    <pre class="language-html"><code class="language-html"><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span><span class="token punctuation">></span></span></span><br><span class="highlight-line">            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span class="token attr-name"><span class="token namespace">xlink:</span>href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#icon-resources-guidelines<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>use</span><span class="token punctuation">></span></span></span><br><span class="highlight-line">        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span></span></code></pre>
 
 
-<div class="code-sample">
-    <svg>
-        <use xlink:href="#icon-resources-training-materials"></use>
-    </svg>
-</div>
+    <div class="code-sample">
+        <svg>
+            <use xlink:href="#icon-resources-training-materials"></use>
+        </svg>
+    </div>
 
-<pre class="language-html"><code class="language-html"><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span><span class="token punctuation">></span></span></span><br><span class="highlight-line">    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span class="token attr-name"><span class="token namespace">xlink:</span>href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#icon-resouces-training-materials<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>use</span><span class="token punctuation">></span></span></span><br><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span></span></code></pre>
+    <pre class="language-html"><code class="language-html"><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span><span class="token punctuation">></span></span></span><br><span class="highlight-line">            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>use</span> <span class="token attr-name"><span class="token namespace">xlink:</span>href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#icon-resouces-training-materials<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>use</span><span class="token punctuation">></span></span></span><br><span class="highlight-line">        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span></span></code></pre>
 
 
         </main>
     </div>
 </div>
 
-<script type="text/javascript" src="/static/js/vendors.efde2605.js"></script>
-<script type="text/javascript" src="/static/js/library.dca07f08.js"></script>
-<script type="text/javascript" src="/static/js/main.efdda98d.js"></script>
+<script type="text/javascript" src="/static/js/vendors.4a52d98c.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
+
+<script type="text/javascript" src="/static/js/library.72d79ff8.js"></script>
+<script type="text/javascript" src="/static/js/main.587ad003.js"></script>
 </body>
 </html>

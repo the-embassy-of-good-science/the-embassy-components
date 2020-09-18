@@ -6,6 +6,7 @@ div#drilldown-header {
     margin-bottom: 40px;
   }
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 20px;
   font-size: 0 !important;
   opacity: 0;
@@ -16,13 +17,19 @@ div#drilldown-header {
   }
 
   .drilldown-header-value {
-    display: inline-flex;
-    margin-right: 5px;
+    display: inline-block;
+    margin-bottom: 20px;
     padding: 2px 25px 0 15px;
     font-size: rem-calc(15);
     line-height: 45px;
     color: $te-blue;
     background-color: $te-white;
+    max-width: calc(100% - 15px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+
 
     ~ a {
       display: inline-flex;
@@ -30,6 +37,7 @@ div#drilldown-header {
       align-items: center;
       width: 25px;
       margin-right: -10px;
+      margin-bottom: 20px;
       transform: translateX(-100%);
       font-size: rem-calc(16);
       color: $te-black;

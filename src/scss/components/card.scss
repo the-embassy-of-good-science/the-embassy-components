@@ -17,8 +17,6 @@
 
   .card {
     min-width: 320px;
-    padding-right: 15px;
-    padding-left: 15px;
     margin-bottom: 40px;
 
     &:last-child {
@@ -34,6 +32,7 @@
     }
   }
 }
+
 .card-grid-5,
 .card-grid-4 {
   @include media-breakpoint-up(xl) {
@@ -191,7 +190,8 @@
   }
 }
 
-.card.is-themes {
+.card.is-themes,
+.card.is-trainings {
   .card-header {
     background-color: $te-sunfloweryellow;
   }
@@ -225,4 +225,251 @@
     content: ' ';
     background-color: $te-verylightblue;
   }
+}
+
+// Trainings landing cards
+.card-grid.is-trainings {
+  @include media-breakpoint-up(lg) {
+    align-items: flex-start;
+  }
+  .card {
+    min-width: 360px;
+    max-width: 360px;
+    margin-bottom: 25px;
+    min-height: auto;
+  }
+
+  .card-header {
+    padding: 25px 40px 40px;
+    min-height: initial;
+
+    &:after {
+      transform: skewY(-3deg) !important
+    }
+
+  }
+
+  .card-title {
+    font-family: $te-font-extrabold;
+    font-size: rem-calc(28)
+  }
+
+  .cards-wrapper {
+    @include media-breakpoint-up(lg) {
+      margin-left: 30px;
+    }
+    // First card, the large one
+    &:first-child {
+      max-width: 800px;
+      margin-left: 0;
+
+      @include media-breakpoint-up(lg) {
+        width: 100%;
+      }
+
+      .card {
+        max-width: none;
+
+        &:hover {
+          color: $te-black;
+
+          a {
+            color: $te-blue;
+          }
+
+          .Virt2ue-button {
+            color: $te-black;
+          }
+
+        }
+      }
+
+      .card-body {
+        padding: 25px;
+        @include media-breakpoint-up(lg) {
+          padding: 50px 40px;
+        }
+      }
+
+      .card-header {
+        @include media-breakpoint-up(lg) {
+          padding-bottom: 15px;
+
+          &:after {
+            display: none;
+          }
+        }
+      }
+
+      .card-text {
+        display: flex;
+        justify-content: flex-start;
+        font-size: rem-calc(22);
+        line-height: rem-calc(30);
+
+        @include media-breakpoint-down(xl) {
+          flex-wrap: wrap;
+        }
+
+        @include media-breakpoint-down(lg) {
+          flex-direction: column;
+        }
+      }
+
+      .text-block {
+        flex: 1 1 auto;
+        max-width: 350px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+
+        span {
+          display: inline-block;
+          width: 230px;
+          margin-bottom: 20px;
+          font-size: rem-calc(17);
+          line-height: unitless-calc(26, 17);
+
+          @include media-breakpoint-up(lg) {
+            margin-bottom: 30px;
+            font-size: rem-calc(22);
+            line-height: unitless-calc(30, 22);
+          }
+
+
+        }
+      }
+
+      .training-links {
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+        @include media-breakpoint-up(lg) {
+          margin-top: 0;
+        }
+      }
+
+      a.training-link {
+        font-size: rem-calc(17);
+        line-height: unitless-calc(31, 17);
+        font-family: $te-font-bold;
+        color: $te-blue;
+        text-decoration: underline;
+        margin-bottom: 20px;
+        padding-right: 15px;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-image: url('data:image/svg+xml,%3Csvg id=\'icon-arrow-right\' width=\'7px\' height=\'11px\' viewBox=\'0 0 6 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cpath d=\'M3.80662838,5.23411402 L1.42748564,7.61325676 L6.07103257e-11,6.18577112 L2.37914274,3.80662838 L2.12139195e-11,1.42748564 L1.42748564,-7.29551974e-11 L5.23411402,3.80662838 L3.80662838,5.23411402 Z\' fill=\'%23567c83\' fill-rule=\'nonzero\'%3E%3C/path%3E%3C/svg%3E%0A');
+
+        @include media-breakpoint-up(lg) {
+          margin-bottom: 5px;
+          font-size: rem-calc(16);
+          line-height: unitless-calc(31, 16);
+        }
+
+        &:hover {
+          text-decoration: none;
+        }
+
+      }
+
+      .Virt2ue-button-wrapper {
+        flex: 1 0 auto;
+        justify-content: flex-start;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        @include media-breakpoint-up(xl) {
+          justify-content: center;
+        }
+
+        a.guide-link {
+          max-width: 285px;
+          width: 100%;
+          font-family: $te-font-regular;
+          color: $te-black;
+          font-size: rem-calc(17);
+          line-height: unitless-calc(26, 17);
+          border-bottom: 1px solid $te-homepage-background;
+          padding: 15px 0;
+          text-decoration: none;
+          background-image: url('data:image/svg+xml,%3Csvg id=\'icon-arrow-right\' width=\'7px\' height=\'11px\' viewBox=\'0 0 6 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cpath d=\'M3.80662838,5.23411402 L1.42748564,7.61325676 L6.07103257e-11,6.18577112 L2.37914274,3.80662838 L2.12139195e-11,1.42748564 L1.42748564,-7.29551974e-11 L5.23411402,3.80662838 L3.80662838,5.23411402 Z\' fill=\'%2378B7C2\' fill-rule=\'nonzero\'%3E%3C/path%3E%3C/svg%3E%0A');
+          background-color: transparent;
+          background-repeat: no-repeat;
+          background-position: 308px center;
+
+          @include media-breakpoint-up(lg){
+            font-size: rem-calc(20);
+            line-height: unitless-calc(31, 20);
+            padding: 10px 0;
+            background-position: 278px center;
+          }
+
+          @include media-breakpoint-up(xl){
+            background-position: 264px center;
+          }
+
+
+          &:hover {
+            background-image: url('data:image/svg+xml,%3Csvg id=\'icon-arrow-right\' width=\'7px\' height=\'11px\' viewBox=\'0 0 6 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cpath d=\'M3.80662838,5.23411402 L1.42748564,7.61325676 L6.07103257e-11,6.18577112 L2.37914274,3.80662838 L2.12139195e-11,1.42748564 L1.42748564,-7.29551974e-11 L5.23411402,3.80662838 L3.80662838,5.23411402 Z\' fill=\'%23000\' fill-rule=\'nonzero\'%3E%3C/path%3E%3C/svg%3E%0A');
+          }
+
+        }
+
+        &.is-mobile {
+          display: flex;
+          @include media-breakpoint-up(xl) {
+            display: none;
+          }
+
+          .guide-link {
+            max-width: 100%;
+
+            &:last-of-type {
+              border-bottom: none;
+            }
+          }
+        }
+
+        &.is-desktop {
+          display: none;
+
+          @include media-breakpoint-up(xl) {
+            display: flex;
+          }
+        }
+      }
+
+      hr {
+        width: calc(100% + 50px);
+        margin: 0px -25px;
+        border-color: $te-homepage-background;
+      }
+
+
+      @include media-breakpoint-up(lg) {
+        hr {
+          display: none;
+        }
+      }
+
+
+      .Virt2ue-button {
+        margin-bottom: 20px;
+        padding: 10px 50px 10px 60px;
+        background-repeat: no-repeat;
+        background-position: 30px center;
+        background-image: url("data:image/svg+xml,%3Csvg width='21' height='21' viewBox='0 0 21 21' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3Cpath id='a' d='M0 .3748h19.8152v13.2074H0z'/%3E%3Cpath id='c' d='M0 .0911h16.5127v16.51H0z'/%3E%3Cpath id='e' d='M.2609.1874h12.3845v6.6023H.261z'/%3E%3C/defs%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg transform='translate(0 6.2303)'%3E%3Cmask id='b' fill='%23fff'%3E%3Cuse xlink:href='%23a'/%3E%3C/mask%3E%3Cpath fill='%23A7D9DC' mask='url(%23b)' d='M16.5127 6.1542h3.3025V.3748h-3.3025z'/%3E%3Cpath fill='%23F5BA59' mask='url(%23b)' d='M0 6.9798l6.605 6.6051V6.98H0'/%3E%3C/g%3E%3Cpath fill='%23F5BA59' d='M16.5127 3.3026L13.21 6.605v5.7794h3.3026V6.6051h3.3025V.0001l-3.3025 3.3025'/%3E%3Cg transform='translate(0 3.2114)'%3E%3Cmask id='d' fill='%23fff'%3E%3Cuse xlink:href='%23c'/%3E%3C/mask%3E%3Cpath fill='%23006C79' mask='url(%23d)' d='M0 .0911v3.3026h6.605L3.3026.091H0'/%3E%3Cpath fill='%23D8BD90' mask='url(%23d)' d='M13.2101 13.3012v3.3026l3.3026-3.3026H13.21'/%3E%3C/g%3E%3Cpath fill='%23D8BD90' d='M0 0v3.3026h3.3025L0 0'/%3E%3Cg transform='translate(7.1698 13.0228)'%3E%3Cmask id='f' fill='%23fff'%3E%3Cuse xlink:href='%23e'/%3E%3C/mask%3E%3Cpath fill='%23A7D9DC' mask='url(%23f)' d='M6.0403.1874v3.3025H9.343L12.6454.1874h-6.605'/%3E%3Cpath fill='%23004B86' mask='url(%23f)' d='M.2609 6.7925h5.7794V.1874H.261z'/%3E%3C/g%3E%3Cpath fill='%23004B86' d='M0 13.2101h6.605v-6.605H0z'/%3E%3C/g%3E%3C/svg%3E");
+
+        @include media-breakpoint-down(lg) {
+          margin-bottom: 5px;
+          padding: 15px 80px 15px 60px;
+        }
+
+      }
+    }
+  }
+
 }

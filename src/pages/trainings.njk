@@ -1,0 +1,88 @@
+---
+layout: layouts/main.njk
+bodyclasses: is-verylightblue
+---
+
+<div class="pageheader row no-gutters">
+    <a class="pageheader-back" href="#">
+        <svg>
+            <use xlink:href="#icon-back"></use>
+        </svg>
+        <span>Back</span>
+    </a>
+    <div class="content text-center text-lg-left col col-lg-7 offset-lg-2">
+        <div class="pageheader-title">
+            <svg>
+                <use xlink:href="#icon-resources"></use>
+            </svg>
+            <h1>Training</h1>
+        </div>
+        <div class="pageheader-description">
+            <p>Guides, materials and a community that support training on research integrity and ethics.</p>
+        </div>
+    </div>
+</div>
+
+<div class="card-grid is-trainings">
+    <div class="cards-wrapper">
+        <div class="card is-trainings">
+            <div class="card-header">
+                <h2 class="card-title text-center">
+                    Training material
+                </h2>
+            </div>
+            <div class="card-body">
+                <div class="card-text">
+                    <div class="text-block">
+                        <span>Step by step guides that help you as a trainer</span>
+                        {% set modifier = 'is-mobile' %}
+                        {% include "../_includes/components/virtue-button.njk" %}
+                        <hr>
+                        <div class="training-links">
+                            <a class="training-link" href="#">All training guides</a>
+                            <a class="training-link" href="#">Individual exercises</a>
+                        </div>
+                    </div>
+                    {% set modifier = 'is-desktop' %}
+                    {% include "../_includes/components/virtue-button.njk" %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cards-wrapper">
+        <div class="card is-trainings">
+            <div class="card-header">
+                <h2 class="card-title text-center">
+                    <a href="/wiki/Category:Training" title="Category:Training">
+                        Educational resources
+                    </a>
+                </h2>
+            </div>
+            <div class="card-body">
+                <div class="card-text">
+                    <a href="/wiki/Category:Training" title="Category:Training">
+                        Literature, tools and other resources to use in training.
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="card is-trainings">
+            <div class="card-header">
+                <h2 class="card-title text-center">
+                    <a href="/wiki/Category:Training" title="Category:Training">
+                        Training community
+                    </a>
+                </h2>
+            </div>
+            <div class="card-body">
+                <div class="card-text">
+                    <a href="/wiki/Category:Training" title="Category:Training">
+                        Meet trainers, trainees and ask your questions.
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include "../_includes/components/banner-block.njk" %}

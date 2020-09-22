@@ -4,6 +4,12 @@
     height: 200px;
     background-color: transparent;
     margin-bottom: 25px;
+
+    .is-homepage &,
+    .page-Main_Page & {
+      margin-bottom: 0;
+    }
+
   }
 
   position: relative;

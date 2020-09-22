@@ -1,0 +1,41 @@
+.training-tabs {
+  font-family: $te-font-bold;
+  border-bottom: 1px solid $te-boticelli;
+  padding-bottom: 10px;
+  font-size: rem-calc(17);
+  line-height: unitless-calc(31, 17);
+
+  @include media-breakpoint-up(lg) {
+    font-size: rem-calc(18);
+    line-height: unitless-calc(31, 18);
+  }
+}
+
+.training-tabs-label {
+  color: $te-blue;
+  margin-right: 40px;
+  display: none;
+  @include media-breakpoint-up(lg) {
+    display: inline;
+  }
+}
+
+.training-tabs-tab {
+  padding: 20px 40px 17px;
+  color: $te-black;
+
+  @include media-breakpoint-up(lg) {
+    padding-bottom: 16px;
+  }
+
+  &.active {
+    border: 1px solid $te-boticelli;
+    border-bottom: 1px solid $te-verylightblue;
+  }
+
+  &:hover {
+    color: $te-black;
+    text-decoration: none;
+  }
+}
+

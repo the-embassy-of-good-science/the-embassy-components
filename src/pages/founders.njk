@@ -3,22 +3,17 @@ layout: layouts/main.njk
 bodyclasses: is-verylightblue
 ---
 
-<div class="pageheader row no-gutters">
-    <a class="pageheader-back" href="/pages/about">
-        <svg>
-            <use xlink:href="#icon-back"></use>
-        </svg>
-        <span>About</span>
-    </a>
-    <div class="content text-center text-lg-left col col-lg-7 offset-lg-2">
-        <div class="pageheader-title">
-            <h1>Founders</h1>
-        </div>
-        <div class="pageheader-description">
-            <p>The people and institutes that founded The Embassy:</p>
-        </div>
-    </div>
-</div>
+{% set pageheader = {
+    'back_button':{
+        'url': 'pages/about',
+        'label': 'About'
+    },
+    'text': {
+        'title':'Founders',
+        'content': 'The people and institutes that founded The Embassy:'
+    }
+} %}
+{% include '../_includes/components/pageheader.njk' %}
 
 <div class="founders founders--long offset-lg-2">
     <div class="founder-profile">

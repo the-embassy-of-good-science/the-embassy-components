@@ -3,6 +3,35 @@ layout: layouts/main.njk
 bodyclasses: is-verylightblue
 ---
 
+{% set pageheader = {
+    'back_button':{
+        'url': '#',
+        'label': 'Back'
+    },
+    'icon': 'trainings',
+    'text': {
+        'title': 'Training',
+        'content': 'Guides, materdddials and a community that support training on research integrity and ethics.'
+    },
+    'button': {
+        'type': 'formbutton-add',
+        'action': '/wiki/Special:FormEdit/Theme',
+        'value': 'Add',
+        'label': 'Add',
+        'class': 'formbutton-add--instruction',
+        'dropdown': [{
+            'title': 'Add an instruction',
+            'description': 'Step by step instruction for an individual exercise.',
+            'url': '#'
+        },{
+            'title': 'Add a guide',
+            'description': 'Overview of a training materials and collection of modules or elements.',
+            'url': '#'
+        }]
+    }
+} %}
+{% include '../_includes/components/pageheader.njk' %}
+
 <div class="pageheader row no-gutters">
     <a class="pageheader-back" href="#">
         <svg>
@@ -22,9 +51,8 @@ bodyclasses: is-verylightblue
         </div>
     </div>
     <div class="pageheader-form-button formbutton-add formbutton-add--instruction">
-
         <form action="/wiki/Special:FormEdit/Theme" method="get" target="_self" data-dropdown-trigger>
-            <button type="submit" value="Add Theme" title="">Add</button>
+            <button type="submit" value="Add" title="">Add</button>
             <div class="te-dropdown-menu">
                 <a href="#">
                     <span class="dropdown-item-title">Add an instruction</span>

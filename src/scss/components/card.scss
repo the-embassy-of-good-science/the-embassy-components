@@ -17,6 +17,8 @@
 
   .card {
     min-width: 320px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-bottom: 40px;
 
     &:last-child {
@@ -279,6 +281,11 @@
 
           .Virt2ue-button {
             color: $te-black;
+
+            &:hover {
+              text-decoration: underline;
+            }
+
           }
 
         }

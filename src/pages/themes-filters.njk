@@ -3,32 +3,24 @@ layout: layouts/main.njk
 bodyclasses: is-verylightblue
 ---
 
-<!-- page header starts here -->
-<div class="pageheader row no-gutters">
-    <a class="pageheader-back" href="#">
-        <svg>
-            <use xlink:href="#icon-back"></use>
-        </svg>
-        <span>Back</span>
-    </a>
-    <div class="content text-center text-lg-left col col-lg-7 offset-lg-2">
-        <div class="pageheader-title">
-            <svg>
-                <use xlink:href="#icon-themes"></use>
-            </svg>
-            <h1>Good practices</h1>
-        </div>
-        <div class="pageheader-description">
-            <p>Find out more about the concepts and practices that inform our ideas about what Good Science is and how
-                to perform it.</p>
-        </div>
-    </div>
-    <div class="pageheader-form-button formbutton-add">
-        <form action="/wiki/Special:FormEdit/Theme" method="get" target="_self">
-            <button type="submit" value="Add Theme" title="">Add Theme</button>
-        </form>
-    </div>
-</div>
+{% set pageheader = {
+    'back_button':{
+        'url': '#',
+        'label': 'Back'
+    },
+    'icon': 'themes',
+    'text': {
+        'title':'Good practices',
+        'content': 'Find out more about the concepts and practices that inform our ideas about what Good Science is and how to perform it.'
+    },
+    'button': {
+        'type': 'formbutton-add',
+        'action': '/wiki/Special:FormEdit/Theme',
+        'value': 'Add Theme',
+        'label': 'Add Theme'
+    }
+} %}
+{% include '../_includes/components/pageheader.njk' %}
 
 {% include '../_includes/components/drilldown-filters.njk' %}
 

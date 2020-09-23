@@ -19,7 +19,6 @@ div#drilldown-header {
   .drilldown-header-value {
     display: inline-block;
     margin-bottom: 20px;
-    padding: 2px 20px 0 15px;
     font-size: rem-calc(15);
     line-height: 45px;
     color: $te-blue;
@@ -28,10 +27,8 @@ div#drilldown-header {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 100%;
 
     @include media-breakpoint-up(md) {
-      width: auto;
       padding-right: 30px;
     }
 

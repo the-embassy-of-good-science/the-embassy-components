@@ -3,6 +3,35 @@ layout: layouts/main.njk
 bodyclasses: is-verylightblue
 ---
 
+{% set pageheader = {
+    'back_button':{
+        'url': '#',
+        'label': 'Back'
+    },
+    'icon': 'trainings',
+    'text': {
+        'title': 'Training',
+        'content': 'Guides, materdddials and a community that support training on research integrity and ethics.'
+    },
+    'button': {
+        'type': 'formbutton-add',
+        'action': '/wiki/Special:FormEdit/Theme',
+        'value': 'Add',
+        'label': 'Add',
+        'class': 'formbutton-add--instruction',
+        'dropdown': [{
+            'title': 'Add an instruction',
+            'description': 'Step by step instruction for an individual exercise.',
+            'url': '#'
+        },{
+            'title': 'Add a guide',
+            'description': 'Overview of a training materials and collection of modules or elements.',
+            'url': '#'
+        }]
+    }
+} %}
+{% include '../_includes/components/pageheader.njk' %}
+
 <div class="pageheader row no-gutters">
     <a class="pageheader-back" href="#">
         <svg>
@@ -13,13 +42,28 @@ bodyclasses: is-verylightblue
     <div class="content text-center text-lg-left col col-lg-7 offset-lg-2">
         <div class="pageheader-title">
             <svg>
-                <use xlink:href="#icon-resources"></use>
+                <use xlink:href="#icon-trainings"></use>
             </svg>
             <h1>Training</h1>
         </div>
         <div class="pageheader-description">
             <p>Guides, materials and a community that support training on research integrity and ethics.</p>
         </div>
+    </div>
+    <div class="pageheader-form-button formbutton-add formbutton-add--instruction">
+        <form action="/wiki/Special:FormEdit/Theme" method="get" target="_self" data-dropdown-trigger>
+            <button type="submit" value="Add" title="">Add</button>
+            <div class="te-dropdown-menu">
+                <a href="#">
+                    <span class="dropdown-item-title">Add an instruction</span>
+                    <span>Step by step instruction for an individual exercise.</span>
+                </a>
+                <a href="#">
+                    <span class="dropdown-item-title">Add a guide</span>
+                    <span>Overview of a training materials and collection of modules or elements.</span>
+                </a>
+            </div>
+        </form>
     </div>
 </div>
 

@@ -1,0 +1,49 @@
+<div class="pageheader row no-gutters">
+    {% if pageheader.back_button %}
+        <a class="pageheader-back" href="{{ pageheader.back_button.url }}">
+            <svg>
+                <use xlink:href="#icon-back"></use>
+            </svg>
+            <span>{{ pageheader.back_button.label }}</span>
+        </a>
+    {% endif %}
+    <div class="content text-center text-lg-left col col-lg-7 offset-lg-2">
+        <div class="pageheader-title">
+            {% if pageheader.icon %}
+                <svg>
+                    <use xlink:href="#icon-{{ pageheader.icon }}"></use>
+                </svg>
+            {% endif %}
+            <h1>{{ pageheader.text.title }}</h1>
+        </div>
+        {% if pageheader.text.content %}
+            <div class="pageheader-description">
+                <p>{{ pageheader.text.content }}</p>
+            </div>
+        {% endif %}
+    </div>
+    {% if pageheader.button %}
+        <div class="pageheader-form-button {{ pageheader.button.type }} {% if pageheader.button.class %}{{ pageheader.button.class }}{% endif %}">
+
+            <form action="{{ pageheader.button.action }}" method="get" target="_self"
+                  {% if pageheader.button.dropdown %}data-dropdown-trigger{% endif %}>
+
+                <button type="submit" value="{{ pageheader.button.value }}" title="">
+                    {{ pageheader.button.label }}
+                </button>
+
+                {% if pageheader.button.dropdown %}
+                    <div class="te-dropdown-menu">
+                        {% for item in pageheader.button.dropdown %}
+                            <a href="{{ item.url }}">
+                                <span class="dropdown-item-title">{{ item.title }}</span>
+                                <span>{{ item.description }}</span>
+                            </a>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+
+            </form>
+        </div>
+    {% endif %}
+</div>

@@ -21,6 +21,11 @@
                 <p>{{ pageheader.text.content }}</p>
             </div>
         {% endif %}
+        {% if pageheader.cta %}
+            <div class="pageheader-cta">
+                {{ pageheader.cta | safe }}
+            </div>
+        {% endif %}
     </div>
     {% if pageheader.button %}
         <div class="pageheader-form-button {{ pageheader.button.type }} {% if pageheader.button.class %}{{ pageheader.button.class }}{% endif %}">

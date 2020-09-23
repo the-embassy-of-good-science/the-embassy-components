@@ -24,15 +24,4 @@ bodyclasses: is-verylightblue
 
 {% include '../_includes/components/drilldown-filters.njk' %}
 
-<div class="resources-list">
-    <div class="resources-list-count">389 resources found</div>
-    <div class="resources-list-items">
-        {% set resources = [
-            { icon: 'icon-resources-guidelines', type: 'guidelines', title: 'Research ethics training of trainers: Developing capacity of Bolivian health science and civil society leaders', authors: 'Aalborg A, Sullivan S, Cortes J, Basagoitia A, Illanes D, Green M', published_year: '2016' },
-            { icon: 'icon-resources-training-materials', type: 'tool', title: 'Integrating Ethics Into a Research Experience for Undergraduates', authors: 'Acharya M,  Davis M,  Weil V', published_year: '1995' }
-        ] %}
-        {% for resource in resources %}
-            {% include '../_includes/components/resource-block.njk'  %}
-        {% endfor %}
-    </div>
-</div>
+{% include '../_includes/components/resources-list.njk' %}

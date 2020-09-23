@@ -1,6 +1,6 @@
-.training-tabs {
+#gesinn-custom-tabs {
   font-family: $te-font-bold;
-  border-bottom: 1px solid $te-boticelli;
+  border-bottom: 2px solid $te-boticelli;
   padding-bottom: 10px;
   font-size: rem-calc(17);
   line-height: unitless-calc(31, 17);
@@ -11,16 +11,19 @@
   }
 }
 
-.training-tabs-label {
-  color: $te-blue;
-  margin-right: 40px;
+.g-tab-info {
   display: none;
+  float: left;
+  margin-left: calc(100 / 6 * 1%);
+  margin-right: 35px;
+  color: $te-blue;
+
   @include media-breakpoint-up(lg) {
-    display: inline;
+    display: block;
   }
 }
 
-.training-tabs-tab {
+.g-tablinks {
   padding: 20px 40px 17px;
   color: $te-black;
 
@@ -29,8 +32,8 @@
   }
 
   &.active {
-    border: 1px solid $te-boticelli;
-    border-bottom: 1px solid $te-verylightblue;
+    border: 2px solid $te-boticelli;
+    border-bottom: 2px solid $te-verylightblue;
   }
 
   &:hover {

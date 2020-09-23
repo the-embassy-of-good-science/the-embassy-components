@@ -36,12 +36,14 @@
     .smw-edit-dropdown {
       margin-left: 5px;
     }
+
     a {
       width: auto;
       padding-left: 50px;
       background-position: 25px center;
       padding-right: 35px;
     }
+
     margin: -10px 0 40px;
     @include media-breakpoint-up(lg) {
       display: none;
@@ -59,9 +61,14 @@
     padding-top: 2px;
     background-color: $te-lightblue;
     transition: background-color 150ms ease-in-out;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 9 9' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23FFF' d='M5.551 5.5396V9H3.4694V5.5396H3.449L0 5.5378V3.4604h3.449V0h2.0816v3.4604h.0204L9 3.4622v2.0774z'/%3E%3C/svg%3E");
+    background-position: 30px center;
+    background-size: 8px;
+    background-repeat: no-repeat;
 
     &::before,
     &::after {
+      /*
       position: absolute;
       z-index: 0;
       top: 0;
@@ -72,6 +79,7 @@
       transform: skewX(-25deg);
       background-color: $te-lightblue;
       transition: background-color 150ms ease-in-out;
+       */
     }
 
     &::before {
@@ -82,10 +90,10 @@
     button {
       display: inline-block;
       height: 42px;
-      padding: 10px 20px;
+      padding: 10px 30px 10px 55px;
       font-family: $te-font-bold;
       font-size: rem-calc(16);
-      text-transform: lowercase;
+      line-height: 1;
       border: none;
       background-color: transparent;
     }
@@ -100,6 +108,45 @@
       }
     }
   }
+
+  &.formbutton-add--instruction {
+    max-width: 300px;
+    form {
+      &.is-open {
+        background-color: $te-sunfloweryellow;
+      }
+    }
+    span {
+      display: block;
+      white-space: initial;
+      font-size: rem-calc(16);
+      line-height: unitless-calc(22,16)
+    }
+    .dropdown-item-title {
+      font-family: $te-font-bold;
+    }
+    .te-dropdown-menu {
+      top: 70px;
+      right: 1px;
+      width: 250px;
+      z-index: 11;
+      transform: none;
+      padding: 25px 10px 25px 30px;;
+      a {
+        background-image: none;
+        padding-bottom: 15px;
+        padding-top: 15px;
+
+        &:hover {
+          text-decoration: none;
+          .dropdown-item-title{
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
 }
 
 // Save and Preview buttons

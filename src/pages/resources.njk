@@ -3,30 +3,24 @@ layout: layouts/main.njk
 bodyclasses: is-verylightblue
 ---
 
-<div class="pageheader row no-gutters">
-    <a class="pageheader-back" href="#">
-        <svg>
-            <use xlink:href="#icon-back"></use>
-        </svg>
-        <span>Back</span>
-    </a>
-    <div class="content text-center text-lg-left col col-lg-7 offset-lg-2">
-        <div class="pageheader-title">
-            <svg>
-                <use xlink:href="#icon-resources"></use>
-            </svg>
-            <h1>Resources</h1>
-        </div>
-        <div class="pageheader-description">
-            <p>Materials that help you in your every-day research practice to do Good Science.</p>
-        </div>
-    </div>
-    <div class="pageheader-form-button formbutton-add">
-        <form action="/wiki/Special:FormEdit/Theme" method="get" target="_self">
-            <button type="submit" value="Add Theme" title="">Add Resource</button>
-        </form>
-    </div>
-</div>
+{% set pageheader = {
+    'back_button':{
+        'url': '#',
+        'label': 'Back'
+    },
+    'icon': 'resources',
+    'text': {
+        'title': 'Resources',
+        'content': 'Materials that help you in your every-day research practice to do Good Science.'
+    },
+    'button': {
+        'type': 'formbutton-add',
+        'action': '/wiki/Special:FormEdit/Theme',
+        'value': 'Add Resource',
+        'label': 'Add Resource'
+    }
+} %}
+{% include '../_includes/components/pageheader.njk' %}
 
 {% include '../_includes/components/drilldown-filters.njk' %}
 

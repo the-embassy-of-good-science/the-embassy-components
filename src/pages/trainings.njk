@@ -1,0 +1,97 @@
+---
+layout: layouts/main.njk
+bodyclasses: is-verylightblue
+---
+
+{% set pageheader = {
+    'back_button':{
+        'url': '#',
+        'label': 'Back'
+    },
+    'icon': 'trainings',
+    'text': {
+        'title': 'Training',
+        'content': 'Guides, materdddials and a community that support training on research integrity and ethics.'
+    },
+    'button': {
+        'type': 'formbutton-add',
+        'action': '/wiki/Special:FormEdit/Theme',
+        'value': 'Add',
+        'label': 'Add',
+        'class': 'formbutton-add--instruction',
+        'dropdown': [{
+            'title': 'Add an instruction',
+            'description': 'Step by step instruction for an individual exercise.',
+            'url': '#'
+        },{
+            'title': 'Add a guide',
+            'description': 'Overview of a training materials and collection of modules or elements.',
+            'url': '#'
+        }]
+    }
+} %}
+{% include '../_includes/components/pageheader.njk' %}
+
+<div class="card-grid is-trainings">
+    <div class="cards-wrapper">
+        <div class="card is-trainings">
+            <div class="card-header">
+                <h2 class="card-title text-center">
+                    Training material
+                </h2>
+            </div>
+            <div class="card-body">
+                <div class="card-text">
+                    <div class="text-block">
+                        <span>Step by step guides that help you as a trainer</span>
+                        {% set modifier = 'is-mobile' %}
+                        {% include "../_includes/components/virtue-button.njk" %}
+                        <hr>
+                        <div class="training-links">
+                            <a class="training-link" href="#">All training guides</a>
+                            <a class="training-link" href="#">Individual exercises</a>
+                        </div>
+                    </div>
+                    {% set modifier = 'is-desktop' %}
+                    {% include "../_includes/components/virtue-button.njk" %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cards-wrapper">
+        <div class="card is-trainings">
+            <div class="card-header">
+                <h2 class="card-title text-center">
+                    <a href="/wiki/Category:Training" title="Category:Training">
+                        Educational resources
+                    </a>
+                </h2>
+            </div>
+            <div class="card-body">
+                <div class="card-text">
+                    <a href="/wiki/Category:Training" title="Category:Training">
+                        Literature, tools and other resources to use in training.
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="card is-trainings">
+            <div class="card-header">
+                <h2 class="card-title text-center">
+                    <a href="/wiki/Category:Training" title="Category:Training">
+                        Training community
+                    </a>
+                </h2>
+            </div>
+            <div class="card-body">
+                <div class="card-text">
+                    <a href="/wiki/Category:Training" title="Category:Training">
+                        Meet trainers, trainees and ask your questions.
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include "../_includes/components/banner-block.njk" %}

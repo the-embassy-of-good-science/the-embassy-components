@@ -1,8 +1,8 @@
 <div class="instruction-block-wrapper">
-    {% if instruction.header %}
-        <div class="instruction-header">
-            <div class="instruction-header-container">
-            <h4>{{ instruction.header }}</h4>
+    {% if instruction.sectionheader %}
+        <div class="instruction-sectionheader">
+            <div class="instruction-sectionheader-container">
+                <h4>{{ instruction.sectionheader }}</h4>
             </div>
 
         </div>
@@ -26,19 +26,30 @@
                     <span class="instruction-block-published">({{ instruction.published_year }})</span>
                 {% endif %}
             </div>
-            {% if instruction.tags %}
-                <div class="instruction-block-tags">
-                    <div class="instruction-block-tag">
-                        0,5 hours
+            <div class="instruction-block-meta">
+                {% if instruction.tags %}
+                    <div class="instruction-block-tags">
+                        <div class="instruction-block-tag">
+                            0,5 hours
+                        </div>
+                        <div class="instruction-block-tag">
+                            3 - 5 participants
+                        </div>
+                        <div class="instruction-block-tag">
+                            Blended learning
+                        </div>
+                        <div class="instruction-block-tag">
+                            Blended learning
+                        </div>
                     </div>
-                    <div class="instruction-block-tag">
-                        3 - 5 participants
+                {% endif %}
+                {% if instruction.virt2ue %}
+                    <div class="instruction-block-virt2ue-label">
+                        <span>Part of</span>
+                        <a href="#">VIRT2UE train-the-trainer training</a>
                     </div>
-                    <div class="instruction-block-tag">
-                        Blended learning
-                    </div>
-                </div>
-            {% endif %}
+                {% endif %}
+            </div>
         </div>
     </div>
 </div>

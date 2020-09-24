@@ -1,36 +1,45 @@
-<div class="instructions-list">
-    <div class="instructions-list-items">
-        {% set instructions = [{
-            header: 'Preparing',
-            icon: 'icon-resources-training-materials',
-            type: 'instruction',
-            title: 'Overall manual for trainers',
-            authors: 'A little description what this instruction is all about. Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.',
-            published_year: '2016',
-            tags: 'test'
-        },{
-            header: 'Online interactive modules',
-            icon: 'icon-resources-training-materials',
-            type: 'instruction',
-            title: 'Introduction to research integrity',
-            authors: 'Introduction to research integrity and virtue ethics, the ECoC and the main concepts used during the training. Including reflection on personal experiences.',
-            published_year: '1995'
-        },{
-            header: 'Participatory exercises',
-            icon: 'icon-resources-training-materials',
-            type: 'instruction',
-            title: 'Introduction of the first face-to-face session of the VIRT2UE training',
-            authors: 'Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nulla vitae elit libero, a pharetra augue. Nullam quis risus eget urna mollis ornare vel eu leo.',
-            published_year: '1995'
-        },{
-            icon: 'icon-resources-training-materials',
-            type: 'instruction',
-            title: 'I. Self-declaration approach: a reflection on the varieties of goodness in research',
-            authors: 'Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nulla vitae elit libero, a pharetra augue. Nullam quis risus eget urna mollis ornare vel eu leo.',
-            published_year: '1995'
-        }] %}
-        {% for instruction in instructions %}
-            {% include '../components/instruction-block.njk' %}
-        {% endfor %}
+<div class="instructions-list-wrapper">
+    <div class="instructions-list">
+        <div class="instructions-list-items">
+            {% set instructions = [{
+                sectionheader:'Preparing',
+                icon: 'icon-resources-training-materials',
+                type: 'instruction',
+                title: 'Overall manual for trainers',
+                authors: 'A little description what this instruction is all about. Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.',
+                published_year: '2016',
+                tags: 'test',
+                virt2ue: true
+            },{
+                icon: 'icon-resources-training-materials',
+                type: 'instruction',
+                title: 'I. Self-declaration approach: a reflection on the varieties of goodness in research',
+                authors: 'Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nulla vitae elit libero, a pharetra augue. Nullam quis risus eget urna mollis ornare vel eu leo.',
+                published_year: '1995',
+                virt2ue: true
+            },{
+                sectionheader:'Online interactive modules',
+                icon: 'icon-resources-training-materials',
+                type: 'instruction',
+                title: 'Introduction to research integrity',
+                authors: 'Introduction to research integrity and virtue ethics, the ECoC and the main concepts used during the training. Including reflection on personal experiences.',
+                published_year: '1995'
+            },{
+                sectionheader:'Participatory exercises',
+                icon: 'icon-resources-training-materials',
+                type: 'instruction',
+                title: 'Introduction of the first face-to-face session of the VIRT2UE training',
+                authors: 'Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nulla vitae elit libero, a pharetra augue. Nullam quis risus eget urna mollis ornare vel eu leo.',
+                published_year: '1995'
+            }] %}
+            {% for instruction in instructions %}
+                {% include '../components/instruction-block.njk' %}
+            {% endfor %}
+        </div>
     </div>
+    <a href="#" class="instructions-list-loadmore">
+        <div class="instructions-list-loadmore-container">
+            <span>See more</span>
+        </div>
+    </a>
 </div>

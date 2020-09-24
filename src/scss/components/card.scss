@@ -356,7 +356,7 @@
         }
       }
 
-      a.training-link {
+      .training-link {
         font-size: rem-calc(17);
         line-height: unitless-calc(31, 17);
         font-family: $te-font-bold;
@@ -392,7 +392,7 @@
           justify-content: center;
         }
 
-        a.guide-link {
+        .guide-link {
           max-width: 285px;
           width: 100%;
           font-family: $te-font-regular;

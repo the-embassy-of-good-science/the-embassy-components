@@ -1,0 +1,26 @@
+---
+layout: layouts/main.njk
+bodyclasses: is-homepageblue
+---
+
+{% set pageheader = {
+    'back_button':{
+        'url': '#',
+        'label': 'Back'
+    },
+    'text': {
+        'title': 'Training instructions',
+        'content': 'Practice oriented step-by-step instructions that will help you as a research ethics and research integrity trainer.'
+    },
+    'button': {
+        'type': 'formbutton-add',
+        'action': '/wiki/Special:FormEdit/Theme',
+        'value': 'Add an instruction',
+        'label': 'Add an instruction',
+        'class': 'formbutton-add--instruction'
+    }
+
+} %}
+{% include '../_includes/components/pageheader.njk' %}
+{% include '../_includes/components/drilldown-filters-instructions.njk' %}
+{% include "../_includes/components/instructions-list.njk" %}

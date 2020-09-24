@@ -40,6 +40,10 @@ import './masonry-columns'
  */
 import './drilldown-cleanup'
 
+/**
+ * Drilldown cleanup
+ */
+import './read-more'
 
 // The Embassy content MediaWiki hyperlinks
 // const mediaWikiContentHyperlinks = document.querySelectorAll('.te-mw-link');

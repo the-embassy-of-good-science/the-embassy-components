@@ -42,7 +42,7 @@ h1 {
   }
 }
 
-ul, ol, p {
+ul, ol, p, .mw-field-value {
   margin-bottom: map_get($paragraph-bottom-margins, sm);
 
   @include media-breakpoint-up(md) {

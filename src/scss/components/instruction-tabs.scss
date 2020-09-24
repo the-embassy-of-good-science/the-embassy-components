@@ -14,9 +14,13 @@
 .g-tab-info {
   display: none;
   float: left;
-  margin-left: calc(100 / 6 * 1%);
   margin-right: 35px;
   color: $te-blue;
+  margin-left: calc(100 / 6 * 1%);
+
+  .is-inline & {
+    margin-left: 0;
+  }
 
   @include media-breakpoint-up(lg) {
     display: block;

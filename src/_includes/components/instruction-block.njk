@@ -1,0 +1,55 @@
+<div class="instruction-block-wrapper">
+    {% if instruction.sectionheader %}
+        <div class="instruction-sectionheader">
+            <div class="instruction-sectionheader-container">
+                <h4>{{ instruction.sectionheader }}</h4>
+            </div>
+
+        </div>
+    {% endif %}
+    <div class="instruction-block">
+        <div class="instruction-block-container">
+            <div class="instruction-block-header">
+                {% if instruction.icon %}
+                    <svg class="instruction-block-icon">
+                        <use xlink:href="#{{ instruction.icon }}"></use>
+                    </svg>
+                {% endif %}
+                <span>{{ instruction.type }}</span>
+            </div>
+            <div class="instruction-block-title">
+                {{ instruction.title }}
+            </div>
+            <div class="instruction-block-authors">
+                {{ instruction.authors }}
+                {% if instruction.published_year %}
+                    <span class="instruction-block-published">({{ instruction.published_year }})</span>
+                {% endif %}
+            </div>
+            <div class="instruction-block-meta">
+                {% if instruction.tags %}
+                    <div class="instruction-block-tags">
+                        <div class="instruction-block-tag">
+                            0,5 hours
+                        </div>
+                        <div class="instruction-block-tag">
+                            3 - 5 participants
+                        </div>
+                        <div class="instruction-block-tag">
+                            Blended learning
+                        </div>
+                        <div class="instruction-block-tag">
+                            Blended learning
+                        </div>
+                    </div>
+                {% endif %}
+                {% if instruction.virt2ue %}
+                    <div class="instruction-block-virt2ue-label">
+                        <span>Part of</span>
+                        <a href="#">VIRT2UE train-the-trainer training</a>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

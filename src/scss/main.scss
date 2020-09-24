@@ -19,28 +19,28 @@
 @import 'components/banner-block';
 @import 'components/card';
 @import 'components/columns';
+@import 'components/contributors-list';
 @import 'components/copyright';
+@import 'components/drilldown-filters'; // Overwrite drilldown filters
 @import 'components/footer';
 @import 'components/founders';
 @import 'components/homeblock';
+@import 'components/instruction-tabs';
+@import 'components/instruction-block';
 @import 'components/link-button';
+@import 'components/mailchimp-embed';
 @import 'components/navigation';
-@import 'components/contributors-list';
 @import 'components/other-infomation-block';
 @import 'components/page-header';
 @import 'components/profile';
 @import 'components/references';
 @import 'components/related-discussion';
 @import 'components/related-resource';
+@import 'components/resource-block';
 @import 'components/search';
 @import 'components/sidebar';
 @import 'components/sidebar-anchors';
 @import 'components/spacer';
+@import 'components/te-dropdown-menu';
 @import 'components/video-button';
 @import 'components/virtue-button';
-@import 'components/te-dropdown-menu';
-@import 'components/resource-block';
-@import 'components/mailchimp-embed';
-
-// Overwrite drilldown filters
-@import 'components/drilldown-filters';

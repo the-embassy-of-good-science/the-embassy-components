@@ -19,6 +19,10 @@ body {
   background-color: $te-white;
 }
 
+body.is-homepageblue {
+  background-color: $te-homepage-background;
+}
+
 body.is-verylightblue,
 body.is-homepage {
   background-color: $te-verylightblue;

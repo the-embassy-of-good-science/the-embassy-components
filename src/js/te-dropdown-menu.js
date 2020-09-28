@@ -9,7 +9,12 @@ TeDropdownMenu = function(el) {
 
   this.open = function(e) {
     e.preventDefault()
-    this.el.classList.toggle('is-open');
+    this.el.classList.add('is-open');
+  }.bind(this);
+
+  this.close = function(e) {
+    e.preventDefault()
+    this.el.classList.remove('is-open');
   }.bind(this);
 
   this.resize = function() {
@@ -20,6 +25,17 @@ TeDropdownMenu = function(el) {
   this.el.addEventListener('click', this.open);
 
   window.addEventListener('resize', this.resize);
+
+  window.addEventListener('click', function(e){
+    let dropdownWrapper = e.target.closest('.is-open')
+
+    // Close dropdown when clicking outside of it
+    if (!dropdownWrapper) {
+      this.el.classList.remove('is-open');
+    }
+
+    //this.close
+  }.bind(this))
 };
 
 /**

@@ -62,25 +62,11 @@
     background-color: $te-lightblue;
     transition: background-color 150ms ease-in-out;
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 9 9' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23FFF' d='M5.551 5.5396V9H3.4694V5.5396H3.449L0 5.5378V3.4604h3.449V0h2.0816v3.4604h.0204L9 3.4622v2.0774z'/%3E%3C/svg%3E");
-    background-position: 30px center;
-    background-size: 8px;
+    background-position: 32px 18px;
+    background-size: 9px;
     background-repeat: no-repeat;
 
-    &::before,
-    &::after {
-      /*
-      position: absolute;
-      z-index: 0;
-      top: 0;
-      left: -10px;
-      width: 20px;
-      height: 100%;
-      content: ' ';
-      transform: skewX(-25deg);
-      background-color: $te-lightblue;
-      transition: background-color 150ms ease-in-out;
-       */
-    }
+
 
     &::before {
       right: -10px;

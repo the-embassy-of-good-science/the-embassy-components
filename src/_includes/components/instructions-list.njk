@@ -1,32 +1,36 @@
 <div class="instructions-list-wrapper">
+    <div class="instructions-list-resultcount">
+        <div class="instructions-list-resultcount-container">
+            <span>82 instructions</span> ordered by <span>recently added</span>
+        </div>
+    </div>
     <div class="instructions-list">
         <div class="instructions-list-items">
             {% set instructions = [{
-                icon: 'icon-resources-training-materials',
+                icon: 'icon-instruction',
                 type: 'instruction',
                 title: 'Overall manual for trainers',
                 authors: 'A little description what this instruction is all about. Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.',
-                published_year: '2016',
-                tags: 'test'
+                tags: true
             },{
                 icon: 'icon-resources-training-materials',
                 type: 'instruction',
                 title: 'I. Self-declaration approach: a reflection on the varieties of goodness in research',
                 authors: 'Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nulla vitae elit libero, a pharetra augue. Nullam quis risus eget urna mollis ornare vel eu leo.',
-                published_year: '1995',
-                virt2ue: true
+                virt2ue: true,
+                tags: true
             },{
                 icon: 'icon-resources-training-materials',
                 type: 'instruction',
                 title: 'Introduction to research integrity',
                 authors: 'Introduction to research integrity and virtue ethics, the ECoC and the main concepts used during the training. Including reflection on personal experiences.',
-                published_year: '1995'
+                tags: true
             },{
                 icon: 'icon-resources-training-materials',
                 type: 'instruction',
                 title: 'Introduction of the first face-to-face session of the VIRT2UE training',
                 authors: 'Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nulla vitae elit libero, a pharetra augue. Nullam quis risus eget urna mollis ornare vel eu leo.',
-                published_year: '1995'
+                tags: true
             }] %}
             {% for instruction in instructions %}
                 {% include '../components/instruction-block.njk' %}

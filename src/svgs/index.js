@@ -23,3 +23,4 @@ import './icon-error.svg';
 import './icon-info.svg';
 import './icon-minus.svg';
 import './icon-download.svg';
+import './icon-instruction.svg';

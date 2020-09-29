@@ -62,10 +62,6 @@
   margin: 0 auto;
   max-width: 400px;
 
-  @include media-breakpoint-up(lg){
-    max-width: 70%;
-  }
-
   p:last-child {
     margin-bottom: 0;
   }

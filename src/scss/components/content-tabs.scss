@@ -33,12 +33,18 @@
 
   &.active {
     border: 2px solid $te-boticelli;
-    border-bottom: 2px solid $te-verylightblue;
+    border-bottom-color: $te-white;
+
+    .is-homepageblue & {
+      border-bottom-color: $te-homepage-background;
+    }
+
   }
 
   &:hover {
-    color: $te-black;
+    color: $te-blue;
     text-decoration: none;
+    cursor: pointer;
   }
 }
 

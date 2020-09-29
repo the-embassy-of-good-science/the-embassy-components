@@ -1,13 +1,13 @@
 .pageheader {
   @include media-breakpoint-up(lg) {
     display: block;
-    margin-top: 0;
+    margin: 0 0 65px;
   }
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 65px 0;
+  margin: 65px 0 40px;
 }
 
 // Back button
@@ -59,8 +59,8 @@
     max-width: 100%;
     font-size: rem-calc(22);
   }
-  max-width: 70%;
   margin: 0 auto;
+  max-width: 400px;
 
   p:last-child {
     margin-bottom: 0;
@@ -84,9 +84,18 @@
 }
 
 .pageheader-form-button {
-  position: absolute;
-  top: 0;
-  right: 0;
+  margin-top: 25px;
+  @include media-breakpoint-up(lg) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 0;
+  }
+
+  button:focus {
+    outline: 0;
+  }
+
 }
 
 .pageheader-cta {

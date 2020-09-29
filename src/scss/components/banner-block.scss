@@ -52,11 +52,6 @@
       text-decoration: underline;
       padding-right: 15px;
 
-      background-color: transparent;
-      background-repeat: no-repeat;
-      background-position: center right;
-      background-image: url('data:image/svg+xml,%3Csvg id=\'icon-arrow-right\' width=\'7px\' height=\'11px\' viewBox=\'0 0 6 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cpath d=\'M3.80662838,5.23411402 L1.42748564,7.61325676 L6.07103257e-11,6.18577112 L2.37914274,3.80662838 L2.12139195e-11,1.42748564 L1.42748564,-7.29551974e-11 L5.23411402,3.80662838 L3.80662838,5.23411402 Z\' fill=\'%23567c83\' fill-rule=\'nonzero\'%3E%3C/path%3E%3C/svg%3E%0A');
-
       @include media-breakpoint-up(md) {
         align-self: flex-start;
         padding-left: 30px;
@@ -80,6 +75,7 @@
     flex-direction: row;
   }
 }
+
 .banner-block-title {
   font-size: rem-calc(22);
   line-height: unitless-calc(28, 22);
@@ -90,6 +86,13 @@
 }
 
 .banner-block-list {
+  @include media-breakpoint-up(lg) {
+
+    ul {
+      margin-bottom: 0;
+    }
+  }
+
   li {
     background-image: url("data:image/svg+xml,%3Csvg width='22' height='16' viewBox='0 0 22 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.4364 0L22 2.5588 8.5333 16l-2.5637-2.5588.0004-.0012L0 7.483 2.5636 4.924 8.533 10.882 19.4364 0z' fill='%23F6D30B' fill-rule='evenodd'/%3E%3C/svg%3E");
     background-size: 22px;

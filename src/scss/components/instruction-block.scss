@@ -1,10 +1,26 @@
 // wrapper of instruction block
 .instructions-list {
-  margin: 40px 0;
+  margin: 20px 0;
 }
 
 .instructions-list-wrapper {
   margin-bottom: 150px;
+}
+
+.instructions-list-resultcount {
+  display: flex;
+  font-family: $te-font-regular;
+  color: $te-blue;
+
+  span {
+    font-family: $te-font-bold;
+  }
+
+}
+
+.instructions-list-resultcount-container {
+  margin-left: auto;
+  margin-top: 25px;
 }
 
 .instruction-sectionheader {

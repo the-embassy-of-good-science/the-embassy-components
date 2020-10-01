@@ -96,8 +96,8 @@
 }
 
 .instruction-block-icon {
-  max-width: 30px;
-  max-height: 30px;
+  max-width: 24px;
+  max-height: 24px;
   margin-right: 10px;
 }
 
@@ -190,8 +190,9 @@
     background-size: 15px;
   }
   &.instruction-block-tags--blended{
-    background-image: url("data:image/svg+xml,%3Csvg width='11' height='16' viewBox='0 0 11 16' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3Cfilter id='a'%3E%3CfeColorMatrix in='SourceGraphic' values='0 0 0 0 0.338841 0 0 0 0 0.488169 0 0 0 0 0.514521 0 0 0 1.000000 0'/%3E%3C/filter%3E%3Cpath id='b' d='M0 0h10.8936v15.9175H0z'/%3E%3C/defs%3E%3Cg transform='translate(-287 -11)' filter='url(%23a)' fill='none' fill-rule='evenodd'%3E%3Cg transform='translate(287 11)'%3E%3Cmask id='c' fill='%23fff'%3E%3Cuse xlink:href='%23b'/%3E%3C/mask%3E%3Cpath d='M5.6489.0034c-1.4914-.0517-2.907.4854-3.981 1.5205C.5924 2.5611 0 3.9547 0 5.449c0 1.149.3548 2.2487 1.0262 3.1797l.1916.264c.6143.8432.8686 1.1922.9442 2.2244l.2375 2.7283h5.4129l-.016 1.0617H2.6069v1.0105h6.1849l.0463-3.0828h-2.886V7.4072l1.6749-1.033-.5305-.86-1.6423 1.0127-1.5461-1.0062-.5512.847 1.5846 1.0316v5.4354H3.326l-.1567-1.7984c-.0961-1.3133-.487-1.8499-1.1346-2.7386l-.1888-.2603c-.5465-.7579-.8354-1.6528-.8354-2.5886 0-1.2172.4827-2.3527 1.3588-3.1971.8746-.8433 2.027-1.2854 3.2426-1.2384 2.3468.0862 4.263 2.0687 4.2714 4.4193.0032.9055-.2655 1.7774-.7766 2.5218-.1476.2147-.2828.3956-.4138.5706-.4863.6495-.8703 1.1626-.954 2.2914l-.0709.9561 1.0079.0746.0709-.956c.0618-.8345.2935-1.1438.755-1.7606.1307-.1745.2787-.3724.4379-.6041.628-.9144.958-1.9855.9541-3.0973C10.8834 2.5432 8.5306.1094 5.649.0034' fill='%23000' mask='url(%23c)'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    background-size: 11px;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 23' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='a' height='19.6' maskUnits='userSpaceOnUse' width='14' x='0' y='0'%3E%3Cpath clip-rule='evenodd' d='M0 0h14v19.6H0z' fill='%23fff' fill-rule='evenodd'/%3E%3C/mask%3E%3Cpath clip-rule='evenodd' d='M7.3 0c-2-.1-3.8.6-5.2 2C.8 3.3 0 5.1 0 7c0 1.5.5 2.9 1.3 4.1l.2.3c.8 1.1 1.1 1.5 1.2 2.8l.4 2.8H10v1.3H3.4v1.4h7.9l.1-4H7.7V9.5l2.1-1.3L9.1 7 7 8.3 5.1 7.1l-.8 1.1 2 1.3v6.1h-2l-.2-1.5c-.1-1.7-.6-2.4-1.5-3.5l-.2-.3c-.7-1-1-2.1-1-3.3 0-1.5.6-3 1.7-4 1.1-1.1 2.6-1.6 4.1-1.6 3 .1 5.4 2.6 5.4 5.6 0 1.1-.3 2.3-1 3.2-.2.3-.4.5-.5.7-.6.8-1.1 1.5-1.2 2.9l1.4.1c.1-1.1.4-1.4 1-2.2.2-.2.4-.5.6-.8C13.6 9.8 14 8.4 14 7c0-3.7-3-6.9-6.7-7' fill='%23567c83' fill-rule='evenodd' mask='url(%23a)' transform='translate(1 1)'/%3E%3C/svg%3E");
+    background-size: 13px;
+    background-position: 10px 8px;
   }
 
 }

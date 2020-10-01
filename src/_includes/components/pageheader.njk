@@ -8,6 +8,18 @@
         </a>
     {% endif %}
     <div class="content text-center text-lg-left col col-lg-7 offset-lg-2">
+        {% if pageheader.type %}
+            <div class="pageheader-type">
+                {% if pageheader.type.icon %}
+                    <svg class="pageheader-type-icon">
+                        <use xlink:href="#{{ pageheader.type.icon }}"></use>
+                    </svg>
+                    {% if pageheader.type.label %}
+                        <span class="pageheader-type-label">{{ pageheader.type.label }}</span>
+                    {% endif %}
+                {% endif %}
+            </div>
+        {% endif %}
         <div class="pageheader-title">
             {% if pageheader.icon %}
                 <svg>

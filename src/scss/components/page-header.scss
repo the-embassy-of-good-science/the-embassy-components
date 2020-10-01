@@ -67,6 +67,27 @@
   }
 }
 
+.pageheader-type {
+  display: flex;
+  padding-top: 10px;
+  margin-bottom: 25px;
+}
+
+.pageheader-type-icon {
+  max-width: 24px;
+  max-height: 24px;
+  stroke: $te-blue;
+  color: $te-blue;
+  margin-right: 10px
+}
+
+.pageheader-type-label {
+  font-family: $te-font-bold;
+  color: $te-blue;
+  font-size: rem-calc(18);
+  line-height: unitless-calc(30,18)
+}
+
 .pageheader-title {
   @include media-breakpoint-up(lg) {
     display: flex;

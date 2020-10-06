@@ -34,13 +34,31 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: rem-calc(30);
-  line-height: rem-calc(52);
+  line-height: rem-calc(36);
 
   @include media-breakpoint-up(lg) {
-    font-size: rem-calc(64);
-    line-height: rem-calc(77);
+    font-size: rem-calc(54);
+    line-height: rem-calc(67);
   }
 }
+
+// Bigger h1 headers for these pages
+.page-Themes,
+.page-Resources,
+.page-Trainings,
+.page-Guides,
+.page-Instructions,
+.page-About,
+.page-Founders,
+.page-Contributors {
+  h1 {
+    @include media-breakpoint-up(lg) {
+      font-size: rem-calc(64);
+      line-height: rem-calc(77);
+    }
+  }
+}
+
 
 ul, ol, p {
   margin-bottom: map_get($paragraph-bottom-margins, sm);
@@ -99,3 +117,4 @@ ol {
 b, strong {
   font-family: $font-headings-bold;
 }
+

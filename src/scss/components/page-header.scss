@@ -1,6 +1,7 @@
 .pageheader {
   @include media-breakpoint-up(lg) {
-    display: block;
+    //display: block;
+    display: grid;
     margin: 0 0 65px;
   }
   position: relative;
@@ -8,6 +9,35 @@
   flex-direction: column;
   align-items: center;
   margin: 65px 0 40px;
+
+
+  // Grid
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(12, 1fr);
+  grid-row-gap: 0;
+  grid-column-gap: 24px;
+
+}
+
+.pageheader-back {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 1;
+  grid-column-end: 1;
+}
+
+.pageheader .content {
+  grid-row-start: 1;
+  grid-column-start: 3;
+  grid-row-end: 1;
+  grid-column-end: 12;
+
+  margin-left: 0 !important;
+
+  @include media-breakpoint-up(xl) {
+    grid-column-end: 11;
+  }
+
 }
 
 // Back button
@@ -16,12 +46,14 @@
     position: absolute;
     top: 0;
     left: 0;
+    margin: 0;
   }
   display: flex;
   align-items: center;
   font-family: $font-headings-bold;
   font-size: rem-calc(16);
   color: $te-black;
+  margin: 10px 0 15px;
 
   img,
   svg {
@@ -70,7 +102,13 @@
 .pageheader-type {
   display: flex;
   padding-top: 10px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
+  justify-content: center;
+
+  @include media-breakpoint-up(lg) {
+    justify-content: flex-start;
+    margin-bottom: 25px;
+  }
 }
 
 .pageheader-type-icon {
@@ -85,16 +123,23 @@
   font-family: $te-font-bold;
   color: $te-blue;
   font-size: rem-calc(18);
-  line-height: unitless-calc(30,18)
+  line-height: unitless-calc(30, 18)
 }
 
 .pageheader-title {
+  h1 {
+    margin-bottom: 5px;
+  }
+
   @include media-breakpoint-up(lg) {
     display: flex;
     align-items: flex-start;
     svg {
       margin-right: 20px;
       transform: translateY(5px);
+    }
+    h1 {
+      margin-bottom: 30px;
     }
   }
 
@@ -110,7 +155,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    margin-top: 0;
+    margin-top: 15px;
   }
 
   button:focus {
@@ -125,7 +170,7 @@
   line-height: unitless-calc(22, 18);
   padding: 35px 15px;
   margin: 45px auto 0;
-  max-width: 70%;
+
 
   @include media-breakpoint-up(lg) {
     padding: 15px 20px 15px;

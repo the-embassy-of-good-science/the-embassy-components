@@ -7,7 +7,7 @@
             <span>{{ pageheader.back_button.label }}</span>
         </a>
     {% endif %}
-    <div class="content text-center text-lg-left col col-lg-7 offset-lg-2">
+    <div class="content text-center text-lg-left offset-lg-2">
         {% if pageheader.type %}
             <div class="pageheader-type">
                 {% if pageheader.type.icon %}
@@ -33,34 +33,18 @@
                 <p>{{ pageheader.text.content }}</p>
             </div>
         {% endif %}
+        {% if pageheader.button %}
+            {% if pageheader.button.type == 'formbutton-add' %}
+                {% include 'components/formbutton-add.njk' %}
+            {% endif %}
+            {% if pageheader.button.type == 'formbutton-edit' %}
+                {% include 'components/formbutton-edit.njk' %}
+            {% endif %}
+        {% endif %}
         {% if pageheader.cta %}
             <div class="pageheader-cta">
                 {{ pageheader.cta | safe }}
             </div>
         {% endif %}
     </div>
-    {% if pageheader.button %}
-        <div class="pageheader-form-button {{ pageheader.button.type }} {% if pageheader.button.class %}{{ pageheader.button.class }}{% endif %}">
-
-            <form action="{{ pageheader.button.action }}" method="get" target="_self"
-                  {% if pageheader.button.dropdown %}data-dropdown-trigger{% endif %}>
-
-                <button type="submit" value="{{ pageheader.button.value }}" title="">
-                    {{ pageheader.button.label }}
-                </button>
-
-                {% if pageheader.button.dropdown %}
-                    <div class="te-dropdown-menu">
-                        {% for item in pageheader.button.dropdown %}
-                            <a href="{{ item.url }}">
-                                <span class="dropdown-item-title">{{ item.title }}</span>
-                                <span>{{ item.description }}</span>
-                            </a>
-                        {% endfor %}
-                    </div>
-                {% endif %}
-
-            </form>
-        </div>
-    {% endif %}
 </div>

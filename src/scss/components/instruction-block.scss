@@ -1,6 +1,6 @@
 // wrapper of instruction block
 .instructions-list {
-  margin: 20px 0;
+  margin: 30px 0;
 }
 
 .instructions-list-wrapper {
@@ -32,16 +32,15 @@
     grid-column-gap: 24px;
   }
 
-  padding: 0 30px;
-
   h4 {
     margin-top: 40px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     @include media-breakpoint-up(md) {
-      margin-top: 20px;
+      margin-bottom: 25px;
+      margin-top: 30px;
     }
     @include media-breakpoint-up(lg) {
-      margin-left: -24px; // offset needed to be aligned with pageheder and tabs
+      //margin-left: -24px; // offset needed to be aligned with pageheder and tabs
     }
   }
 
@@ -66,6 +65,13 @@
   }
 }
 
+.instruction-sectionheader-container {
+  padding: 0 30px;
+  @include media-breakpoint-up(md) {
+    padding: 0;
+  }
+}
+
 // styles for instruction block
 .instruction-block {
   @include media-breakpoint-up(md) {
@@ -78,11 +84,14 @@
   margin-bottom: 20px;
   padding: 30px;
   background-color: $te-white;
+  @include media-breakpoint-up(md) {
+    padding: 30px 0;
+  }
 }
 
 .instruction-block-container {
   @include media-breakpoint-up(lg) {
-    margin-left: -24px; // offset needed to be aligned with pageheder and tabs
+    //margin-left: -24px; // offset needed to be aligned with pageheder and tabs
   }
 }
 
@@ -174,7 +183,7 @@
   line-height: unitless-calc(18, 15);
   color: $te-blue;
   border: 1px solid $te-verylightblue;
-  margin: 0 5px 5px 0;
+  margin: 0 10px 5px 0;
   padding: 10px 20px 5px 30px;
 
   background-repeat: no-repeat;
@@ -198,22 +207,22 @@
 }
 
 .instruction-block-virt2ue-label {
-  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  align-self: start;
   flex: 0 1 auto;
   flex-wrap: nowrap;
-  min-width: 300px;
   font-family: $te-font-bold;
   font-size: rem-calc(15);
   line-height: unitless-calc(19, 15);
   color: $te-blue;
-  margin-left: auto;
-  margin-bottom: 11px;
+  margin: 0 auto;
 
   a {
     padding: 10px 0 10px 25px;
-    margin-left: 10px;
+    margin-left: 8px;
     background-repeat: no-repeat;
-    background-position: left 5px;
+    background-position: left 7px;
     background-image: url("data:image/svg+xml,%3Csvg width='21' height='21' viewBox='0 0 21 21' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3Cpath id='a' d='M0 .3748h19.8152v13.2074H0z'/%3E%3Cpath id='c' d='M0 .0911h16.5127v16.51H0z'/%3E%3Cpath id='e' d='M.2609.1874h12.3845v6.6023H.261z'/%3E%3C/defs%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg transform='translate(0 6.2303)'%3E%3Cmask id='b' fill='%23fff'%3E%3Cuse xlink:href='%23a'/%3E%3C/mask%3E%3Cpath fill='%23A7D9DC' mask='url(%23b)' d='M16.5127 6.1542h3.3025V.3748h-3.3025z'/%3E%3Cpath fill='%23F5BA59' mask='url(%23b)' d='M0 6.9798l6.605 6.6051V6.98H0'/%3E%3C/g%3E%3Cpath fill='%23F5BA59' d='M16.5127 3.3026L13.21 6.605v5.7794h3.3026V6.6051h3.3025V.0001l-3.3025 3.3025'/%3E%3Cg transform='translate(0 3.2114)'%3E%3Cmask id='d' fill='%23fff'%3E%3Cuse xlink:href='%23c'/%3E%3C/mask%3E%3Cpath fill='%23006C79' mask='url(%23d)' d='M0 .0911v3.3026h6.605L3.3026.091H0'/%3E%3Cpath fill='%23D8BD90' mask='url(%23d)' d='M13.2101 13.3012v3.3026l3.3026-3.3026H13.21'/%3E%3C/g%3E%3Cpath fill='%23D8BD90' d='M0 0v3.3026h3.3025L0 0'/%3E%3Cg transform='translate(7.1698 13.0228)'%3E%3Cmask id='f' fill='%23fff'%3E%3Cuse xlink:href='%23e'/%3E%3C/mask%3E%3Cpath fill='%23A7D9DC' mask='url(%23f)' d='M6.0403.1874v3.3025H9.343L12.6454.1874h-6.605'/%3E%3Cpath fill='%23004B86' mask='url(%23f)' d='M.2609 6.7925h5.7794V.1874H.261z'/%3E%3C/g%3E%3Cpath fill='%23004B86' d='M0 13.2101h6.605v-6.605H0z'/%3E%3C/g%3E%3C/svg%3E");
     text-decoration: underline;
 

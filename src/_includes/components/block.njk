@@ -1,0 +1,60 @@
+<div class="block-wrapper">
+    {% if block.sectionheader %}
+        <div class="instruction-sectionheader">
+            <div class="instruction-sectionheader-container">
+                <h4>{{ block.sectionheader }}</h4>
+            </div>
+
+        </div>
+    {% endif %}
+    <div class="block">
+        <div class="block-container">
+            <div class="block-header">
+                {% if block.icon %}
+                    <svg class="block-icon">
+                        <use xlink:href="#{{ block.icon }}"></use>
+                    </svg>
+                {% endif %}
+                <span>{{ block.type }}</span>
+            </div>
+            <div class="block-title">
+                {{ block.title }}
+            </div>
+            <div class="block-text">
+                {{ block.authors }}
+                {% if block.published_year %}
+                    <span class="resource-block-published">({{ block.published_year }})</span>
+                {% endif %}
+            </div>
+            <div class="block-meta">
+                {% if block.tags %}
+                    <div class="block-tags">
+                        <div class="block-tag block-tags--duration">
+                            0,5 hours
+                        </div>
+                        <div class="block-tag block-tags--participants">
+                            3 - 5 participants
+                        </div>
+                        <div class="block-tag block-tags--blended">
+                            Blended learning
+                        </div>
+                    </div>
+                {% endif %}
+                {% if block.virt2ue %}
+                    <div class="block-virt2ue-label">
+                        <span>By</span>
+                        <a href="#">VIRT2UE</a>
+                    </div>
+                {% endif %}
+            </div>
+
+            {% if block.navigation %}
+                <div class="resource-block-navigation">
+                    <a class="resource-block-link" href="#">Open</a>
+                    <a class="resource-block-info" href="#">About</a>
+                </div>
+            {% endif %}
+
+        </div>
+    </div>
+</div>

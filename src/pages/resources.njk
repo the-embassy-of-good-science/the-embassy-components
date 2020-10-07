@@ -1,6 +1,6 @@
 ---
 layout: layouts/main.njk
-bodyclasses: is-homepageblue page-Resources
+bodyclasses: mw-special-BrowseData page-Resources
 ---
 
 {% set pageheader = {
@@ -24,4 +24,22 @@ bodyclasses: is-homepageblue page-Resources
 
 {% include '../_includes/components/drilldown-filters.njk' %}
 
-{% include '../_includes/components/resources-list.njk' %}
+{% set blocks = [{
+    icon: 'icon-resources-guidelines',
+    type: 'guidelines',
+    title: 'Research ethics training of trainers: Developing capacity of Bolivian health science and civil society leaders',
+    text: 'Aalborg A, Sullivan S, Cortes J, Basagoitia A, Illanes D, Green M',
+    published_year: '2016',
+    navigation: true
+},{
+    icon: 'icon-resources-training-materials',
+    type: 'tool',
+    title: 'Integrating Ethics Into a Research Experience for Undergraduates',
+    text: 'Acharya M,  Davis M,  Weil V',
+    published_year: '1995',
+    navigation: true
+}] %}
+
+{% set resultCount =  '389 resources' %}
+
+{% include '../_includes/components/block-list.njk' %}

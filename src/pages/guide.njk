@@ -38,4 +38,34 @@ bodyclasses: page-Guide
 {% include '../_includes/components/pageheader.njk' %}
 
 {% include "../_includes/components/content-tabs.njk" %}
-{% include "../_includes/components/guide-list.njk" %}
+
+{% set blocks = [{
+    sectionheader:'Preparing',
+    icon: 'icon-instruction',
+    type: 'instruction',
+    title: 'Overall manual for trainers',
+    text: 'A little description what this instruction is all about. Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.',
+    tags: true
+},{
+    icon: 'icon-instruction',
+    type: 'instruction',
+    title: 'I. Self-declaration approach: a reflection on the varieties of goodness in research',
+    text: 'Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nulla vitae elit libero, a pharetra augue. Nullam quis risus eget urna mollis ornare vel eu leo.',
+    tags: true
+},{
+    sectionheader:'Online interactive modules',
+    icon: 'icon-instruction',
+    type: 'instruction',
+    title: 'Introduction to research integrity',
+    text: 'Introduction to research integrity and virtue ethics, the ECoC and the main concepts used during the training. Including reflection on personal experiences.',
+    tags: true
+},{
+    sectionheader:'Participatory exercises',
+    icon: 'icon-instruction',
+    type: 'instruction',
+    title: 'Introduction of the first face-to-face session of the VIRT2UE training',
+    text: 'Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nulla vitae elit libero, a pharetra augue. Nullam quis risus eget urna mollis ornare vel eu leo.',
+    tags: true
+}] %}
+
+{% include "../_includes/components/block-list.njk" %}

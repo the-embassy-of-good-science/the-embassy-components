@@ -1,0 +1,16 @@
+<div class="block-list-wrapper">
+    {% if resultCount %}
+        <div class="block-list-resultcount">
+            <div class="block-list-resultcount-container">
+                <span>{{ resultCount }}</span> ordered by <span>recently added</span>
+            </div>
+        </div>
+    {% endif %}
+    <div class="block-list">
+        <div class="block-list-items">
+            {% for block in blocks %}
+                {% include '../components/block.njk' %}
+            {% endfor %}
+        </div>
+    </div>
+</div>

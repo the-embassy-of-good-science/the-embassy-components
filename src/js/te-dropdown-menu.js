@@ -8,13 +8,10 @@ TeDropdownMenu = function(el) {
   this.el = el;
 
   this.open = function(e) {
-    e.preventDefault()
+    if (e.target.nodeName === 'BUTTON'){
+      e.preventDefault()
+    }
     this.el.classList.add('is-open');
-  }.bind(this);
-
-  this.close = function(e) {
-    e.preventDefault()
-    this.el.classList.remove('is-open');
   }.bind(this);
 
   this.resize = function() {
@@ -34,7 +31,7 @@ TeDropdownMenu = function(el) {
       this.el.classList.remove('is-open');
     }
 
-    //this.close
+
   }.bind(this))
 };
 

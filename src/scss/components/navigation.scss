@@ -22,6 +22,82 @@
 
   // Avoid shrinking when a flex item children
   flex-shrink: 0;
+
+
+  & > .row {
+    margin-left: 0;
+    margin-right: 0;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(12, 1fr);
+    grid-row-gap: 0;
+    grid-column-gap: 24px;
+    //background: pink;
+  }
+
+  .nav-brand {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 1;
+    grid-column-end: 1;
+    padding: 0;
+    //background: lightcoral;
+  }
+
+  .nav {
+    justify-content: space-between;
+
+    grid-row-start: 1;
+    grid-column-start: 3;
+    grid-row-end: 1;
+    grid-column-end: 9;
+
+    //background: lightgoldenrodyellow;
+
+    max-width: none;
+
+    a {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+  }
+
+  .nav-search-profile {
+    grid-row-start: 1;
+    grid-column-start: 10;
+    grid-row-end: 1;
+    grid-column-end: 13;
+    //background: lightsalmon;
+
+    display: flex;
+    max-width: none;
+
+    padding-left: 0;
+    padding-right: 0;
+
+    .profile {
+      right: auto;
+    }
+
+    .p-search {
+      display: flex;
+      margin-right: 15px;
+      align-items: center;
+    }
+
+    input[name='search'] {
+      margin-bottom: -2px;
+      height: 25px;
+    }
+
+  }
+
+  &.container {
+    padding: 0 30px;
+  }
+
 }
 
 .nav-trigger {
@@ -75,6 +151,7 @@
     &:checked + .nav-trigger {
       position: fixed;
       top: 13px;
+
       .open-icon {
         display: none;
       }
@@ -105,7 +182,7 @@
   @include media-breakpoint-up(lg) {
     position: relative;
     flex-direction: row;
-    justify-content: left;
+    justify-content: space-between;
     height: auto;
   }
 
@@ -120,8 +197,7 @@
   a {
     @include media-breakpoint-up(lg) {
       width: auto;
-      margin: 0 16px;
-      padding: 16px 0 10px;
+
       font-size: 16px;
 
       &:hover {
@@ -139,7 +215,7 @@
 
     position: relative;
     width: 100%;
-    padding: 16px;
+
     font-family: $te-font-bold;
     font-size: 26px;
     text-align: center;
@@ -180,7 +256,7 @@
       // homepage
       .is-homepage &,
       .page-Main_Page & {
-        @include media-breakpoint-up(lg){
+        @include media-breakpoint-up(lg) {
           background-color: $te-black;
         }
       }
@@ -203,7 +279,6 @@
 
 .navigation .nav-brand {
   @include media-breakpoint-up(lg) {
-    position: relative;
     top: auto;
     left: auto;
     display: inline;

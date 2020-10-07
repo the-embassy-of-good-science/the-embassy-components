@@ -51,7 +51,7 @@
     grid-row-start: 1;
     grid-column-start: 3;
     grid-row-end: 1;
-    grid-column-end: 9;
+    grid-column-end: 10;
 
     //background: lightgoldenrodyellow;
 
@@ -195,10 +195,16 @@
   height: 100vh;
 
   a {
+    @include media-breakpoint-up(xl) {
+      margin-right: 45px;
+    }
+
     @include media-breakpoint-up(lg) {
       width: auto;
 
       font-size: 16px;
+
+      margin-right: 25px;
 
       &:hover {
         cursor: pointer;

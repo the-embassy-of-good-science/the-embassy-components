@@ -10,6 +10,7 @@ body.page-Special_Search {
   background-color: $te-verylightblue;
 }
 
+
 // Styles on content generic area
 .content.mw-body .bodyContent,
 .content {
@@ -362,4 +363,17 @@ form#search {
   box-shadow: none;
 }
 
+body {
+  &.page-About,
+  &.page-Contributors,
+  &.page-Founders,
+  &.page-Guides,
+  &.page-Guide,
+  &.page-Instructions,
+  &.page-Resources,
+  &.page-Trainings,
+  &.page-Special_BrowseData_Theme {
+    background-color: $te-homepage-background
+  }
+}
 

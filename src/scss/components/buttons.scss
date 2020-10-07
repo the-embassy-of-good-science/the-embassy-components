@@ -37,7 +37,7 @@
       margin-left: 5px;
     }
 
-    a {
+    & > a {
       width: auto;
       padding-left: 50px;
       background-position: 25px center;
@@ -46,14 +46,15 @@
 
     margin: -10px 0 40px;
     @include media-breakpoint-up(lg) {
-      display: none;
+      //display: none;
     }
   }
 
 }
 
 // used on pageheader
-.pageheader-form-button.formbutton-add {
+.pageheader-form-button.formbutton-add,
+.pageheader-form-button.formbutton-edit {
   form {
     position: relative;
     display: inline-flex;
@@ -65,7 +66,6 @@
     background-position: 32px 18px;
     background-size: 9px;
     background-repeat: no-repeat;
-
 
 
     &::before {
@@ -97,20 +97,24 @@
 
   &.formbutton-add--instruction {
     max-width: 300px;
+
     form {
       &.is-open {
         background-color: $te-sunfloweryellow;
       }
     }
+
     span {
       display: block;
       white-space: initial;
       font-size: rem-calc(16);
-      line-height: unitless-calc(22,16)
+      line-height: unitless-calc(22, 16)
     }
+
     .dropdown-item-title {
       font-family: $te-font-bold;
     }
+
     .te-dropdown-menu {
       top: 70px;
       right: 1px;
@@ -118,6 +122,7 @@
       z-index: 11;
       transform: none;
       padding: 20px;
+
       a {
         background-image: none;
         padding-bottom: 15px;
@@ -125,7 +130,8 @@
 
         &:hover {
           text-decoration: none;
-          .dropdown-item-title{
+
+          .dropdown-item-title {
             text-decoration: underline;
           }
         }
@@ -133,6 +139,26 @@
     }
   }
 
+}
+
+.pageheader-form-button.formbutton-edit {
+
+  margin-top: 25px;
+  justify-content: center;
+  margin-bottom: -5px;
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  @include media-breakpoint-up(xl) {
+    margin-top: 15px;
+  }
+
+  & > a {
+    padding: 10px 85px 10px 105px;
+    background-position: 80px center;
+  }
 }
 
 // Save and Preview buttons

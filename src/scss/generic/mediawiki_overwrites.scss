@@ -297,12 +297,15 @@ form#search {
           color: $te-black;
         }
       }
+
       .searchresult {
         margin: 15px 0 0;
       }
+
       .searchmatch {
         font-family: $font-headings-bold;
       }
+
       .mw-search-result-data {
         margin-top: 20px;
         font-size: rem-calc(16);
@@ -358,3 +361,5 @@ form#search {
   border-color: $te-lightblue;
   box-shadow: none;
 }
+
+

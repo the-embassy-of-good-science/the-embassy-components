@@ -5,16 +5,37 @@
   font-size: rem-calc(17);
   line-height: unitless-calc(31, 17);
 
+  @include media-breakpoint-up(md) {
+    display: grid;
+  }
   @include media-breakpoint-up(lg) {
     font-size: rem-calc(18);
     line-height: unitless-calc(31, 18);
+  }
+
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(12, 1fr);
+  grid-row-gap: 0;
+  grid-column-gap: 24px;
+
+}
+
+.gesinn-custom-tabs-container {
+  grid-column-start: 1;
+  grid-column-end: 10;
+  @include media-breakpoint-up(md) {
+    grid-column-start: 2;
+    margin-left: -40px;
+  }
+  @include media-breakpoint-up(lg) {
+    grid-column-start: 3;
+    margin-left: 0;
   }
 }
 
 .g-tab-info {
   display: none;
   float: left;
-  margin-left: calc(100 / 6 * 1%);
   margin-right: 35px;
   color: $te-blue;
 

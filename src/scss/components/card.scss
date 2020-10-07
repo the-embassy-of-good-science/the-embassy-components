@@ -207,10 +207,14 @@
 }
 
 
-// special exeptions for themes and resources page
+// special exceptions for themes and resources page
+.page-Resources .card-grid,
 .page-Resources .card-grid-5,
 .page-Resources .card-grid-4,
-.page-Themes .card-grid {
+.page-Themes .card-grid,
+.page-Themes .card-grid-4,
+.page-Themes .card-grid-5,
+.page-Themes .masonry-columns {
   position: relative;
 
   @include media-breakpoint-down(lg) {
@@ -223,7 +227,7 @@
     top: 70px;
     left: -50vw;
     width: 150vw;
-    height: 100%;
+    height: calc(100% + 70px); //added offset needs to be equal to top prop value
     content: ' ';
     background-color: $te-verylightblue;
   }

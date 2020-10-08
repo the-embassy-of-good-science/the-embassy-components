@@ -18,7 +18,6 @@ window.addEventListener('DOMContentLoaded', function(event) {
   if(gridItems) {
     // Set collapse of grid items
     for (var i = 0; i < gridItems.length; i++) {
-      console.log(gridItems[i])
       new gridBlock(gridItems[i], msnry);
     }
   }

@@ -59,6 +59,15 @@ h1 {
   }
 }
 
+// h1 title offset for detail pages
+body[class*="page-Resource_"],
+body[class*="page-Instruction_"],
+body[class*="page-Theme_"] {
+  h1 {
+    margin-top: -15px;
+  }
+}
+
 
 ul, ol, p {
   margin-bottom: map_get($paragraph-bottom-margins, sm);

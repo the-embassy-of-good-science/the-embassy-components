@@ -23,7 +23,7 @@
             <div class="block-text">
                 {{ block.text }}
                 {% if block.published_year %}
-                    <span class="resource-block-published">({{ block.published_year }})</span>
+                    <span class="block-published">({{ block.published_year }})</span>
                 {% endif %}
             </div>
             <div class="block-meta">
@@ -49,9 +49,9 @@
             </div>
 
             {% if block.navigation %}
-                <div class="resource-block-navigation">
-                    <a class="resource-block-link" href="#">Open</a>
-                    <a class="resource-block-info" href="#">About</a>
+                <div class="block-navigation">
+                    <a class="block-link" href="#">Open</a>
+                    <a class="block-info" href="#">About</a>
                 </div>
             {% endif %}
 

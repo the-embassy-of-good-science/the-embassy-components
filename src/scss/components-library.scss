@@ -35,6 +35,10 @@ body {
     overflow: auto;
     background-color: var(--te-verylightblue);
     padding: 30px;
+
+    h5 {
+        margin-bottom: 10px;
+    }
 }
 
 .te-content {
@@ -42,7 +46,7 @@ body {
     padding-bottom: 30px;
 }
 
-.code-sample {    
+.code-sample {
     position: relative;
     margin-bottom: - 0.5rem;
     padding: 10px 10px;

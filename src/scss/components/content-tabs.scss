@@ -18,6 +18,9 @@
   grid-row-gap: 0;
   grid-column-gap: 24px;
 
+  body[class*="page-Instruction_"] & {
+    display: block;
+  }
 }
 
 .gesinn-custom-tabs-container {

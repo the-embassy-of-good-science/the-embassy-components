@@ -1,0 +1,278 @@
+{% set bodyclasses = 'is-sidebar page-Instruction_' %}
+
+{% set loggedin = true %}
+
+{# Extends the sidebar layout #}
+{% extends "../_includes/layouts/sidebar.njk" %}
+
+{# This is where the HTML for the content should be added #}
+{% block content %}
+    <div class="pageheader-back is-forms te-mw-link" data-href="Category:Theme" data-target="_self">
+        <a href="/wiki/Category:Themes" title="Category:Themes">
+            <svg>
+                <use xlink:href="#icon-back"></use>
+            </svg>
+        </a>
+        <span>Themes</span></div>
+    <h1>I. Self-declaration approach: a reflection on the varieties of goodness in research</h1>
+
+    {% set tabs_modifier = 'is-inline' %}
+    {% include "../_includes/components/content-tabs.njk" %}
+
+    {% include "../_includes/components/summary-block.njk" %}
+    {% include "../_includes/components/steps-foldout.njk" %}
+
+    <!-- example of edit button -->
+    <div class="formbutton-edit">
+        <a href="/wiki/Special:FormEdit/Theme/Theme:651b40c7-f0b8-4742-a816-e7b8438e3fcd" title=""
+           target="_self">edit</a>
+        <div class="smw-edit-dropdown" data-dropdown-trigger>
+            <div class="menu-dots">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 13">
+                    <g fill="currentColor" fill-rule="evenodd">
+                        <circle cx="1.4619" cy="11.1083" r="1.4619"/>
+                        <circle cx="1.4619" cy="6.2851" r="1.4619"/>
+                        <circle cx="1.4619" cy="1.4619" r="1.4619"/>
+                    </g>
+                </svg>
+            </div>
+
+            <div class="te-dropdown-menu">
+                <a href="#"><span>Share</span></a>
+                <a href="#"><span>View source</span></a>
+                <a href="#"><span>History</span></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- sampled from SMW -->
+    <div>
+        <h2>Introduction</h2>
+        <h3><span class="mw-headline" id="What_is_this_about">What is this about</span></h3>
+        <div class="mw-field-value" data-property="Is About">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non ex eget tellus placerat suscipit.
+            Praesent molestie tempus mi, in condimentum massa lobortis nec. Nulla nisl dui, auctor imperdiet efficitur
+            in, consectetur.</sup>
+        </div>
+    </div>
+
+    <h2>What is this about?</h2>
+    <p class="mw-field-value has-readmore">“All trials registered, all results reported.” The AllTrials campaign is aiming towards publication of all of the
+        results, from all clinical trials, on all treatments used (1). Their goal is to make this a reality for present,
+        but also for past and future clinical trials. They launched in 2013, as an initiative of Ben Goldacre, BMJ,
+        Centre for Evidence-based Medicine, Cochrane Collaboration, James Lind Initiative, PLOS and Sense about
+        Science.
+    </p>
+
+
+    <h2>Why is it interesteing?</h2>
+    <p class="mw-field-value has-readmore">Vestibulum feugiat massa sit amet mi tincidunt, sit amet aliquet arcu commodo. Praesent aliquam, ipsum sit amet
+        faucibus fringilla, dui quam faucibus enim, et pretium lectus metus vitae enim. Vestibulum feugiat massa sit
+        amet mi tincidunt, sit amet aliquet arcu commodo. Praesent aliquam, ipsum sit amet
+        faucibus fringilla, dui quam faucibus enim, et pretium lectus metus vitae enim.
+    </p>
+
+
+    <h2>Practical tips</h2>
+    <p class="mw-field-value has-readmore">Vestibulum feugiat massa sit amet mi tincidunt, sit amet aliquet arcu commodo. Praesent aliquam, ipsum sit amet
+        faucibus fringilla, dui quam faucibus enim, et pretium lectus metus vitae enim. Sed non ligula vel Vestibulum
+        feugiat massa sit amet mi tincidunt, sit amet aliquet arcu commodo. Praesent aliquam, ipsum sit amet
+        faucibus fringilla, dui quam faucibus enim, et pretium lectus metus vitae enim.
+    </p>
+
+    <div class="spacer"></div>
+
+
+    <h2><span class="mw-headline" id="For_whom_is_this_important">For whom is this important</span></h2>
+    <p data-property="Important For">
+        <span class="label label-info label-tag">
+            <a href="/wiki-wiki/index.php?title=Important_For:Gono&amp;action=edit&amp;redlink=1" class="new"
+               title="Important For:Gono (page does not exist)">Gono</a>
+        </span>
+        <span class="label label-info label-tag">
+            <a href="/wiki-wiki/index.php?title=Important_For:asd&amp;action=edit&amp;redlink=1" class="new"
+               title="Important For:asd (page does not exist)">asd</a>
+        </span>&nbsp;
+        <span class="label label-info label-tag">
+            <a href="/wiki-wiki/index.php?title=Important_For:phd_students&amp;action=edit&amp;redlink=1" class="new"
+               title="Important For:phd students (page does not exist)">phd students</a>
+        </span>
+        <span class="label label-info label-tag">
+            <a href="/wiki-wiki/index.php?title=Important_For:researchers&amp;action=edit&amp;redlink=1" class="new"
+               title="Important For:researchers (page does not exist)">researchers</a>
+        </span>
+    </p>
+    <h5>Morbi leo risus, porta ac consectetur</h5>
+    <ul>
+        <li>Curabitur blandit tempus porttitor</li>
+        <li>Vivamus sagittis lacus vel augue laoreet</li>
+        <li>Rutrum faucibus auctor vivamus sagittis</li>
+        <li>Lacus vel augue laoreet rutrum faucibus</li>
+    </ul>
+
+    <h5>Morbi leo risus, porta ac consectetur</h5>
+    <ol>
+        <li>Curabitur blandit tempus porttitor</li>
+        <li>Vivamus sagittis lacus vel augue laoreet</li>
+        <li>Rutrum faucibus auctor vivamus sagittis</li>
+        <li>Lacus vel augue laoreet rutrum faucibus</li>
+    </ol>
+
+    <h1>Thematic page</h1>
+    <h2>What is this about?</h2>
+    <p>“All trials registered, all results reported.” The AllTrials campaign is aiming towards publication of all of the
+        results, from all clinical trials, on all treatments used (1). Their goal is to make this a reality for present,
+        but also for past and future clinical trials. They launched in 2013, as an initiative of Ben Goldacre, BMJ,
+        Centre for Evidence-based Medicine, Cochrane Collaboration, James Lind Initiative, PLOS and Sense about
+        Science.</p>
+    <h2>What is this about?</h2>
+    <p>“All trials registered, all results reported.” The AllTrials campaign is aiming towards publication of all of the
+        results, from all clinical trials, on all treatments used (1). Their goal is to make this a reality for present,
+        but also for past and future clinical trials. They launched in 2013, as an initiative of Ben Goldacre, BMJ,
+        Centre for Evidence-based Medicine, Cochrane Collaboration, James Lind Initiative, PLOS and Sense about
+        Science.</p>
+
+    <h2>What is this about?</h2>
+    <p>“All trials registered, all results reported.” The AllTrials campaign is aiming towards publication of all of the
+        results, from all clinical trials, on all treatments used (1). Their goal is to make this a reality for present,
+        but also for past and future clinical trials. They launched in 2013, as an initiative of Ben Goldacre, BMJ,
+        Centre for Evidence-based Medicine, Cochrane Collaboration, James Lind Initiative, PLOS and Sense about
+        Science.</p>
+
+    <h2>What is this about?</h2>
+    <p>“All trials registered, all results reported.” The AllTrials campaign is aiming towards publication of all of the
+        results, from all clinical trials, on all treatments used (1). Their goal is to make this a reality for present,
+        but also for past and future clinical trials. They launched in 2013, as an initiative of Ben Goldacre, BMJ,
+        Centre for Evidence-based Medicine, Cochrane Collaboration, James Lind Initiative, PLOS and Sense about
+        Science.</p>
+
+    <div class="spacer"></div>
+
+    <div class="other-information">
+        <h2>Other information</h2>
+
+        <div class="other-information-wrapper other-information-grid">
+            {% set otherInfoBlockData = { title: 'Who', items: [ { label: 'Chinelo', url: '#' }, {label: 'Acharya', url: '#'}, {label: 'Morata', url: '#'}, { label: 'Chinelo Chyke', url: '#' },  {label: 'Diego Morata', url: '#'}, { label: 'Chinelo Chyke', url: '#' }, {label: 'Deveeprasad Acharya', url: '#'}, {label: 'Diego Morata', url: '#'} ] } %}
+            {% include "../_includes/components/other-information-block.njk" %}
+
+            {% set otherInfoBlockData = { title: 'When', items: [ { label: '1987 - 2019', url: '#' } ] } %}
+            {% include "../_includes/components/other-information-block.njk" %}
+
+            {% set otherInfoBlockData = { title: 'Virtue or value', items: [ { label: 'Accountability', url: '#' }, {label: 'Attentiveness', url: '#'}, {label: 'Reflexivity', url: '#'}, {label: 'Something else', url: '#'} ] } %}
+            {% include "../_includes/components/other-information-block.njk" %}
+
+            {% set otherInfoBlockData = { title: 'Misconduct', items: [ { label: 'Chinelo Chyke', url: '#' }, {label: 'Deveeprasad Acharya', url: '#'}, {label: 'Diego Morata', url: '#'} ] } %}
+            {% include "../_includes/components/other-information-block.njk" %}
+
+            {% set otherInfoBlockData = { title: 'Good practice', items: [ { label: 'Institutional responsibilities', url: '#' }, {label: 'Responsible supervision', url: '#'}, {label: 'Reasonable standards for career advisors', url: '#'} ] } %}
+            {% include "../_includes/components/other-information-block.njk" %}
+
+            {% set otherInfoBlockData = { title: 'Other', items: [ { label: 'Euismod dolor fusce', url: '#' }, {label: 'Ridiculus males', url: '#'}, {label: 'Lorem', url: '#'}, {label: 'Something else', url: '#'}, {label: 'Mator Panner', url: '#'} ] } %}
+            {% include "../_includes/components/other-information-block.njk" %}
+        </div>
+    </div>
+
+
+    <div class="spacer"></div>
+
+    <div class="references">
+        <h2>References</h2>
+        <ul>
+            <li>(1) Wilkinson, M. D. et al. The FAIR Guiding Principles for scientific data management and stewardship.
+                Sci. Data 3:160018 doi: 10.1038/sdata.2016.18 (2016).
+            </li>
+            <li>(2) Ivi, p. 1</li>
+            <li>(3) The FAIR Data Principles (FORCE 11 discussion forum) [consulted on 02/01/2018]. Available at: <a
+                        href="https://www.force11.org/group/fairgroup/fairprinciples" target="_blank"
+                        rel="noopener noreferrer">https://www.force11.org/group/fairgroup/fairprinciples</a></li>
+        </ul>
+    </div>
+
+    <div class="copyright">
+        <p><b>Giulia Inguaggiato</b>, <b>Natalie Evans</b>, <b>Guy Widdershoven</b> and <b>5 more</b> contributed to
+            this theme. Latest contribution was <b>May 8, 2019</b></p>
+    </div>
+
+
+{% endblock %}
+
+{# This is where the HTML for the sidebar should be added #}
+{% block sidebar %}
+    <!-- example of edit button -->
+    <div class="sidebar-item formbutton-edit">
+        <a href="/wiki/Special:FormEdit/Theme/Theme:651b40c7-f0b8-4742-a816-e7b8438e3fcd" title=""
+           target="_self">edit</a>
+        <div class="smw-edit-dropdown" data-dropdown-trigger>
+            <div class="menu-dots">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 13">
+                    <g fill="currentColor" fill-rule="evenodd">
+                        <circle cx="1.4619" cy="11.1083" r="1.4619"/>
+                        <circle cx="1.4619" cy="6.2851" r="1.4619"/>
+                        <circle cx="1.4619" cy="1.4619" r="1.4619"/>
+                    </g>
+                </svg>
+            </div>
+
+            <div class="te-dropdown-menu">
+                <a href="#"><span>Share</span></a>
+                <a href="#"><span>View source</span></a>
+                <a href="#"><span>History</span></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar-item" data-template="RelatedResources">
+        <h4 class="sidebar-title">Related resources</h4>
+        <input type="checkbox" id="resources">
+
+        {% set relatedResourceData = { modifier: 'is-caseStudies', category: 'Case studies collection', title: 'The European Network of Research Integrity Offices (ENRIO) - Collection', info: '#', url: '#' } %}
+        {% include '../_includes/components/related-resource.njk' %}
+
+        {% set relatedResourceData = { modifier: 'is-caseStudies', category: 'Case studies collection', title: 'Responsible Conduct of Research (RCR) - Casebook', info: '#', url: '#' } %}
+        {% include '../_includes/components/related-resource.njk' %}
+
+        {% set relatedResourceData = { modifier: 'is-experts', category: 'Experts', title: 'Maura Hiney - Health Research Board ', info: '#', url: '#' } %}
+        {% include '../_includes/components/related-resource.njk' %}
+
+        {% set relatedResourceData = { modifier: 'is-caseStudies', category: 'Case studies collection', title: 'Responsible Conduct of Research (RCR) - Casebook', info: '#', url: '#' } %}
+        {% include '../_includes/components/related-resource.njk' %}
+
+        {% set relatedResourceData = { modifier: 'is-experts', category: 'Experts', title: 'Maura Hiney - Health Research Board ', info: '#', url: '#' } %}
+        {% include '../_includes/components/related-resource.njk' %}
+
+        <label for="resources" class="related-resources-seeMore">See more resources</label>
+    </div>
+
+    <div class="sidebar-item" data-template="RelatedDiscussions">
+        <h4 class="sidebar-title">Related discussions</h4>
+        <input type="checkbox" id="discussions">
+
+        {% set relatedDiscussionData = { title: 'How to request that collaborators add my supervisor\'s name to a manuscript?', url: '#', date: '2 weeks ago', tags: [{label: 'something', url: '#'}] } %}
+        {% include '../_includes/components/related-discussion.njk' %}
+
+        {% set relatedDiscussionData = { title: 'Is it unethical to edit grammatical errors in a letter of recommendation?', url: '#', date: '19 December 2018', tags: [{label: 'supervision', url: '#'}, {label: 'medical research', url: '#'},{label: 'supervision', url: '#'}, {label: 'medical research', url: '#'}, {label: 'supervision', url: '#'}, {label: 'medical research', url: '#'}] } %}
+        {% include '../_includes/components/related-discussion.njk' %}
+
+        {% set relatedDiscussionData = { title: 'Is it unethical to edit grammatical errors in a letter of recommendation?', url: '#', date: '19 December 2020', tags: [{label: 'supervision', url: '#'}, {label: 'medical research', url: '#'},{label: 'supervision', url: '#'}, {label: 'medical research', url: '#'}, {label: 'supervision', url: '#'}, {label: 'medical research', url: '#'}] } %}
+        {% include '../_includes/components/related-discussion.njk' %}
+
+        {% set relatedDiscussionData = { title: 'Is it unethical to edit grammatical errors in a letter of recommendation?', url: '#', date: '19 January 2018', tags: [{label: 'supervision', url: '#'}, {label: 'medical research', url: '#'},{label: 'supervision', url: '#'}, {label: 'medical research', url: '#'}, {label: 'supervision', url: '#'}, {label: 'medical research', url: '#'}] } %}
+        {% include '../_includes/components/related-discussion.njk' %}
+
+        {% set relatedDiscussionData = { title: 'Is it unethical to edit grammatical errors in a letter of recommendation?', url: '#', date: '19 December 2018', tags: [{label: 'supervision', url: '#'}, {label: 'medical research', url: '#'},{label: 'supervision', url: '#'}, {label: 'medical research', url: '#'}, {label: 'supervision', url: '#'}, {label: 'medical research', url: '#'}] } %}
+        {% include '../_includes/components/related-discussion.njk' %}
+
+        <label for="discussions" class="related-discussions-seeMore">See more discussions</label>
+    </div>
+
+    <div class="sidebar-item sidebar--discusssions" data-template="MoreDiscussions">
+        <h3>Any questions or experiences to share?</h3>
+        <a class="link-button">Join our discussions</a>
+    </div>
+
+    {# Related themes using other-info-block component #}
+    <div class="sidebar-item" data-template="RelatedThemes">
+        {% set otherInfoBlockData = { title: 'Related themes', items: [ { label: 'authorship', url: '#' }, { label: 'plagiarism', url: '#' }, { label: 'self-plagiarism', url: '#' }, { label: 'legal-research', url: '#' }, { label: 'lorem ipsum', url: '#' }, { label: 'dolor amet', url: '#' } ] } %}
+        {% include "../_includes/components/other-information-block.njk" %}
+    </div>
+{% endblock %}

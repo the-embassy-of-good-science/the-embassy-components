@@ -5,7 +5,6 @@ import $ from 'jquery';
  */
 $(function () {
 
-  /*
   var allHasReadMore = $('.has-readmore');
   var readMore = '<span class=\"read-more\">Read more</span>'
 
@@ -18,5 +17,4 @@ $(function () {
       $(hasReadMore).addClass('open')
     })
   });
-   */
 });

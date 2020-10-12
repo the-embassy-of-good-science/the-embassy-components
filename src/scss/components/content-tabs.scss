@@ -42,7 +42,6 @@
   float: left;
   margin-right: 35px;
   color: $te-blue;
-  transition: none !important;
 
   @include media-breakpoint-up(lg) {
     display: block;
@@ -52,13 +51,16 @@
 .g-tablinks {
   padding: 20px 40px 17px;
   color: $te-black;
+  transition: none !important;
 
   @include media-breakpoint-up(lg) {
     padding-bottom: 16px;
   }
 
+  border: 2px solid transparent;
+
   &.active {
-    border: 2px solid $te-boticelli;
+    border-color: $te-boticelli;
     border-bottom-color: $te-white;
 
     body[class^="page-Guide"] &{

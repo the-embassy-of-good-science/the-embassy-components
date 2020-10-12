@@ -34,19 +34,28 @@
     }
   }
 
+
+
+  li a[href].external,
+  li a[href].new,
   li a {
     display: block;
     overflow: hidden;
     max-width: 240px;
     padding: 10px 15px;
+    color: $te-blue !important;
     font-size: rem-calc(15);
     line-height: unitless-calc(18, 15);
     white-space: nowrap;
     text-overflow: ellipsis;
 
+    &:visited {
+      color: $te-blue !important;
+    }
+
     &:hover {
       text-decoration: underline;
-      color: $te-blue;
+      color: $te-blue  !important;
     }
   }
 

@@ -186,6 +186,7 @@
   margin-bottom: -5px;
 
   @include media-breakpoint-up(lg) {
+    display: flex;
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -197,6 +198,26 @@
     padding: 10px 85px 10px 105px;
     background-position: 80px center;
   }
+
+  .smw-edit-dropdown {
+    transition-property: background-color, border;
+    transition-duration: 150ms;
+    transition-timing-function: ease-in-out;
+    background-color: $te-lightblue;
+    border-color: $te-lightblue;
+
+    &:hover {
+      background-color: $te-sunfloweryellow;
+      border-color: $te-sunfloweryellow;
+    }
+
+    &.is-open {
+      background: $te-white;
+      border: solid 2px $te-border-color;
+    }
+
+  }
+
 }
 
 // Save and Preview buttons

@@ -369,9 +369,10 @@ body {
   &.page-Guides,
   &.page-Guide,
   &.page-Instructions,
-  &.page-Resources,
   &.page-Trainings,
-  &.page-Special_BrowseData_Theme {
-    background-color: $te-homepage-background
+  &.page-Special_BrowseData_Theme,
+  &.page-Special_BrowseData_Resource,
+  &.page-Special_BrowseData_Instruction {
+    background-color: $te-homepage-background !important;
   }
 }

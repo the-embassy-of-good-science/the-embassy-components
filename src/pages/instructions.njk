@@ -9,8 +9,8 @@ bodyclasses: mw-special-BrowseData page-Instructions
         'label': 'Back'
     },
     'text': {
-        'title': 'Training instructions',
-        'content': 'Practice oriented step-by-step instructions that will help you as a research ethics and research integrity trainer.'
+        'title': 'Individual exercises',
+        'content': 'Practice oriented step-by-step instructions that will help you as a research integrity and ethics trainer and trainee.'
     },
     'button': {
         'type': 'formbutton-add',
@@ -22,7 +22,7 @@ bodyclasses: mw-special-BrowseData page-Instructions
 
 } %}
 {% include '../_includes/components/pageheader.njk' %}
-{% include '../_includes/components/drilldown-filters-instructions.njk' %}
+{% include '../_includes/components/drilldown-filters-trainings.njk' %}
 
 {% set blocks = [{
     icon: 'icon-instruction',
@@ -31,20 +31,20 @@ bodyclasses: mw-special-BrowseData page-Instructions
     text: 'A little description what this instruction is all about. Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.',
     tags: true
 },{
-    icon: 'icon-resources-training-materials',
+    icon: 'icon-instruction',
     type: 'instruction',
     title: 'I. Self-declaration approach: a reflection on the varieties of goodness in research',
     text: 'Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nulla vitae elit libero, a pharetra augue. Nullam quis risus eget urna mollis ornare vel eu leo.',
     virt2ue: true,
     tags: true
 },{
-    icon: 'icon-resources-training-materials',
+    icon: 'icon-instruction',
     type: 'instruction',
     title: 'Introduction to research integrity',
     text: 'Introduction to research integrity and virtue ethics, the ECoC and the main concepts used during the training. Including reflection on personal experiences.',
     tags: true
 },{
-    icon: 'icon-resources-training-materials',
+    icon: 'icon-instruction',
     type: 'instruction',
     title: 'Introduction of the first face-to-face session of the VIRT2UE training',
     text: 'Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nulla vitae elit libero, a pharetra augue. Nullam quis risus eget urna mollis ornare vel eu leo.',

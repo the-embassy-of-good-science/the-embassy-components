@@ -34,6 +34,7 @@
     grid-column-start: 3;
     margin-left: 0;
   }
+
 }
 
 .g-tab-info {
@@ -41,6 +42,7 @@
   float: left;
   margin-right: 35px;
   color: $te-blue;
+  transition: none !important;
 
   @include media-breakpoint-up(lg) {
     display: block;
@@ -70,4 +72,5 @@
     text-decoration: none;
     cursor: pointer;
   }
+
 }

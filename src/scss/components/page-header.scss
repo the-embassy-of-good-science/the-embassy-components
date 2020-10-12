@@ -150,7 +150,8 @@
 }
 
 .pageheader-form-button {
-  margin-top: 25px;
+  margin: 25px auto 0;
+
   @include media-breakpoint-up(lg) {
     position: absolute;
     top: 0;

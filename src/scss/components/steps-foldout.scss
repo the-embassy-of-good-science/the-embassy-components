@@ -1,14 +1,15 @@
 .steps-foldout {
   margin: 45px 0;
   background-color: $te-homepage-background;
+  font-family: $te-font-bold;
+  font-size: rem-calc(18);
+  line-height: unitless-calc(30, 18);
 }
 
 .steps-foldout-toggle {
-  font-family: $te-font-bold;
-  font-size: rem-calc(18);
   width: 100%;
   margin-bottom: 0;
-  padding: 15px 30px;
+  padding: 15px 40px;
   background-image: url("data:image/svg+xml,%3Csvg width='9' height='6' viewBox='0 0 9 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.6595 4.2552L0 1.5957 1.5957 0l2.6595 2.6595L6.9148 0l1.5957 1.5957L4.2552 5.851 2.6595 4.2552z' fill='currentColor'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: calc(100% - 30px) center;
@@ -21,7 +22,27 @@
 
 .steps-foldout-content {
   display: none;
-  padding: 30px;
+  padding: 35px 40px 10px;
+
+  a {
+    color: $te-black;
+
+    &:hover {
+      color: $te-black;
+    }
+  }
+
+  span {
+    color: $te-blue;
+    background-color: $te-lightblue;
+    padding: 5px 7px 0;
+    margin-right: 10px;
+  }
+
+}
+
+.steps-foldout-step {
+  margin-bottom: 14px;
 }
 
 // steps foldout toggle

@@ -1,0 +1,21 @@
+.instruction-step-wrapper {
+  position: relative;
+
+  .step-number {
+    position: absolute;
+    top: -30px;
+    left: -170px;
+    font-family: $te-font-extrabold;
+    font-size: 54px;
+    color: $te-blue;
+    background-color: $te-homepage-background;
+    padding: 20px 40px 10px;
+
+  }
+
+  h5 {
+    font-size: rem-calc(28);
+    line-height: unitless-calc(38, 28);
+  }
+
+}

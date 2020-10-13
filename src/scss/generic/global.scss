@@ -63,6 +63,9 @@ h1 {
 body[class*="page-Resource_"],
 body[class*="page-Instruction_"],
 body[class*="page-Theme_"] {
+  font-size: rem-calc(18);
+  line-height: unitless-calc(30, 18);
+
   h1 {
     margin-top: -15px;
   }

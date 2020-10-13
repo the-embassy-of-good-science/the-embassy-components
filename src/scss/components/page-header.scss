@@ -109,6 +109,16 @@
     justify-content: flex-start;
     margin-bottom: 25px;
   }
+
+  img {
+    max-width: 24px;
+    max-height: 24px;
+    margin-right: 10px;
+    color: pink;
+    filter: invert(43%) sepia(96%) saturate(1237%) hue-rotate(88deg) brightness(128%) contrast(119%);
+  }
+
+
 }
 
 .pageheader-type-icon {

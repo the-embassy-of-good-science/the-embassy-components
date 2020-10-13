@@ -45,6 +45,16 @@ import './drilldown-cleanup'
  */
 import './read-more'
 
+/**
+ * Tabs
+ */
+import './tabs'
+
+/**
+ * Tabs
+ */
+import './steps-foldout'
+
 // The Embassy content MediaWiki hyperlinks
 // const mediaWikiContentHyperlinks = document.querySelectorAll('.te-mw-link');
 

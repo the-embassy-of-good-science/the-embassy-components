@@ -1,24 +1,13 @@
 <div class="steps-foldout">
     <div class="steps-foldout-container">
-        <input type="checkbox" id="steps-foldout">
-        <label for="steps-foldout" class="steps-foldout-toggle">Steps</label>
+        <div class="steps-foldout-toggle">Steps</div>
         <div class="steps-foldout-content">
-            <div class="steps-foldout-step">
-                <span>1</span>
-                <a href="#Test_Title_For_Trainee_1">Test Title For Trainee ... 1</a>
-            </div>
-            <div class="steps-foldout-step">
-                <span>2</span>
-                <a href="#Test_Title_For_Trainee_2" class="steps-foldout-step">Test Title For Trainee ... 2</a>
-            </div>
-            <div class="steps-foldout-step">
-                <span>3</span>
-                <a href="#Test_Title_For_Trainee_3" class="steps-foldout-step">Test Title For Trainee ... 3</a>
-            </div>
-            <div class="steps-foldout-step">
-                <span>4</span>
-                <a href="#Test_Title_For_Trainee_4" class="steps-foldout-step">Test Title For Trainee ... 4</a>
-            </div>
+            {% for step in steps %}
+                <div class="steps-foldout-step">
+                    <span>{{ loop.index }}</span>
+                    <a href="#{{ step.target }}">{{ step.title }}</a>
+                </div>
+            {% endfor %}
         </div>
     </div>
 </div>

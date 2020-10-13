@@ -5,16 +5,23 @@ import $ from 'jquery';
  */
 $(function () {
 
-  var allHasReadMore = $('.has-readmore');
-  var readMore = '<span class=\"read-more\">Read more</span>'
+  const charThreshold = 280
+  const allHasReadMore = $('.has-readmore');
+  const readMore = '<span class=\"read-more\">Read more</span>'
 
   $.each(allHasReadMore, function (index, hasReadMore) {
+    // Insert readmore button when string is greater than charThreshold
+    if (hasReadMore.innerText.length > charThreshold) {
 
-    var readMoreEl = $(readMore).insertAfter(hasReadMore);
+      const readMoreEl = $(readMore).insertAfter(hasReadMore);
 
-    $(readMoreEl).on('click', function (e) {
-      $(this).hide()
-      $(hasReadMore).addClass('open')
-    })
+      $(readMoreEl).on('click', function (e) {
+        $(this).hide()
+        $(hasReadMore).addClass('open')
+      })
+    } else {
+      $(hasReadMore).addClass('readmore-disabled')
+    }
+
   });
 });

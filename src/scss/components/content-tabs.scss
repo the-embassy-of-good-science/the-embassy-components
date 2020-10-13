@@ -63,7 +63,7 @@
     border-color: $te-boticelli;
     border-bottom-color: $te-white;
 
-    body[class^="page-Guide"] &{
+    body[class^="page-Guide"] & {
       border-bottom-color: $te-homepage-background;
     }
 
@@ -75,4 +75,12 @@
     cursor: pointer;
   }
 
+  //&[data-tab="trainee"] {
+  //  display: block;
+  //}
+
+}
+
+#data-tab-content-trainee {
+  display: block;
 }

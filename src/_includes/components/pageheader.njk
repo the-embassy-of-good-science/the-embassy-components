@@ -10,13 +10,9 @@
     <div class="content text-center text-lg-left offset-lg-2">
         {% if pageheader.type %}
             <div class="pageheader-type">
-                {% if pageheader.type.icon %}
-                    <svg class="pageheader-type-icon">
-                        <use xlink:href="#{{ pageheader.type.icon }}"></use>
-                    </svg>
-                    {% if pageheader.type.label %}
-                        <span class="pageheader-type-label">{{ pageheader.type.label }}</span>
-                    {% endif %}
+                {% if pageheader.type.label %}
+                    <span class="{{ pageheader.type.icon }}"></span>
+                    <span class="pageheader-type-label">{{ pageheader.type.label }}</span>
                 {% endif %}
             </div>
         {% endif %}

@@ -1,17 +1,19 @@
 import $ from 'jquery';
 
-$(function() {
+$(function () {
   const traineeTab = document.querySelector('[data-tab="trainee"')
 
   // Trainee tab active by default
-  traineeTab.classList.add('active')
+  if (traineeTab) {
+    traineeTab.classList.add('active')
+  }
 
 })
 
 /**
  * Module to open links inside MediaWiki context
  */
-$('.g-tab').on('click', function(e) {
+$('.g-tab').on('click', function (e) {
   e.preventDefault();
 
   const trainerTab = document.querySelector('[data-tab="trainer"')

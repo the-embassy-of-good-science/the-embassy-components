@@ -63,6 +63,15 @@
   background-repeat: no-repeat;
   background-position: left center;
   padding-left: 20px;
+
+  color: $te-black;
+
+  a[href].external,
+  a[href].new,
+  a {
+    color: $te-black;
+  }
+
 }
 
 .resource-link {

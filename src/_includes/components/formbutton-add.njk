@@ -9,10 +9,10 @@
         {% if pageheader.button.dropdown %}
             <div class="te-dropdown-menu">
                 {% for item in pageheader.button.dropdown %}
-                    <a href="{{ item.url }}">
+                    <div class="dropdown-item">
                         <span class="dropdown-item-title">{{ item.title }}</span>
                         <span>{{ item.description }}</span>
-                    </a>
+                    </div>
                 {% endfor %}
             </div>
         {% endif %}

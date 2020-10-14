@@ -10,11 +10,12 @@
     <div class="block">
         <div class="block-container">
             <div class="block-header">
-                {% if block.icon %}
-                    <svg class="block-icon">
-                        <use xlink:href="#{{ block.icon }}"></use>
-                    </svg>
-                {% endif %}
+
+                <span class="block-icon icon-{{block.type}}"></span>
+{#                    <svg class="block-icon">#}
+{#                        <use xlink:href="#{{ block.icon }}"></use>#}
+{#                    </svg>#}
+
                 <span>{{ block.type }}</span>
             </div>
             <div class="block-title">

@@ -246,6 +246,13 @@
     min-height: auto;
     padding-left: 0;
     padding-right: 0;
+
+    &:hover {
+      a {
+        color: initial;
+      }
+    }
+
   }
 
   .card-header {
@@ -263,7 +270,7 @@
     font-size: rem-calc(28);
     text-align: center;
     @include media-breakpoint-up(lg) {
-      text-align: left;
+      text-align: left !important;
     }
   }
 
@@ -342,7 +349,7 @@
         align-items: flex-start;
         flex-direction: column;
 
-        span {
+         & > span {
           display: inline-block;
           width: 230px;
           margin-bottom: 20px;
@@ -374,7 +381,7 @@
         }
       }
 
-      .training-link {
+      .training-link a{
         font-size: rem-calc(17);
         line-height: unitless-calc(31, 17);
         font-family: $te-font-bold;

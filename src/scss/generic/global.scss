@@ -62,7 +62,10 @@ h1 {
 // h1 title offset for detail pages
 body[class*="page-Resource_"],
 body[class*="page-Instruction_"],
-body[class*="page-Theme_"] {
+body[class*="page-Theme_"],
+body[class*="page-About"],
+body[class*="page-Contributors"],
+body[class*="page-Founders"] {
   font-size: rem-calc(18);
   line-height: unitless-calc(30, 18);
 

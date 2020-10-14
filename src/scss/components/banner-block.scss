@@ -34,6 +34,7 @@
 
     &:hover {
       color: initial;
+      cursor: pointer;
     }
 
   }
@@ -44,7 +45,7 @@
     flex-direction: column;
     align-items: flex-start;
 
-    .training-link {
+    .training-link a{
       align-self: center;
       font-size: rem-calc(16);
       font-family: $te-font-bold;

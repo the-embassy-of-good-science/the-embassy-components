@@ -6,7 +6,7 @@ bodyclasses: page-Trainings
 {% set pageheader = {
     'icon': 'trainings',
     'text': {
-        'title': 'Training',
+        'title': 'Trainings',
         'content': 'Guides, materials and a community that support training on research integrity and ethics.'
     },
     'button': {
@@ -32,24 +32,17 @@ bodyclasses: page-Trainings
     <div class="cards-wrapper">
         <div class="card is-trainings">
             <div class="card-header">
-                <h2 class="card-title">
-                    Training material
-                </h2>
+                <h2 class="card-title text-center"><span class="mw-headline" id="Training_material">Training material</span></h2>
             </div>
             <div class="card-body">
                 <div class="card-text">
-                    <div class="text-block">
-                        <span>Step by step guides that help you as a trainer</span>
-                        {% set modifier = 'is-mobile' %}
-                        {% include "../_includes/components/virtue-button.njk" %}
-                        <hr>
-                        <div class="training-links">
-                            <a class="training-link" href="#">All training guides</a>
-                            <a class="training-link" href="#">Individual exercises</a>
-                        </div>
+                    <div class="text-block"><span>Step by step guides that help you as a trainer</span>
+                        <div class="Virt2ue-button-wrapper is-mobile"><span class="Virt2ue-button"><a href="#VIRT2UE_training_guide_VIRT2UE_training_guide">#VIRT2UE training guide VIRT2UE training guide</a></span>
+                            <span class="guide-link"><a href="#Another_training_guide">Another training guide</a></span><span class="guide-link"><a href="#Another_training_guide">Another training guide</a></span><span class="guide-link"><a href="#Another_training_guide">Another training guide</a></span></div>
+                        <hr><div class="training-links"><span class="training-link"><a href="/wiki/Special:BrowseData/Guide" title="Special:BrowseData/Guide">All training guides</a></span><span class="training-link"><a href="/wiki/Special:BrowseData/Instruction" title="Special:BrowseData/Instruction">Individual exercises</a></span></div>
                     </div>
-                    {% set modifier = 'is-desktop' %}
-                    {% include "../_includes/components/virtue-button.njk" %}
+                    <div class="Virt2ue-button-wrapper is-desktop"><span class="Virt2ue-button"><a href="#VIRT2UE_training_guide">VIRT2UE training guide</a></span><span class="guide-link"><a href="#Another_training_guide">Another training guide</a></span><span class="guide-link"><a href="#Another_training_guide">Another training guide</a></span><span class="guide-link"><a href="#Another_training_guide">Another training guide</a></span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -57,34 +50,18 @@ bodyclasses: page-Trainings
     <div class="cards-wrapper">
         <div class="card is-trainings">
             <div class="card-header">
-                <h2 class="card-title">
-                    <a href="/wiki/Category:Training" title="Category:Training">
-                        Educational resources
-                    </a>
-                </h2>
+                <h2 class="card-title text-center"><span class="mw-headline" id="Educational_resources"><a href="/wiki/Special:BrowseData/Resource" title="Special:BrowseData/Resource">Educational resources</a></span></h2>
             </div>
             <div class="card-body">
-                <div class="card-text">
-                    <a href="/wiki/Category:Training" title="Category:Training">
-                        Literature, tools and other resources to use in training.
-                    </a>
-                </div>
+                <div class="card-text"><a href="/wiki/Special:BrowseData/Resource" title="Special:BrowseData/Resource">Literature, tools and other resources to use in training.</a></div>
             </div>
         </div>
         <div class="card is-trainings">
             <div class="card-header">
-                <h2 class="card-title">
-                    <a href="/wiki/Category:Training" title="Category:Training">
-                        Training community
-                    </a>
-                </h2>
+                <h2 class="card-title text-center"><span class="mw-headline" id="Training_community"><a href="/wiki/Special:BrowseData/Training" title="Special:BrowseData/Training">Training community</a></span></h2>
             </div>
             <div class="card-body">
-                <div class="card-text">
-                    <a href="/wiki/Category:Training" title="Category:Training">
-                        Meet trainers, trainees and ask your questions.
-                    </a>
-                </div>
+                <div class="card-text"><a href="/wiki/Special:BrowseData/Training" title="Special:BrowseData/Training">Meet trainers, trainees and ask your questions.</a></div>
             </div>
         </div>
     </div>

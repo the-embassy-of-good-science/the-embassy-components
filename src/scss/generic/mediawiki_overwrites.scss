@@ -378,3 +378,8 @@ body {
     background-color: $te-homepage-background
   }
 }
+
+// Output of MediaWiki fields in Theme / Resource / Instruction detail pages
+.mw-field-value {
+  margin-bottom: 50px;
+}

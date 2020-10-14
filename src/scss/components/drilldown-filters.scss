@@ -76,7 +76,10 @@ div.drilldown-filters {
   opacity: 0;
 
   // Drilldown filter on guides filter page
-  &.is-guides {
+
+  .page-Special_BrowseData_Instruction &,
+  .page-Instructions &{
+
     .drilldown-filter-label {
       font-family: $te-font-bold;
       color: $te-black;

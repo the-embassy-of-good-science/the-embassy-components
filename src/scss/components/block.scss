@@ -7,13 +7,19 @@
   margin-bottom: 150px;
 }
 
-.block-list-resultcount {
+.mw-resultsinrange {
   display: flex;
   font-family: $te-font-regular;
   color: $te-blue;
 
   span {
     font-family: $te-font-bold;
+  }
+
+  & > p{
+    margin-left: auto;
+    margin-top: 25px;
+    margin-bottom: 0;
   }
 
 }

@@ -1,8 +1,22 @@
 .banner-block {
+  position: relative;
   background: $te-white;
   padding: 30px;
   margin-bottom: 150px;
   margin-right: -50px;
+
+  &:after {
+    position: absolute;
+    z-index: -1;
+    top: 40px;
+    left: -50vw;
+    width: 150vw;
+    height: calc(100% + 110px); //added offset needs to be equal to top prop value
+    content: ' ';
+    background-color: $te-homepage-background;
+  }
+
+
 
   @include media-breakpoint-up(lg) {
     padding: 40px 50px;

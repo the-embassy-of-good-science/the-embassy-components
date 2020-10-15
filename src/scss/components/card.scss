@@ -208,6 +208,7 @@
 
 
 // special exceptions for themes and resources page
+.page-Training .card-grid,
 .page-Resources .card-grid,
 .page-Resources .card-grid-5,
 .page-Resources .card-grid-4,
@@ -222,16 +223,23 @@
   }
 
   &:after {
+
     position: absolute;
     z-index: -1;
-    top: 70px;
+    top: 40px;
     left: -50vw;
     width: 150vw;
-    height: calc(100% + 70px); //added offset needs to be equal to top prop value
+    height: calc(100% + 110px); //added offset needs to be equal to top prop value
     content: ' ';
     background-color: $te-homepage-background;
   }
+
+
 }
+
+//.page-Training .card-grid {
+//  @include lightblue-bg-after(40px);
+//}
 
 // Trainings landing cards
 .card-grid.is-trainings {
@@ -349,7 +357,7 @@
         align-items: flex-start;
         flex-direction: column;
 
-         & > span {
+        & > span {
           display: inline-block;
           width: 230px;
           margin-bottom: 20px;
@@ -380,7 +388,7 @@
         }
       }
 
-      .training-link a{
+      .training-link a {
         font-size: rem-calc(17);
         line-height: unitless-calc(31, 17);
         font-family: $te-font-bold;
@@ -420,7 +428,7 @@
         background-repeat: no-repeat;
         background-position: 282px center;
 
-        @include media-breakpoint-up(lg){
+        @include media-breakpoint-up(lg) {
           font-size: rem-calc(20);
           line-height: unitless-calc(31, 20);
           padding: 10px 15px;
@@ -428,7 +436,7 @@
 
         }
 
-        @include media-breakpoint-up(xl){
+        @include media-breakpoint-up(xl) {
           width: 240px;
           background-position: 234px center;
           padding-left: 0;

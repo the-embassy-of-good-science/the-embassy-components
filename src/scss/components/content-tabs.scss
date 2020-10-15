@@ -28,7 +28,7 @@
   grid-column-end: 10;
   @include media-breakpoint-up(md) {
     grid-column-start: 2;
-    margin-left: -40px;
+
   }
   @include media-breakpoint-up(lg) {
     grid-column-start: 3;

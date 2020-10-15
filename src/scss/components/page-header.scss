@@ -74,7 +74,7 @@
 
 // Special styles for form pages
 .pageheader-back.is-forms {
-  margin: 65px 0 0;
+  margin: 65px 0 20px;
 
   @include media-breakpoint-up(lg) {
     position: absolute;
@@ -104,11 +104,12 @@
   display: flex;
   margin-bottom: 10px;
   justify-content: center;
-  padding-top: 10px;
+
 
   @include media-breakpoint-up(lg) {
     justify-content: flex-start;
     margin-bottom: 25px;
+    padding-top: 10px;
   }
 
 

@@ -1,8 +1,8 @@
 {% for step in steps %}
     <div class="instruction-step-wrapper">
         <div class="step-number">{{ loop.index }}</div>
-        <div class="instruction-step">
-            <div class="instruction-step-wrapper instruction-step-grid" data-template="Instruction Step Trainee">
+
+            <div class="instruction-step instruction-step-grid" data-template="Instruction Step Trainee">
                 <h5>
                     <span class="mw-headline" id="{{ step.target }}">{{ step.title }}</span>
                 </h5>
@@ -15,7 +15,7 @@
                     sea takimata sanctus est Lorem ipsum dolor sit amet.
                 </p>
             </div>
-        </div>
+
     </div>
     <div class="spacer"></div>
 {% endfor %}

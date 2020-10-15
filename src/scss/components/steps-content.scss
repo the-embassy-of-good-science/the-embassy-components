@@ -28,19 +28,21 @@
   .instruction-step {
     display: flex;
     flex-direction: column;
-    @include media-breakpoint-up(lg) {
-      display: block;
+    margin-left: 20px;
+    margin-top: 10px;
+
+    p {
+      margin-left: -90px;
+      margin-top: 10px;
+
+      @include media-breakpoint-up(md) {
+        margin: 0;
+      }
+
     }
+
   }
 
-  .instruction-step-grid {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    @include media-breakpoint-up(lg) {
-      margin-top: 0
-    }
-  }
 
   h5 {
 

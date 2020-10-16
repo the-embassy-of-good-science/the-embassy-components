@@ -16,10 +16,11 @@
     font-family: $te-font-bold;
   }
 
-  & > p{
+  & > p {
     margin-left: auto;
     margin-top: 25px;
     margin-bottom: 0;
+    font-size: rem-calc(18);
   }
 
 }

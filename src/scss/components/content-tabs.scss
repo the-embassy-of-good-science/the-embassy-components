@@ -18,7 +18,8 @@
   grid-row-gap: 0;
   grid-column-gap: 24px;
 
-  body[class*="page-Instruction_"] & {
+  body[class*="page-Instruction_"] &,
+  body[class*="mw-special-FormEdit"] & {
     display: block;
   }
 }

@@ -1,0 +1,40 @@
+.form-template-wrapper {
+
+  .sfFormContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sfFieldRow {
+    padding-bottom: 40px;
+  }
+
+  .createboxInput,
+  .mandatoryField,
+  textarea,
+  .ve-area-wrapper.inputSpan {
+    border: 1px solid $te-boticelli !important;
+    background-color: rgba($te-homepage-background, 0.5);
+  }
+
+  .ve-ce-paragraphNode {
+    margin-bottom: 20px;
+  }
+
+  figure.ve-ce-mwBlockImageNode {
+    height: auto !important;
+    width: auto !important;
+
+    img {
+      height: auto !important;
+      width: auto !important;
+    }
+
+  }
+
+  .simple-tooltip {
+    border: none !important;
+  }
+
+}
+

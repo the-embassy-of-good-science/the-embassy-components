@@ -1,6 +1,8 @@
 // Add all variations for buttons
 .formbutton-edit,
-.formbutton-open {
+.formbutton-open,
+.formbutton-save,
+.formbutton-preview {
   display: flex;
   align-items: center;
 
@@ -51,6 +53,29 @@
     }
   }
 
+}
+
+.formbutton-save {
+  a {
+    background-color: $te-sunfloweryellow;
+
+    &:hover {
+      text-decoration: none;
+      background-color: $te-lightblue;
+
+      &::before,
+      &::after {
+        background-color: $te-lightblue;
+      }
+    }
+  }
+}
+
+.formbutton-save,
+.formbutton-preview {
+  a {
+    background-image: none;
+  }
 }
 
 .formbutton-open {
@@ -184,6 +209,7 @@
           padding-top: 0;
           border-bottom: 1px solid $te-border-color;
         }
+
         &:last-child {
           padding-bottom: 0;
         }

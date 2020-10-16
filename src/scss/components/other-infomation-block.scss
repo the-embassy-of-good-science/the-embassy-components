@@ -48,13 +48,13 @@
     line-height: unitless-calc(18, 15);
     white-space: nowrap;
     text-overflow: ellipsis;
+    pointer-events: none;
 
     &:visited {
       color: $te-blue !important;
     }
 
     &:hover {
-      text-decoration: underline;
       color: $te-blue  !important;
     }
   }
@@ -95,6 +95,13 @@
 
   &.is-visible {
     display: inline-flex;
+    pointer-events: all;
+
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
   }
 }
 .grid-item {

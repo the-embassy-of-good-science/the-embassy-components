@@ -216,7 +216,7 @@ div.drilldown-filter {
       color: $te-blue;
       border: 2px solid $te-lightblue;
       border-radius: 0;
-      background: $te-homepage-background;
+      background: rgba($te-verylightblue, 0.3);
       padding: 13px 10px;
 
       &:focus {

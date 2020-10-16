@@ -1,4 +1,4 @@
-  // Overwrite MediaWiki styles or use its classnames to add styles
+// Overwrite MediaWiki styles or use its classnames to add styles
 .mw-body {
   margin-bottom: 0;
   padding: 0;
@@ -25,6 +25,11 @@ body.page-Special_Search {
   textarea,
   input {
     max-width: 100%;
+  }
+
+  p + ul {
+    margin-top: -25px;
+    margin-bottom: 35px;
   }
 
   .panel-heading {
@@ -377,14 +382,12 @@ body {
   }
 }
 
-// Output of MediaWiki fields in Theme / Resource / Instruction detail pages
-.mw-field-value {
-  margin-bottom: 50px;
+.page-Themes,
+.page-Resources,
+.page-Training {
+  .wrapper.container {
+    padding-bottom: 100px;
+  }
 }
 
-// When Visual editor is display in an actual table (i.e. matrix type setup used to create steps for an instruction),
-// as opposed to only using display: table in regular implementations, border-collapse needs to be set explicitly
-// This fixes the padding in the drop down values in the editor
-.multipleTemplateInstanceTable {
-  border-collapse: separate;
-}
+

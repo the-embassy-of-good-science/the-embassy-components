@@ -22,7 +22,13 @@
   body[class*="mw-special-FormEdit"] & {
     display: block;
   }
+
+  body[class*="page-Guide"] & .active {
+    border-bottom-color: $te-homepage-background;
+  }
+
 }
+
 
 .gesinn-custom-tabs-container {
   grid-column-start: 1;
@@ -63,11 +69,6 @@
   &.active {
     border-color: $te-boticelli;
     border-bottom-color: $te-white;
-
-    body[class^="page-Guide"] & {
-      border-bottom-color: $te-homepage-background;
-    }
-
   }
 
   &:hover {
@@ -75,10 +76,6 @@
     text-decoration: none;
     cursor: pointer;
   }
-
-  //&[data-tab="trainee"] {
-  //  display: block;
-  //}
 
 }
 

@@ -151,6 +151,8 @@
   font-size: rem-calc(20);
   line-height: unitless-calc(26, 20);
 
+  a[href].external,
+  a[href].new,
   a {
     color: $te-black;
 
@@ -255,15 +257,22 @@
   color: $te-blue;
   margin: 0 auto;
 
+  & > span {
+    padding-right: 6px;
+    padding-top: 4px;
+  }
+
+  a[href].external,
+  a[href].new,
   a {
     padding: 10px 0 10px 0;
-    margin-left: 8px;
+    margin-left: 6px;
     background-repeat: no-repeat;
     background-position: left 7px;
-    text-decoration: underline;
+    color: $te-blue;
+
 
     &:hover {
-      text-decoration: none;
       color: $te-blue;
     }
   }

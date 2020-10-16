@@ -317,38 +317,73 @@ ul.ui-menu .ui-menu-item {
   user-select: none;
   color: $te-blue;
   outline: none;
-  background: $te-homepage-background;
-  margin-bottom: -25px;
+  background: rgba($te-homepage-background, .2);
+  border: 1px solid $te-boticelli;
+  text-align: center;
+  margin-bottom: 0;
 
   @include media-breakpoint-up(md) {
     align-items: flex-end;
+    margin-bottom: -25px;
+    border: none;
+    text-align: left;
+  }
+
+  &:hover {
+
+    border-color: $te-blue;
+    text-decoration: none;
+
+    label {
+      cursor: pointer;
+      text-decoration: none;
+    }
+
   }
 
   label {
-    font-family: $te-font-bold;
-    color: $te-black;
+    font-family: $te-font-regular;
+    color: $te-blue;
     display: block;
-    width: 250px;
+    width: 100%;
     font-size: 0;
-    text-decoration: underline;
-    margin-top: 20px;
-    margin-bottom: 0;
+    margin: 0;
+    padding: 10px 0;
+
+    &:hover {
+      color: $te-blue;
+    }
+
+
+    @include media-breakpoint-up(md) {
+      font-family: $te-font-bold;
+      color: $te-black;
+      width: 250px;
+      margin: 5px 0 0;
+      padding: 0;
+      text-decoration: underline;
+
+      &:hover {
+        color: $te-black;
+      }
+
+    }
 
     &::before {
+
+
       @include media-breakpoint-up(md) {
         font-size: rem-calc(16);
         line-height: unitless-calc(24,16);
         content: 'More filters';
+        background-image: url("data:image/svg+xml,%3Csvg width='9' height='9' viewBox='0 0 9 9' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.3834 5.5886v3.3628H3.3646V5.5886h-.0198v-.0018H0V3.568h3.3448V.2052h2.0188V3.568h.0198v.0018h3.3448v2.0188z' fill='%23000' fill-rule='nonzero'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: 9px;
+        background-position: left center;
+        padding-left: 18px;
       }
       content: 'Show filters';
       font-size: rem-calc(18);
-    }
-
-    &:hover {
-      cursor: pointer;
-      color: $te-black;
-      border-color: $te-blue;
-      text-decoration: none;
     }
   }
 }

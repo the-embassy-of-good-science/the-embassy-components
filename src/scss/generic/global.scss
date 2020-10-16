@@ -138,3 +138,15 @@ a[href].new,
 a[href].external {
   color: $te-blue;
 }
+
+.page-About,
+.page-Founders,
+.page-Contributors {
+  main.content {
+    padding-top: 100px;
+
+    @include media-breakpoint-up(lg) {
+      padding-top: 0;
+    }
+  }
+}

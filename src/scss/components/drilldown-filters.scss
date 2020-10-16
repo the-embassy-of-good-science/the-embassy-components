@@ -1,9 +1,9 @@
 div#drilldown-header {
   @include media-breakpoint-up(md) {
-    margin-bottom: 30px;
+
   }
   @include media-breakpoint-up(lg) {
-    margin-bottom: 40px;
+
   }
   display: flex;
   flex-wrap: wrap;
@@ -125,6 +125,7 @@ div.drilldown-filters {
 }
 
 div.drilldown-filter {
+
   @include media-breakpoint-up(md) {
     display: block;
     max-width: calc(50% - 15px);
@@ -234,6 +235,11 @@ div.drilldown-filter-label {
   line-height: unitless-calc(30, 18);
   color: $te-blue;
   margin-top: 5px;
+
+  .is-applied &{
+    font-style: normal;
+  }
+
 }
 
 // visible state
@@ -289,10 +295,12 @@ ul.ui-menu .ui-menu-item {
     font-family: $font-headings-bold;
   }
 
-  .ui-state-focus {
+  .ui-state-focus,
+  .ui-state-active {
     color: $te-black;
     border: 0;
     background: $te-lightblue;
+    margin: 0 !important;
   }
 }
 
@@ -322,11 +330,13 @@ ul.ui-menu .ui-menu-item {
   text-align: center;
   margin-bottom: 0;
 
+
   @include media-breakpoint-up(md) {
     align-items: flex-end;
     margin-bottom: -25px;
     border: none;
     text-align: left;
+    margin-left: 1px;
   }
 
   &:hover {

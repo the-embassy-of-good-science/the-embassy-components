@@ -134,3 +134,7 @@ b, strong {
   font-family: $font-headings-bold;
 }
 
+a[href].new,
+a[href].external {
+  color: $te-blue;
+}

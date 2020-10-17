@@ -28,8 +28,10 @@ body.page-Special_Search {
   }
 
   p + ul {
-    margin-top: -25px;
-    margin-bottom: 35px;
+    @include media-breakpoint-up(lg) {
+      margin-top: -25px;
+      margin-bottom: 35px;
+    }
   }
 
   .panel-heading {
@@ -65,12 +67,14 @@ body.page-Special_Search {
       padding: 5px 10px;
       color: $te-black;
       background-color: $te-verylightblue;
-
+      pointer-events: none;
+      /*
       &:hover {
         text-decoration: none;
         color: $te-black;
         background-color: $te-sunfloweryellow;
       }
+       */
     }
   }
 

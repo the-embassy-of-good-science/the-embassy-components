@@ -195,7 +195,8 @@
 
     .te-dropdown-menu {
       top: 70px;
-      right: 1px;
+      right: -89px;
+
       width: 250px;
       z-index: 11;
       transform: none;
@@ -213,9 +214,33 @@
         &:last-child {
           padding-bottom: 0;
         }
-
-
       }
+
+      &:before{
+        border-width: 0 12px 12px 12px;
+        right: 128px
+      }
+      &:after{
+        border-width: 1px 10px 10px 10px;
+        right: 130px
+      }
+
+
+      @include media-breakpoint-up(lg) {
+
+        right: 1px;
+
+        &:before{
+          border-width: 0 12px 12px 12px;
+          right: 38px
+        }
+        &:after{
+          border-width: 1px 10px 10px 10px;
+          right: 40px
+
+        }
+      }
+
 
     }
   }

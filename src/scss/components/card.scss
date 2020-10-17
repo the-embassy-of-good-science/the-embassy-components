@@ -227,11 +227,13 @@
     position: absolute;
     z-index: -1;
     top: 40px;
-    left: -50vw;
-    width: 150vw;
-    height: calc(100% + 110px); //added offset needs to be equal to top prop value
+    left: 50%;
+    width: 100vw;
+    height: calc(100% + 110px);
     content: ' ';
     background-color: $te-homepage-background;
+    transform: translateX(-50%);
+
   }
 
 

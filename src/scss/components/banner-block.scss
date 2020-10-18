@@ -17,7 +17,6 @@
   }
 
 
-
   @include media-breakpoint-up(lg) {
     padding: 40px 50px;
     margin-right: 0;
@@ -25,12 +24,16 @@
 
   .Virt2ue-button {
     font-size: rem-calc(16);
-    width: 100%;
+    width: auto;
     margin-bottom: 25px;
     padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
 
     @include media-breakpoint-up(lg) {
+      display: block;
       margin-bottom: 30px;
+      width: 100%;
     }
 
     span {
@@ -59,7 +62,7 @@
     flex-direction: column;
     align-items: flex-start;
 
-    .training-link a{
+    .training-link a {
       align-self: center;
       font-size: rem-calc(16);
       font-family: $te-font-bold;

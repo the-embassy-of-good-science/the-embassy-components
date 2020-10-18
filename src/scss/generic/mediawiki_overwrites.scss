@@ -92,7 +92,7 @@ body.page-Special_Search {
   }
   position: relative;
   order: 3;
-  margin: 30px 0 90px;
+  margin: 50px 0 90px;
   padding: 30px 0 0 0;
 
   > *:last-child {
@@ -101,16 +101,17 @@ body.page-Special_Search {
 
   &:before {
     @include media-breakpoint-up(lg) {
-      transform: skewY(-2.8deg) translateX(-40vw) translateY(-65px);
+      transform: skewY(-2.8deg) translateX(-50%) translateY(-80px);
     }
     position: absolute;
+    left: 50%;
     z-index: -1;
-    width: 150vw;
+    width: 100vw;
     height: calc(100% + 60px);
     content: ' ';
-    transform: skewY(-2.8deg) translateX(-40vw) translateY(-35px);
+    transform: skewY(-2.8deg) translateX(-50%) translateY(-50px);
     transform-origin: top left;
-    background-color: $te-verylightblue;
+    background-color: $te-homepage-background;
   }
 }
 

@@ -254,8 +254,11 @@
     max-width: 360px;
     margin-bottom: 25px;
     min-height: auto;
-    padding-left: 0;
-    padding-right: 0;
+
+    @include media-breakpoint-up(lg) {
+      padding-left: 0;
+      padding-right: 0;
+    }
 
     &:hover {
       a {

@@ -10,23 +10,24 @@
 
   &::after {
     @include media-breakpoint-up(lg) {
-      left: -55px;
       display: block;
       height: calc(100% + 400px);
       transform: translateY(-400px);
-    }
-    @include media-breakpoint-up(md) {
       left: -40px;
     }
 
     position: absolute;
     z-index: -1;
     top: 0;
-    left: -60px;
-    min-width: 150vw;
+    left: 50%;
+    min-width: 108.333%;
+
     height: 100%;
     content: ' ';
     background-color: $te-homepage-background;
+    transform: translateX(-50%);
+
+
   }
 }
 

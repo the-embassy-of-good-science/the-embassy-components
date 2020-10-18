@@ -139,14 +139,32 @@ a[href].external {
   color: $te-blue;
 }
 
-.page-About,
-.page-Founders,
-.page-Contributors {
+body[class*="page-Resource_"],
+body[class*="page-Instruction_"],
+body[class*="page-Theme_"],
+body.page-About {
   main.content {
     padding-top: 100px;
 
     @include media-breakpoint-up(lg) {
       padding-top: 0;
     }
+  }
+
+  // background color sidebar to fill out on right side of sidebar on large screen
+  // Previous solution caused horizontal scrollbar
+  @include media-breakpoint-up(lg) {
+    background-image: linear-gradient(white, white),
+    linear-gradient(white, white),
+    linear-gradient(white, white),
+    linear-gradient($te-homepage-background);
+
+    background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white)), -webkit-gradient(linear, left top, left bottom, from(white), to(white)), -webkit-gradient(linear, left top, left bottom, from(white), to(white)), -webkit-gradient(linear, left top, left bottom, from($te-homepage-background));
+
+    background-size: calc(1 * (100% / 4)) 100%,
+    calc(2 * (100% / 4)) 100%,
+    calc(3 * (100% / 4)) 100%,
+    calc(4 * (100% / 4)) 100%;
+    background-repeat: repeat-y;
   }
 }

@@ -26,9 +26,33 @@
     content: ' ';
     background-color: $te-homepage-background;
     transform: translateX(-50%);
+  }
 
+  @include media-breakpoint-only(sm) {
+    &::after{
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 45px;
+      width: calc(100% + 60px);
+      height: 100%;
+      content: ' ';
+    }
 
   }
+  @include media-breakpoint-only(md){
+    &::after{
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 45px;
+      width: calc(100% + 60px);
+      height: 100%;
+      content: ' ';
+    }
+
+  }
+
 }
 
 .sidebar-title {

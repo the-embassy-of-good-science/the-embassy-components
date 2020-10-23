@@ -39,7 +39,8 @@
     "build": "run-s prod:*",
     "prod:webpack": "webpack --mode production",
     "prod:eleventy": "npx @11ty/eleventy",
-    "lint": "eslint ./src -c .eslintrc.json --ext js"
+    "lint": "eslint ./src -c .eslintrc.json --ext js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",

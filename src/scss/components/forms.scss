@@ -146,3 +146,15 @@
     }
   }
 }
+
+#pfForm select, #pfForm input[type="checkbox"] {
+  min-height: 34px;
+}
+
+.simple-tooltip-img {
+  vertical-align: middle !important;
+}
+
+span.select-sfs {
+  max-width: 100%;
+}

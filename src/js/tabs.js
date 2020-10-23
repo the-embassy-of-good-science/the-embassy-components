@@ -1,13 +1,12 @@
 import $ from 'jquery';
 
 $(function () {
-  const traineeTab = document.querySelector('[data-tab="trainee"')
+  const traineeTab = document.querySelector('[data-tab="trainee"]')
 
   // Trainee tab active by default
   if (traineeTab) {
     traineeTab.classList.add('active')
   }
-
 })
 
 /**
@@ -16,8 +15,8 @@ $(function () {
 $('.g-tab').on('click', function (e) {
   e.preventDefault();
 
-  const trainerTab = document.querySelector('[data-tab="trainer"')
-  const traineeTab = document.querySelector('[data-tab="trainee"')
+  const trainerTab = document.querySelector('[data-tab="trainer"]')
+  const traineeTab = document.querySelector('[data-tab="trainee"]')
 
   if (e.target.dataset.tab === 'trainer') {
     trainerTab.classList.add('active')
@@ -33,6 +32,4 @@ $('.g-tab').on('click', function (e) {
     document.querySelector('#data-tab-content-trainer').style.display = 'none';
     document.querySelector('#data-tab-content-trainee').style.display = 'block';
   }
-
-
 });

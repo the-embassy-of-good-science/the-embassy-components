@@ -7,6 +7,9 @@ cache:
 
 before_deploy:
   - "npm run build"
+  
+script:
+  - echo "skipping tests"
 
 deploy:
   provider: pages

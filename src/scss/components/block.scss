@@ -257,7 +257,7 @@
 
 }
 
-.block-virt2ue-label {
+.block-initiative {
   display: flex;
   align-items: center;
   align-self: start;
@@ -273,24 +273,29 @@
     margin: 0 auto;
   }
 
+  a.image {
+    max-width: 30px;
+    margin-right: 6px;
 
-
-
+    img {
+      width: 100%;
+    }
+  }
 
   & > span {
-    padding-right: 6px;
-    padding-top: 4px;
+    padding-right: 10px;
+    display: inline-flex;
   }
 
   a[href].external,
   a[href].new,
   a {
+    display: inline-flex;
+    align-items: center;
     padding: 10px 0 10px 0;
-    margin-left: 6px;
     background-repeat: no-repeat;
     background-position: left 7px;
     color: $te-blue;
-
 
     &:hover {
       color: $te-blue;

@@ -34,8 +34,6 @@
     }
   }
 
-
-
   li a[href].external,
   li a[href].new,
   li a {
@@ -87,6 +85,10 @@
   .other-information-item {
     background-color: $te-white;
     white-space: nowrap;
+  }
+
+  li a {
+    pointer-events: all;
   }
 }
 

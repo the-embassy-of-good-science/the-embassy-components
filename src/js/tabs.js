@@ -1,35 +1,37 @@
-import $ from 'jquery';
+/**
+ * Set initial tab active
+ */
+document.addEventListener('DOMContentLoaded', (event) => {
+  var tabs = document.querySelectorAll('.g-tablinks:not(.disabled)')
 
-$(function () {
-  const traineeTab = document.querySelector('[data-tab="trainee"]')
-
-  // Trainee tab active by default
-  if (traineeTab) {
-    traineeTab.classList.add('active')
+  if(tabs) {
+    // Set first tab that is enabled
+    tabs[0].classList.add('active')
   }
 })
 
 /**
  * Module to open links inside MediaWiki context
  */
-$('.g-tab').on('click', function (e) {
-  e.preventDefault();
+var tabs = document.querySelectorAll('.g-tablinks')
+tabs.forEach(function(tab) {
 
-  const trainerTab = document.querySelector('[data-tab="trainer"]')
-  const traineeTab = document.querySelector('[data-tab="trainee"]')
+  tab.addEventListener('click', function(e) {
+    var trainerTab = document.querySelector('[data-tab="trainer"]')
+    var traineeTab = document.querySelector('[data-tab="trainee"]')
 
-  if (e.target.dataset.tab === 'trainer') {
-    trainerTab.classList.add('active')
-    traineeTab.classList.remove('active')
-    document.querySelector('#data-tab-content-trainer').style.display = 'block';
-    document.querySelector('#data-tab-content-trainee').style.display = 'none';
+    if (e.target.dataset.tab === 'trainer') {
+      trainerTab.classList.add('active')
+      traineeTab.classList.remove('active')
+      document.querySelector('#data-tab-content-trainer').style.display = 'block';
+      document.querySelector('#data-tab-content-trainee').style.display = 'none';
+    }
 
-  }
-
-  if (e.target.dataset.tab === 'trainee') {
-    traineeTab.classList.add('active')
-    trainerTab.classList.remove('active')
-    document.querySelector('#data-tab-content-trainer').style.display = 'none';
-    document.querySelector('#data-tab-content-trainee').style.display = 'block';
-  }
-});
+    if (e.target.dataset.tab === 'trainee') {
+      traineeTab.classList.add('active')
+      trainerTab.classList.remove('active')
+      document.querySelector('#data-tab-content-trainer').style.display = 'none';
+      document.querySelector('#data-tab-content-trainee').style.display = 'block';
+    }
+  })
+})

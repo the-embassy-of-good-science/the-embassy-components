@@ -71,6 +71,11 @@
     border-bottom-color: $te-white;
   }
 
+  &.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
   &:hover {
     color: $te-blue;
     text-decoration: none;

@@ -125,6 +125,18 @@
     }
   }
 
+  a.image {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+
+    * {
+      max-width: 25px;
+      max-height: 25px;
+    }
+  }
+
   a {
     padding: 10px 0;
     background-repeat: no-repeat;
@@ -138,14 +150,4 @@
   }
 }
 
-a.summary-block-image {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 10px;
 
-  * {
-    max-width: 25px;
-    max-height: 25px;
-  }
-}
